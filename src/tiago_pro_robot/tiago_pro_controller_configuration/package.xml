@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>tiago_pro_controller_configuration</name>
+  <version>2.5.0</version>
+  <description>The tiago_pro_controller_configuration package</description>
+
+  <maintainer email="narcis.miguel@pal-robotics.com">Narcis Miguel</maintainer>
+  <maintainer email="ilenia.perrella@pal-robotics.com">Ilenia Perrella</maintainer>
+
+  <license>Apache License 2.0</license>
+  
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+
+  <exec_depend condition="$PAL_DISTRO >= alum">omni_drive_controller</exec_depend>
+  <exec_depend>pal_pro_gripper_controller_configuration</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">allegro_hand_controller_configuration</exec_depend>
+  <exec_depend>pal_sea_arm_controller_configuration</exec_depend>
+  <exec_depend>omni_base_controller_configuration</exec_depend>
+  <exec_depend>tiago_pro_head_controller_configuration</exec_depend>
+
+  <exec_depend>joint_state_broadcaster</exec_depend>
+  <exec_depend>joint_trajectory_controller</exec_depend>
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_pal</exec_depend>
+
+  <exec_depend>ros2controlcli</exec_depend>
+  <exec_depend condition="$PAL_DISTRO > 0">gravity_compensation_controller2</exec_depend>
+  <exec_depend condition="$PAL_DISTRO > 0">tsid_controllers</exec_depend>
+  <exec_depend condition="$PAL_DISTRO > 0"> pal_impedance_control</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>tiago_pro_description</name>
+  <version>2.5.0</version>
+  <description>The tiago_pro_description package</description>
+
+  <maintainer email="narcis.miguel@pal-robotics.com">Narcis Miguel</maintainer>
+  <maintainer email="ilenia.perrella@pal-robotics.com">Ilenia Perrella</maintainer>
+
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>omni_base_description</exec_depend>
+  <exec_depend>tiago_pro_head_description</exec_depend>
+  <exec_depend>pal_sea_arm_description</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">allegro_hand_description</exec_depend>
+  <exec_depend>pal_urdf_utils</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">hector_gazebo_plugins</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <test_depend>ament_cmake_pytest</test_depend>
+
+  <test_depend>launch_testing_ament_cmake</test_depend>
+  <test_depend>urdf_test</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>

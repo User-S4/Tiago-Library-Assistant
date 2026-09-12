@@ -1,0 +1,24 @@
+services:
+  erc:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: erc-2026:humble-harmonic
+    container_name: erc_sim
+    stdin_open: true
+    tty: true
+    privileged: true
+    environment:
+      - DISPLAY=${DISPLAY:-:0}
+      - QT_X11_NO_MITSHM=1
+      - ROS_DOMAIN_ID=23
+    volumes:
+      - ../src:/opt/erc_ws/src:rw
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /dev/dri:/dev/dri
+    shm_size: '512m'
+    network_mode: host
+    
+# GPU passthrough lives in docker-compose.gpu.yml and is layered on top only
+# when an NVIDIA GPU + container toolkit is detected (see up.sh). This base file
+# runs anywhere and falls back to software / integrated (/dev/dri) rendering.

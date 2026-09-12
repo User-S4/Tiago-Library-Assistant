@@ -1,0 +1,122 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <xacro:macro name="inertial_link_1" params="reflect">
+        <xacro:if value="${inertia_version == 'tiago-pro-s'}">
+            <inertial>
+                <origin
+                    xyz="0.0047632 0.015281 0.15179"
+                    rpy="0 0 0" />
+                <mass
+                    value="1.2728" />
+                <inertia
+                    ixx="0.0026718"
+                    ixy="2.956E-05"
+                    ixz="9.1714E-05"
+                    iyy="0.0024708"
+                    iyz="-0.00021103"
+                    izz="0.0010181" />
+            </inertial>
+        </xacro:if>
+        <xacro:if value="${inertia_version == 'tiago-pro'}">
+            <inertial>
+                <origin xyz="0.0043916 0.016184 0.15576" rpy="0 0 0" />
+                <mass value="1.1325" />
+                <inertia ixx="0.0025497" ixy="2.6206E-05" ixz="6.2082E-05" iyy="0.0023517" iyz="-0.00020617" izz="0.00097131" />
+            </inertial>
+        </xacro:if>
+    </xacro:macro>
+
+    <xacro:macro name="origin_joint_1" params="reflect">
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </xacro:macro>
+
+    <xacro:macro name="inertial_link_2" params="reflect">
+        <xacro:if value="${inertia_version == 'tiago-pro-s'}">
+            <inertial>
+                <origin
+                    xyz="0.016761 -0.11092 -0.029509"
+                    rpy="0 0 0" />
+                <mass
+                    value="1.0974" />
+                <inertia
+                    ixx="0.0017447"
+                    ixy="0.00015165"
+                    ixz="1.4253E-05"
+                    iyy="0.00092895"
+                    iyz="-0.00017788"
+                    izz="0.0018861" />
+            </inertial>
+        </xacro:if>
+        <xacro:if value="${inertia_version == 'tiago-pro'}">
+            <inertial>
+                <origin xyz="0.01786 -0.11956 -0.032097" rpy="0 0 0" />
+                <mass value="0.9976" />
+                <inertia ixx="0.0015021" ixy="0.00011264" ixz="1.0692E-05" iyy="0.00088017" iyz="-0.00015843" izz="0.0016021" />
+            </inertial>
+        </xacro:if>
+    </xacro:macro>
+
+    <xacro:macro name="origin_joint_2" params="reflect">
+        <origin xyz="0.0371099999999995 0.02 0.18" rpy="-1.57079632679489 0 -1.5707963267949" />
+    </xacro:macro>
+
+    <xacro:macro name="inertial_link_3" params="reflect">
+        <xacro:if value="${inertia_version == 'tiago-pro-s'}">
+            <inertial>
+                <origin
+                    xyz="0.014943 -0.0047866 0.12972"
+                    rpy="0 0 0" />
+                <mass
+                    value="1.1907" />
+                <inertia
+                    ixx="0.0024631"
+                    ixy="-2.9584E-05"
+                    ixz="-0.00021101"
+                    iyy="0.0026656"
+                    iyz="-9.1746E-05"
+                    izz="0.0010104" />
+            </inertial>
+        </xacro:if>
+        <xacro:if value="${inertia_version == 'tiago-pro'}">
+            <inertial>
+                <origin xyz="0.016184 -0.0043916 0.13565" rpy="0 0 0" />
+                <mass value="1.0865" />
+                <inertia ixx="0.0023517" ixy="-2.6206E-05" ixz="-0.00020617" iyy="0.0025497" iyz="-6.2082E-05" izz="0.00097131" />
+            </inertial>
+        </xacro:if>
+    </xacro:macro>
+
+    <xacro:macro name="origin_joint_3" params="reflect">
+        <origin xyz="0.019999999999999 -0.17011 -0.037110000000001" rpy="1.5707963267949 0 0" />
+    </xacro:macro>
+
+    <xacro:macro name="inertial_link_4" params="reflect">
+        <xacro:if value="${inertia_version == 'tiago-pro-s'}">
+            <inertial>
+                <origin
+                    xyz="-0.016761 0.11092 -0.029509"
+                    rpy="0 0 0" />
+                <mass
+                    value="1.0974" />
+                <inertia
+                    ixx="0.0017447"
+                    ixy="0.00015165"
+                    ixz="-1.4253E-05"
+                    iyy="0.00092895"
+                    iyz="0.00017788"
+                    izz="0.0018861" />
+            </inertial>
+        </xacro:if>
+        <xacro:if value="${inertia_version == 'tiago-pro'}">
+            <inertial>
+                <origin xyz="-0.01786 0.11956 -0.032097" rpy="0 0 0" />
+                <mass value="0.9976" />
+                <inertia ixx="0.0015021" ixy="0.00011264" ixz="-1.0692E-05" iyy="0.00088017" iyz="0.00015843" izz="0.0016021" />
+            </inertial>
+        </xacro:if>
+    </xacro:macro>
+
+    <xacro:macro name="origin_joint_4" params="reflect">
+        <origin xyz="0.0199999999999993 -0.0371100000000008 0.15989" rpy="1.57079632679489 0 0" />
+    </xacro:macro>
+</robot>

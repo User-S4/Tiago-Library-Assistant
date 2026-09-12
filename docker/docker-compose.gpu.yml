@@ -1,0 +1,19 @@
+# GPU override — layered on top of docker-compose.yml.
+#
+#   docker compose -f docker-compose.yml -f docker-compose.gpu.yml up -d
+#
+# up.sh applies this automatically when it detects an NVIDIA GPU plus a working
+# container toolkit. The deploy.resources route uses nvidia-container-toolkit /
+# CDI and does NOT require nvidia to be Docker's default runtime.
+services:
+  erc:
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

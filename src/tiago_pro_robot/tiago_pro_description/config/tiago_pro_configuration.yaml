@@ -1,0 +1,84 @@
+arm_type_right:
+  description: 'Arm type right'
+  choices: ['tiago-pro', 'tiago-pro-s', 'no-arm']
+  default_value: 'tiago-pro'
+arm_type_left:
+  description: 'Arm type left'
+  choices: ['tiago-pro', 'tiago-pro-s', 'no-arm']
+  default_value: 'tiago-pro'
+wrist_model_right:
+  description: 'Wrist model right'
+  choices: ['spherical-wrist', 'straight-wrist', 'short-wrist']
+  default_value: 'spherical-wrist'
+wrist_model_left:
+  description: 'Wrist model left'
+  choices: ['spherical-wrist', 'straight-wrist', 'short-wrist']
+  default_value: 'spherical-wrist'
+laser_model:
+  description: 'Base laser model'
+  choices: ['no-laser', 'sick-571']
+  default_value: 'sick-571'
+tool_changer_right:
+  description: 'The arm has a tool changer'
+  choices: ['False', 'True']
+  default_value: 'True'
+tool_changer_left:
+  description: 'The arm has a tool changer'
+  choices: ['False', 'True']
+  default_value: 'True'
+end_effector_right:
+  description: 'End effector model right arm'
+  choices: ['pal-pro-gripper', 'custom', 'no-end-effector', 'allegro-hand']
+  default_value: 'pal-pro-gripper'
+end_effector_left:
+  description: 'End effector model left arm'
+  choices: ['pal-pro-gripper', 'custom', 'no-end-effector', 'allegro-hand']
+  default_value: 'pal-pro-gripper'
+ft_sensor_right:
+  description: 'FT sensor model right arm'
+  choices: ['ati', 'rokubi', 'no-ft-sensor']
+  default_value: 'no-ft-sensor'
+ft_sensor_left:
+  description: 'FT sensor model left arm'
+  choices: ['ati', 'rokubi', 'no-ft-sensor']
+  default_value: 'no-ft-sensor'
+ft_sensor_teleop_right:
+  description: 'FT sensor model right teleop arm'
+  choices: ['ati', 'rokubi', 'no-ft-sensor']
+  default_value: 'no-ft-sensor'
+ft_sensor_teleop_left:
+  description: 'FT sensor model left teleop arm'
+  choices: ['ati', 'rokubi', 'no-ft-sensor']
+  default_value: 'no-ft-sensor'
+base_type:
+  description: 'Base type'
+  choices: ['omni_base']
+  default_value: 'omni_base'
+camera_model:
+  description: 'Head camera model'
+  choices: ['realsense-d435', 'realsense-d435i', 'realsense-d455']
+  default_value: 'realsense-d435'
+wheel_model:
+  description: 'Wheel model'
+  choices: ['moog', 'grassland', 'no-wheels']
+  default_value: 'moog'
+torque_estimation:
+  description: 'The arm has torque estimation'
+  choices: ['False', 'True']
+  default_value: 'False'
+has_teleop_arms:
+  description: 'The robot has teleop two extra arms'
+  choices: ['False', 'True']
+  default_value: 'False'
+has_wrist_camera:
+  description: 'The robot has wrist camera on the arms'
+  choices: ['False', 'True']
+  default_value: 'False'
+calibration_tool:
+  description: 'Set to True to include the calibration tool on the gripper'
+  choices: ['False', 'True']
+  default_value: 'False'
+limits_v2:
+  description: 'Use limits v2 for the arm joints'
+  choices: ['False', 'True']
+  default_value: 'False'

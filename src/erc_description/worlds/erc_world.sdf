@@ -1,0 +1,236 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="erc_world">
+
+    <!-- PHYSICS                                     -->
+    <physics name="default" type="ode">
+      <max_step_size>0.002</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <!-- PLUGINS                                     -->
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin filename="gz-sim-contact-system" name="gz::sim::systems::Contact"/>
+
+    <!-- Needed for IMU specifically -->
+    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
+
+    <!-- GROUND PLANE with sponsor logo               -->
+    <model name="ground_plane">
+      <static>true</static>
+      <pose>1.0 0 0 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane><normal>0 0 1</normal><size>10 10</size></plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane><normal>0 0 1</normal><size>10 10</size></plane>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+            <pbr>
+              <metal>
+                <albedo_map>model://erc_description/materials/textures/arena_floor.png</albedo_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ARENA BOUNDARIES                             -->
+    <!-- Arena floor marking (slightly raised) -->
+    <model name="arena_boundary">
+      <static>true</static>
+      <pose>1.0 0.0 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="floor_marking">
+          <geometry>
+            <plane><normal>0 0 1</normal><size>7.0 7.0</size></plane>
+          </geometry>
+          <material>
+            <ambient>0.75 0.75 0.72 1</ambient>
+            <diffuse>0.75 0.75 0.72 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- OUTER WALLS                                  -->
+    <model name="wall_north">
+      <static>true</static>
+      <pose>1.0 5 1.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>10 0.05 3</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>10 0.05 3</size></box>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_south">
+      <static>true</static>
+      <pose>1.0 -5 1.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>10 0.05 3</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>10 0.05 3</size></box>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_east">
+      <static>true</static>
+      <pose>6.0 0 1.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>0.05 10 3</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>0.05 10 3</size></box>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_west">
+      <static>true</static>
+      <pose>-4.0 0 1.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>0.05 10 3</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>0.05 10 3</size></box>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    
+    <!-- START ZONE (Location A)                    -->
+    <model name="start_zone">
+      <static>true</static>
+      <pose>0 0 0.002 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <plane><normal>0 0 1</normal><size>0.8 0.8</size></plane>
+          </geometry>
+          <material>
+            <ambient>0.1 0.4 0.1 1</ambient>
+            <diffuse>0.1 0.4 0.1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- TABLE -->
+      <include>
+        <uri>model://erc_description/models/table/sdf/erc_table.sdf</uri>
+        <name>erc_table</name>
+        <pose>-1 0 0.7 1.5708 0 -1.5708</pose>
+      </include>
+
+    <!-- SHELF -->
+      <include>
+        <uri>model://erc_description/models/shelf/sdf/erc_shelf.sdf</uri>
+        <name>erc_shelf</name>
+        <pose>3 0 1.1 1.5708 0 -1.5708</pose>
+      </include>
+
+    <!-- COLLECTION BIN -->
+      <include>
+        <uri>model://erc_description/models/collection_bin/sdf/erc_collection_bin.sdf</uri>
+        <name>erc_collection_bin</name>
+        <pose>-1 0 1.3 1.5708 0 -1.5708</pose>
+      </include>
+
+    <!-- SCENE                                        -->
+    <scene>
+      <ambient>0.7 0.7 0.7 1</ambient>
+      <background>0.8 0.8 0.8 1</background>
+      <shadows>false</shadows>
+    </scene>
+
+    <!-- LIGHTS                                       -->
+    <!-- Light from front -->
+    <light name="light_front" type="directional">
+      <pose>0 -10 5 0 0.5 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0 1 -0.5</direction>
+      <cast_shadows>false</cast_shadows>
+    </light>
+
+    <!-- Light from back -->
+    <light name="light_back" type="directional">
+      <pose>0 10 5 0 -0.5 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0 -1 -0.5</direction>
+      <cast_shadows>false</cast_shadows>
+    </light>
+
+    <!-- Light from left -->
+    <light name="light_left" type="directional">
+      <pose>-10 0 5 0 0 0.5</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>1 0 -0.5</direction>
+      <cast_shadows>false</cast_shadows>
+    </light>
+
+    <!-- Light from right -->
+    <light name="light_right" type="directional">
+      <pose>10 0 5 0 0 -0.5</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>-1 0 -0.5</direction>
+      <cast_shadows>false</cast_shadows>
+    </light>
+
+  </world>
+</sdf>

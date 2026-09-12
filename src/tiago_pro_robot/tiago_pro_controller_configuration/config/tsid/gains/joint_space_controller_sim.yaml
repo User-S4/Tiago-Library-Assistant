@@ -1,0 +1,25 @@
+${ARM_SIDE_PREFIX}_joint_space_controller:
+  ros__parameters:
+    joint_pos_gain:
+      ${ARM_SIDE_PREFIX}_1_joint:
+        kp: 100.0
+        kd: 50.0
+      ${ARM_SIDE_PREFIX}_2_joint:
+        kp: 100.0
+        kd: 50.0
+      ${ARM_SIDE_PREFIX}_3_joint:
+        kp: 100.0
+        kd: 50.0
+      ${ARM_SIDE_PREFIX}_4_joint:
+        kp: 100.0
+        kd: 50.0
+      ${ARM_SIDE_PREFIX}_5_joint:
+        kp: 100.0
+        kd: 50.0
+      ${ARM_SIDE_PREFIX}_6_joint:
+        kp: 100.0
+        kd: 50.0
+      ${ARM_SIDE_PREFIX}_7_joint:
+        kp: 100.0
+        kd: 50.0
+    

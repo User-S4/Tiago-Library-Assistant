@@ -1,0 +1,7 @@
+wheels_current_limit_controller:
+  ros__parameters:
+    actuators:
+      - wheel_front_left_motor
+      - wheel_rear_left_motor
+      - wheel_front_right_motor
+      - wheel_rear_right_motor

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <xacro:macro name="mj_head_actuators" params="mj_control">
+        <xacro:include filename="$(find tiago_pro_head_description)/urdf/head_limits.xacro" />
+
+        <xacro:if value="${mj_control == 'position'}">
+            <position name="head_1_joint_position" joint="head_1_joint" ctrlrange="${head_1_lower_limit} ${head_1_upper_limit}" kp="2000" />
+            <position name="head_2_joint_position" joint="head_2_joint" ctrlrange="${head_2_lower_limit} ${head_2_upper_limit}" kp="2000"/>
+        </xacro:if>
+        <xacro:if value="${mj_control == 'motor'}">
+            <motor name="head_1_joint_motor" joint="head_1_joint" ctrllimited="true" ctrlrange="-${head_1_max_effort} ${head_1_max_effort}"/>
+            <motor name="head_2_joint_motor" joint="head_2_joint" ctrllimited="true" ctrlrange="-${head_2_max_effort} ${head_2_max_effort}"/>
+        </xacro:if>
+    </xacro:macro>
+
+</robot>

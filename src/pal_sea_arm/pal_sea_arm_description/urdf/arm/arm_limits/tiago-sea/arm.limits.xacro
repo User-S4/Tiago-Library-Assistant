@@ -1,0 +1,31 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!--Constant parameters-->
+  <xacro:property name="arm_friction" value="1.0" />
+  <xacro:property name="arm_damping" value="1.0" />
+  <xacro:property name="arm_k_position" value="20"/>
+  <xacro:property name="arm_k_velocity" value="20"/>
+
+  <!-- Joint limits -->
+  <xacro:property name="arm_1_joint_ub" value="90"/>
+  <xacro:property name="arm_1_joint_lb" value="-90"/>
+  <xacro:property name="arm_2_joint_ub" value="90"/>
+  <xacro:property name="arm_2_joint_lb" value="-62.5"/>
+  <xacro:property name="arm_3_joint_ub" value="170"/>
+  <xacro:property name="arm_3_joint_lb" value="-170"/>
+  <xacro:property name="arm_4_joint_ub" value="90" />
+  <xacro:property name="arm_4_joint_lb" value="-140" />
+
+  <!-- Velocity limits -->
+  <xacro:property name="arm_1_max_velocity" value="1.95" />
+  <xacro:property name="arm_2_max_velocity" value="1.95" />
+  <xacro:property name="arm_3_max_velocity" value="1.95" />
+  <xacro:property name="arm_4_max_velocity" value="1.95" />
+
+  <!-- Effort limits -->
+  <xacro:property name="arm_1_max_effort" value="50" />
+  <xacro:property name="arm_2_max_effort" value="50" />
+  <xacro:property name="arm_3_max_effort" value="50" />
+  <xacro:property name="arm_4_max_effort" value="50" />
+
+</robot>

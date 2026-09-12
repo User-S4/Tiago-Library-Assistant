@@ -1,0 +1,107 @@
+/**:
+  ros__parameters:
+    motions:
+      home:
+        joints: [torso_lift_joint, arm_left_1_joint, arm_left_2_joint, arm_left_3_joint, arm_left_4_joint, arm_left_5_joint, arm_left_6_joint, arm_left_7_joint]
+        times_from_start: [0.0, 5.0, 10.0]
+        positions: [0.17202, 1.8557, -1.5919, 0.35538, -2.0502, 0.10524, -1.5976, 0.0,
+                    0.1761, 0.26, -1.6008, 0.3489, -1.9818, 0.0, -1.2, 0.0,
+                    0.1, 0.36, -1.83, 0.47, -2.35, 0.0, -1.2, 0.0]
+        meta:
+          name: home
+          usage: demo
+          description: home
+      home_left:
+        joints: [torso_lift_joint, arm_left_1_joint, arm_left_2_joint, arm_left_3_joint, arm_left_4_joint, arm_left_5_joint, arm_left_6_joint, arm_left_7_joint]
+        times_from_start: [0.0, 5.0, 10.0]
+        positions: [0.17202, 1.8557, -1.5919, 0.35538, -2.0502, 0.10524, -1.5976, 0.0,
+                    0.1761, 0.26, -1.6008, 0.3489, -1.9818, 0.0, -1.2, 0.0,
+                    0.1, 0.36, -1.83, 0.47, -2.35, 0.0, -1.2, 0.0]
+        meta:
+          name: home_left
+          usage: demo
+          description: home_left
+
+      offer_left:
+        joints: [torso_lift_joint, arm_left_1_joint, arm_left_2_joint, arm_left_3_joint, arm_left_4_joint, arm_left_5_joint, arm_left_6_joint, arm_left_7_joint]
+        times_from_start: [0.0]
+        positions: [0.14, -0.25843, -0.57522, 0.50314, -2.0337, 0.0, 1.0543, 1.5708]
+        meta:
+          name: offer_left
+          usage: demo
+          description: offer_left
+      shake_left:
+        joints: [torso_lift_joint, arm_left_1_joint, arm_left_2_joint, arm_left_3_joint, arm_left_4_joint, arm_left_5_joint, arm_left_6_joint, arm_left_7_joint]
+        times_from_start: [0.0, 1.0, 2.5, 4.0, 5.5, 7.0]
+        positions: [0.125, -0.25843, -0.57522, 0.50314, -2.0337, 0.0, 1.0612, 0.0,
+                    0.125, -0.25843, -0.57522, 0.50314, -2.0337, 0.0, 0.8137, 0.0,
+                    0.125, -0.25843, -0.57522, 0.50314, -2.0337, 0.0, 1.3237, 0.0,
+                    0.125, -0.25843, -0.57522, 0.50314, -2.0337, 0.0, 0.8137, 0.0,
+                    0.125, -0.25843, -0.57522, 0.50314, -2.0337, 0.0, 1.3237, 0.0,
+                    0.125, -0.25843, -0.57522, 0.50314, -2.0337, 0.0, 1.0612, 0.0]
+        meta:
+          name: shake_left
+          usage: demo
+          description: shake_left
+
+      horizontal_left:
+        joints: [torso_lift_joint,  arm_left_1_joint, arm_left_2_joint, arm_left_3_joint, arm_left_4_joint, arm_left_5_joint, arm_left_6_joint, arm_left_7_joint]
+        positions: [0.23, 0.7167, -1.83, 0.1158,-2.35,0.0, -1.2, 0.0,
+          0.23, 1.75, -1.83, 0.47, -2.35, 0.0, -1.20, 0.0,
+          0.23, 1.75, -1.27, 0.0, 0.0, 0.0, 0.0, 0.0,]
+        times_from_start: [0.0, 3.0, 8.0]
+        meta:
+          name: Horizontal Left
+          usage: Demo
+          description: horizontal left
+
+      reach_floor_left:
+        joints: [torso_lift_joint, arm_left_1_joint, arm_left_2_joint, arm_left_3_joint, arm_left_4_joint, arm_left_5_joint, arm_left_6_joint, arm_left_7_joint, head_1_joint, head_2_joint]
+        positions: [0.25, 0.36, -1.83, 0.47, -2.35, 0.0, -1.20, 0.0, -0.7, 0.0,
+                    0.25, 0.36, -0.74001, -0.3, -0.26194, -0.43569, -0.10612, 0.0, 0.0, 0.0]
+        times_from_start: [0.0, 5.0]
+        meta:
+          name: Reach Floor Left
+          usage: Demo
+          description: reach floor left
+
+      torso_up:
+        joints: [torso_lift_joint]
+        positions: [0.33]
+        times_from_start: [5.0]
+        meta:
+          name: Torso Up
+          usage: Demo
+          description: torso up
+
+      torso_down:
+        joints: [torso_lift_joint]
+        positions: [0.02]
+        times_from_start: [0.0]
+        meta:
+          name: Torso Down
+          usage: Demo
+          description: torso down
+
+      boxing:
+        joints: [torso_lift_joint, arm_left_1_joint, arm_left_2_joint, arm_left_3_joint, arm_left_4_joint, arm_left_5_joint, arm_left_6_joint, arm_left_7_joint]
+        times_from_start: [0.0, 5.0, 10.0, 15.0]
+        positions: [0.17202, 1.8557, -1.5919, 0.35538, -2.0502, 0.10524, -1.5976, 0.0,
+                    0.1761, 0.26, -1.6008, 0.3489, -1.9818, 0.0, -1.5829, 0.0,
+                    0.1, 0.36, -1.83, 0.47, -2.35, 0.0, -1.2, 0.0,
+                    0.0, 0.29, -1.89, 0.48, -2.37, 0.2, -1.25, 1.71]
+        meta:
+          name: Boxing
+          usage: demo
+          description: Go boxing
+
+      pre_grasp_left:
+        joints: [torso_lift_joint, arm_left_1_joint, arm_left_2_joint, arm_left_3_joint, arm_left_4_joint, arm_left_5_joint, arm_left_6_joint, arm_left_7_joint]
+        positions: [0.18, 0.36, -1.83, 0.47, -2.35, 8.3788e-06, -1.2, -3.087e-06, 
+                    0.20, 1.6358, -2.2016, 0.47, -2.0984, 0.0, -1.0555, -0.0003145, 
+                    0.22, 3.1646, -2.1672, -0.40768, -1.9953, 5.4626e-06, -1.0548, -1.6346e-06]
+        times_from_start: [0.0, 2.5, 4.5]
+        meta:
+          name: Pre Grasp Left
+          usage: ""
+          description: Moves left arm to a pre grasp position

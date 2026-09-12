@@ -1,0 +1,6 @@
+gripper_grasper:
+  launch: "tiago_pro_bringup gripper_grasper.launch.py
+          arm_type_right:=@arm_type_right@
+          arm_type_left:=@arm_type_left@
+          end_effector_right:=@end_effector_right@
+          end_effector_left:=@end_effector_left@"

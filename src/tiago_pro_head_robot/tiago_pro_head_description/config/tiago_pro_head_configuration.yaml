@@ -1,0 +1,4 @@
+camera_model:
+  description: 'Head camera model'
+  choices: ['realsense-d435', 'realsense-d435i', 'realsense-d455']
+  default_value: 'realsense-d435i'

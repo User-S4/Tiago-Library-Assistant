@@ -1,0 +1,6 @@
+default_controllers:
+  launch: "pal_sea_arm_controller_configuration default_controllers.launch.py
+           end_effector:=@end_effector@
+           ft_sensor:=@ft_sensor@"
+  finishes: True
+  dependencies: ["Hardware/Controller Manager/Hardware Components Activity"]

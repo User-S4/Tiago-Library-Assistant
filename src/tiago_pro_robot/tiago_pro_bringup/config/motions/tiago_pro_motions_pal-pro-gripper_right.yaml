@@ -1,0 +1,29 @@
+/**:
+  ros__parameters:
+    motions:
+      close_right:
+        joints: [gripper_right_finger_joint]
+        positions: [0.0]
+        times_from_start: [0.5]
+        meta:
+          name: Close Right Gripper
+          usage: demo
+          description: 'Closes right gripper'
+
+      close_right_half:
+        joints: [gripper_right_finger_joint]
+        positions: [0.03969]
+        times_from_start: [0.5]
+        meta:
+          name: Close Right Gripper Half
+          usage: demo
+          description: 'Closes right gripper halfway'
+
+      open_right:
+        joints: [gripper_right_finger_joint]
+        positions: [0.07]
+        times_from_start: [0.5]
+        meta:
+          name: Open Right Gripper
+          usage: demo
+          description: 'Open right gripper'

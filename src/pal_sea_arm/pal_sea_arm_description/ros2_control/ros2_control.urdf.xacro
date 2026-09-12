@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!-- 
+  Copyright (c) 2024 PAL Robotics S.L. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ -->
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="pal_sea_arm">
+
+  <xacro:macro name="pal_sea_arm_ros2_control" params="use_sim_time:=^|false torque_estimation:=false sim_type:=gazebo gazebo_version:=classic">
+
+    <xacro:arg name="end_effector" default="no-end-effector"/>
+    <xacro:arg name="ft_sensor" default="no-ft-sensor"/>
+
+    <xacro:property name="end_effector" value="$(arg end_effector)" />
+    <xacro:property name="has_ft_sensor" value="${ft_sensor != 'no-ft-sensor'}" />
+    <xacro:property name="ft_sensor" value="$(arg ft_sensor)" />
+    <xacro:property name="torque_estimation" value="$(arg torque_estimation)" />
+
+    <xacro:include filename="$(find pal_sea_arm_description)/urdf/arm/arm.ros2_control.xacro" />
+
+    <xacro:if value="${end_effector == 'pal-pro-gripper'}">
+      <xacro:include filename="$(find pal_pro_gripper_description)/urdf/gripper.ros2_control.xacro" />
+    </xacro:if>
+
+
+    <!-- calibration offsets -->
+    <xacro:include filename="$(find pal_sea_arm_description)/urdf/calibration_constants.urdf.xacro" />
+
+    <ros2_control name="ros2_control_pal_sea_arm_system" type="system">
+      <hardware>
+        <xacro:if value="$(arg use_sim_time)">
+          <xacro:if value="${sim_type == 'mujoco-ros2-control'}">
+            <plugin>mujoco_ros2_control/MujocoSystem</plugin>
+          </xacro:if>
+          <xacro:if value="${sim_type == 'gazebo'}">
+            <xacro:if value="${gazebo_version == 'classic'}">
+              <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+            </xacro:if>
+            <xacro:if value="${gazebo_version == 'gazebo'}">
+              <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+            </xacro:if>
+          </xacro:if>
+        </xacro:if> 
+        <xacro:unless value="$(arg use_sim_time)">
+          <plugin>robot_control/RobotControl</plugin>
+          <param name="error_protection">true</param>
+          <param name="idle_mode_on_stop">true</param>
+        </xacro:unless>
+
+      </hardware>
+
+      <!-- arm -->
+      <xacro:ros2_control_arm name="arm_1" reduction="121.0" offset_value="${arm_1_joint_offset}" use_sea_transmission="${torque_estimation}"/>
+      <xacro:ros2_control_arm name="arm_2" reduction="121.0" offset_value="${arm_2_joint_offset}" use_sea_transmission="${torque_estimation}"/>
+      <xacro:ros2_control_arm name="arm_3" reduction="101.0" offset_value="${arm_3_joint_offset}" use_sea_transmission="${torque_estimation}"/>
+      <xacro:ros2_control_arm name="arm_4" reduction="101.0" offset_value="${arm_4_joint_offset}" use_sea_transmission="${torque_estimation}"/>
+      <xacro:ros2_control_arm name="arm_5" reduction="101.0" offset_value="${arm_5_joint_offset}" use_sea_transmission="${torque_estimation}"/>
+      <xacro:ros2_control_arm name="arm_6" reduction="101.0" offset_value="${arm_6_joint_offset}" use_sea_transmission="${torque_estimation}"/>
+      <xacro:ros2_control_arm name="arm_7" reduction="101.0" offset_value="${arm_7_joint_offset}" use_sea_transmission="${torque_estimation}"/>
+
+      <xacro:if value="${end_effector == 'pal-pro-gripper'}">
+        <!-- pal-pro-gripper -->
+        <xacro:ros2_control_pal_pro_gripper name="gripper" reduction="1.0" />
+      </xacro:if>
+
+      <!-- Force Torque sensor -->
+      <xacro:if value="${has_ft_sensor}">
+        <xacro:include filename="$(find pal_urdf_utils)/urdf/ft_sensors/ftsensor.ros2_control.xacro"/>
+        <xacro:ros2_control_force_torque_sensor name="wrist_ft_sensor"/>
+      </xacro:if>
+
+    </ros2_control>
+  </xacro:macro>
+</robot>

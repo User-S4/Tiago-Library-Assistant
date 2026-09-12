@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+<!-- 
+  Copyright (c) 2024 PAL Robotics S.L. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ -->
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="pal_sea_arm">
+
+  <!-- ARGUMENTS -->
+
+  <!-- no-end-effector, pal-pro-gripper -->
+  <xacro:arg name="end_effector" default="pal-pro-gripper"/>
+
+  <!-- spherical-wrist, straight-wrist -->
+  <xacro:arg name="wrist_model" default="spherical-wrist"/>
+
+  <!-- no-ft-sensor, rokubi, ati-tc -->
+  <xacro:arg name="ft_sensor" default="rokubi"/>
+
+  <!-- pal-sea-arm-standalone, tiago-pro, tiago-sea, tiago-sea-dual -->
+  <xacro:arg name="arm_type" default="pal-sea-arm-standalone"/>
+
+  <!-- False, True -->
+  <xacro:arg name="torque_estimation" default="False"/>
+
+  <!-- False, True -->
+  <xacro:arg name="tool_changer" default="True"/>
+
+  <!-- Common args -->
+  <xacro:arg name="use_sim_time" default="False"/>
+  <xacro:arg name="namespace" default=""/>
+  <xacro:arg name="gazebo_version" default="classic"/>
+
+  <!-- Mujoco args -->
+  <xacro:arg name="sim_type" default="gazebo" />
+  <xacro:arg name="mj_control" default="false" />
+  <xacro:arg name="world_name" default="floor" />
+
+  <!-- Limits v2-->
+  <xacro:arg name="limits_v2" default="False"/>
+
+  <!-- PROPERTIES -->
+  <xacro:property name="end_effector" value="$(arg end_effector)" />
+  <xacro:property name="wrist_model" value="$(arg wrist_model)" />
+  <xacro:property name="ft_sensor" value="$(arg ft_sensor)" />
+  <xacro:property name="arm_type" value="$(arg arm_type)" />
+  <xacro:property name="torque_estimation" value="$(arg torque_estimation)" />
+  <xacro:property name="tool_changer" value="$(arg tool_changer)" />
+  <xacro:property name="namespace" value="$(arg namespace)" />
+  <xacro:property name="gazebo_version" value="$(arg gazebo_version)"/>
+  <xacro:property name="limits_v2" value="$(arg limits_v2)"/>
+
+  <xacro:property name="sim_type" value="$(arg sim_type)" /> 
+  <xacro:property name="mj_control" value="$(arg mj_control)"/>
+  <xacro:property name="world_name" value="$(arg world_name)"/>
+
+  <xacro:if value="${end_effector not in ['no-end-effector', 'pal-pro-gripper', 'allegro-hand', 'custom', 'pen-gripper']}">
+    <xacro:wrong_end_effector/>
+  </xacro:if>
+  <xacro:if value="${wrist_model not in ['straight-wrist', 'spherical-wrist', 'short-wrist']}">
+    <xacro:wrong_wrist_model/>
+  </xacro:if>
+  <xacro:if value="${ft_sensor not in ['no-ft-sensor', 'rokubi', 'ati']}">
+    <xacro:wrong_ft_sensor/>
+  </xacro:if>
+  <xacro:if value="${arm_type not in ['pal-sea-arm-standalone', 'tiago-pro', 'tiago-pro-s',  'tiago-sea', 'tiago-sea-dual']}">
+    <xacro:wrong_arm_type/>
+  </xacro:if>
+
+  <!-- Compatibility check within TC and ft sensors-->
+  <!-- <xacro:if value="${ft_sensor == 'rokubi' and wrist_model=='spherical-wrist'}">
+    <xacro:error_rokubi_not_compatible_with_spherical_wrist />
+  </xacro:if>
+  <xacro:if value="${ft_sensor == 'rokubi' and tool_changer}">
+    <xacro:error_rokubi_not_compatible_with_tc />
+  </xacro:if>
+  <xacro:if value="${ft_sensor == 'ati' and not tool_changer}">
+    <xacro:error_ati_not_compatible_without_tc />
+  </xacro:if>
+  <xacro:if value="${not tool_changer and wrist_model=='spherical-wrist'}">
+    <xacro:error_spherical_wrist_always_comes_with_tc />
+  </xacro:if> -->
+
+  <xacro:property name="has_ft_sensor" value="${ft_sensor != 'no-ft-sensor'}"/>
+  <xacro:property name="has_end_effector" value="${end_effector not in ['no-end-effector']}"/>
+  <xacro:property name="end_effector_link" value="${'wrist_ft_tool_link' if has_ft_sensor else 'arm_tool_link'}"/>
+
+  <!--INCLUDES -->
+  <xacro:include filename="$(find pal_urdf_utils)/urdf/deg_to_rad.urdf.xacro" />
+  <xacro:include filename="$(find pal_urdf_utils)/urdf/materials.urdf.xacro" />
+  <xacro:include filename="$(find pal_sea_arm_description)/urdf/arm/arm.urdf.xacro"/>
+  <xacro:include filename="$(find pal_sea_arm_description)/urdf/end_effector/end_effector.urdf.xacro"/>
+  <xacro:include filename="$(find pal_sea_arm_description)/gazebo/gazebo.urdf.xacro" />
+
+  <!-- ROS2 control -->
+  <xacro:include filename="$(find pal_sea_arm_description)/ros2_control/ros2_control.urdf.xacro" />
+
+  <!-- Force Torque sensor -->
+  <xacro:if value="${has_ft_sensor}">
+    <xacro:include filename="$(find pal_urdf_utils)/urdf/ft_sensors/ft_sensor.urdf.xacro" />
+    <xacro:include filename="$(find pal_urdf_utils)/urdf/ft_sensors/ft_sensor.gazebo.xacro" />
+  </xacro:if>
+
+  <!-- ROBOT DEFINITION -->
+  <link name="world"></link>
+
+  <joint name="base_joint" type="fixed">
+    <origin xyz="0 0 0.05" rpy="0 0 0"/>
+    <parent link="world"/>
+    <child link="base_link"/>        
+  </joint>
+
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 -0.1" rpy="0 0 0"/>
+      <mass value="0.01" />
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <!-- ARM ROOT LINK -->
+  <joint name="arm_root_joint" type="fixed">
+    <origin xyz="0 0 1.272" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="arm_root_link"/>
+  </joint>
+
+  <link name="arm_root_link">
+    <inertial>
+      <origin xyz="-0.0023663 -0.0013678 -0.86311" rpy="0 0 2.618" />
+      <mass value="89.317"/>
+      <inertia ixx="6.284" ixy="-2.737E-05" ixz="0.0010106" iyy="6.2841" iyz="0.00058347" izz="3.768" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -0.08" rpy="0 0 2.618 " />
+      <geometry>
+        <mesh filename="package://pal_sea_arm_description/meshes/pal_sea_arm_standalone/base_link.stl" />
+      </geometry>
+      <material name="">
+        <color rgba="0.89412 0.91373 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.08" rpy="0 0 2.618" />
+      <geometry>
+        <mesh filename="package://pal_sea_arm_description/meshes/pal_sea_arm_standalone/base_link.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+  <gazebo reference="arm_root_link">
+    <material>Gazebo/DarkGrey</material>
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+
+  <!-- ARM -->
+  <xacro:pal_sea_arm name="arm" parent="arm_root_link" arm_type="${arm_type}" tool_changer="${tool_changer}" wrist_model="${wrist_model}" reflect="1" arm_1_offset="0" arm_2_offset="0" arm_3_offset="0" arm_4_offset="0" arm_5_offset="0" arm_6_offset="0" arm_7_offset="0" limits_v2="${limits_v2}">
+    <origin xyz="0.140 0 -0.08" rpy="0 0 0" />
+  </xacro:pal_sea_arm>
+
+  <!-- Force Torque sensor-->
+  <xacro:if value="${has_ft_sensor}">
+    <xacro:ft_sensor type="${ft_sensor}" name="wrist" parent="arm_tool_link"/>
+    <!-- <xacro:force_torque_sensor_gazebo name="wrist_ft" update_rate="100"/>-->
+  </xacro:if>
+
+  <!-- End effector -->
+  <xacro:pal_sea_arm_end_effector name="gripper" parent="${end_effector_link}" type="${end_effector}" tool_changer="${tool_changer}" reflect="1"/>
+
+  <xacro:if value="${sim_type == 'mujoco' or sim_type == 'mujoco-ros2-control'}">
+
+
+    <mujoco> 
+      <!-- Mujoco Includes -->
+      <xacro:include filename="$(find pal_sea_arm_description)/mujoco/mj_tags.xacro" />
+      <xacro:include filename="$(find pal_pro_gripper_description)/mujoco/mj_tags.xacro" />
+      <xacro:include filename="$(find pal_mujoco_scenes)/scenes/${world_name}.xacro" />
+
+       <!-- Mujoco environment -->
+      <xacro:mj_common light_target="arm_1_link"/>
+
+      <!-- Actuator-->
+      <xacro:if value="${sim_type == 'mujoco'}">
+        <actuator>
+          <!-- Arm -->
+          <xacro:mj_arm_actuators name="arm" arm_type="${arm_type}" wrist_model="${wrist_model}" joint_reflect="1"/>
+          <xacro:if value="${has_end_effector}">
+            <!-- End-effector -->
+            <xacro:mj_gripper_actuators name="gripper"/>
+          </xacro:if>
+        </actuator>
+
+      </xacro:if>
+
+      <xacro:if value="${has_end_effector}">
+          <!-- Equality-->
+        <equality>
+          <xacro:mj_gripper_equality name="gripper" anchor_r="0.014 -0.0015 0" anchor_l="0.014 -0.001 0"/>
+        </equality>
+        
+        <!-- Contact-->
+        <contact>
+          <xacro:mj_gripper_contact name="gripper"/>
+        </contact>
+      </xacro:if>
+    </mujoco>  
+  </xacro:if>
+
+  <!-- ROS2 control -->
+  <xacro:pal_sea_arm_ros2_control use_sim_time="$(arg use_sim_time)" torque_estimation="${torque_estimation}" gazebo_version="${gazebo_version}"/>
+
+</robot>

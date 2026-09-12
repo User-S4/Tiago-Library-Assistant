@@ -1,0 +1,9 @@
+torso_joint_space_vel_controller:
+  ros__parameters:
+    velocity_scaling: 1.0
+    joint_vel_gain:
+      torso_lift_joint:
+        kp: 100.0
+        kd: 0.5
+        ki: 5.0
+    

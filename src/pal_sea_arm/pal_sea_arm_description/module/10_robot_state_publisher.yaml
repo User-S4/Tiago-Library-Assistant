@@ -1,0 +1,7 @@
+robot_state_publisher:
+  launch: "pal_sea_arm_description robot_state_publisher.launch.py
+           arm_type:=@arm_type@
+           end_effector:=@end_effector@
+           ft_sensor:=@ft_sensor@
+           wrist_model:=@wrist_model@
+           torque_estimation:=@has_torque_estimation@"

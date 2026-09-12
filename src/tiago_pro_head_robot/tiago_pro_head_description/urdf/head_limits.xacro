@@ -1,0 +1,18 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!--Constant parameters-->
+  <xacro:property name="head_friction" value="1.0" />
+  <xacro:property name="head_damping" value="0.5" />
+
+  <!-- Velocity limits -->
+  <xacro:property name="head_max_vel" value="3.0" />
+
+  <!-- Joint limits -->
+  <xacro:property name="head_1_lower_limit" value="-1.309"/>
+  <xacro:property name="head_1_upper_limit" value="1.309"/>
+  <xacro:property name="head_2_lower_limit" value="-1.0472"/>
+  <xacro:property name="head_2_upper_limit" value="0.34907"/>
+  <xacro:property name="head_1_max_effort" value="5.197"/>
+  <xacro:property name="head_2_max_effort" value="2.77"/>
+
+</robot>

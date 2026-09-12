@@ -1,0 +1,29 @@
+${ARM_SIDE_PREFIX}_joint_space_controller:
+  ros__parameters:
+    type: tsid_controllers/JointSpaceTsidController
+    update_rate: 1000
+    
+    joint_state_names:
+      - ${ARM_SIDE_PREFIX}_1_joint
+      - ${ARM_SIDE_PREFIX}_2_joint
+      - ${ARM_SIDE_PREFIX}_3_joint
+      - ${ARM_SIDE_PREFIX}_4_joint
+      - ${ARM_SIDE_PREFIX}_5_joint
+      - ${ARM_SIDE_PREFIX}_6_joint
+      - ${ARM_SIDE_PREFIX}_7_joint
+
+    joint_command_names:
+      - ${ARM_SIDE_PREFIX}_1_joint
+      - ${ARM_SIDE_PREFIX}_2_joint
+      - ${ARM_SIDE_PREFIX}_3_joint
+      - ${ARM_SIDE_PREFIX}_4_joint
+      - ${ARM_SIDE_PREFIX}_5_joint
+      - ${ARM_SIDE_PREFIX}_6_joint
+      - ${ARM_SIDE_PREFIX}_7_joint
+
+    ee_names:
+      - ${ARM_SIDE_PREFIX}_7_link
+    
+    interface_name: position
+
+    velocity_scaling: 1.0

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>tiago_pro_robot</name>
+  <version>2.5.0</version>
+  <description>The tiago_pro_robot package</description>
+
+  <maintainer email="narcis.miguel@pal-robotics.com">Narcis Miguel</maintainer>
+  <maintainer email="ilenia.perrella@pal-robotics.com">Ilenia Perrella</maintainer>
+
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>tiago_pro_bringup</exec_depend>
+  <exec_depend>tiago_pro_controller_configuration</exec_depend>
+  <exec_depend>tiago_pro_description</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>

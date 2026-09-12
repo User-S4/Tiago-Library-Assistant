@@ -1,0 +1,24 @@
+${EE_SIDE_PREFIX}_controller:
+  ros__parameters:
+    type: joint_trajectory_controller/JointTrajectoryController
+    update_rate: 1000
+    joints:
+      - ${EE_SIDE_PREFIX}_finger_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+
+    gains:
+      ${EE_SIDE_PREFIX}_finger_joint:
+        p: 0.0
+        i: 0.0
+        d: 0.0
+
+    interpolate_from_desired_state: true
+    
+    constraints:
+      goal_time: 0.6
+      stopped_velocity_tolerance: 5.0
+      ${EE_SIDE_PREFIX}_finger_joint:
+        goal: 0.02

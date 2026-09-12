@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<!--
+
+  Copyright (c) 2024 PAL Robotics S.L. All rights reserved.
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+      http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <!--
+    Utiliy to create a tiago end effector (right or left).
+
+    Parameters:
+    - name: End effector name. The created links and joints are prepended with 'name_'
+    - parent: Parent link
+    - reflect: Set to 1 for a right end effector, or to -1 for a left end effector
+  -->
+  <xacro:macro name="pal_sea_arm_end_effector" params="name parent type tool_changer reflect calibration_tool:=False">
+
+    <!-- PAL Pro Gripper -->
+    <xacro:if value="${type == 'pal-pro-gripper'}">
+      <xacro:include filename="$(find pal_pro_gripper_description)/urdf/gripper.urdf.xacro" />
+      <xacro:pal_pro_gripper name="${name}" parent="${parent}" tool_changer="${tool_changer}" calibration_tool="${calibration_tool}">
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      </xacro:pal_pro_gripper>
+    </xacro:if>
+
+    <!--Pen Gripper-->
+    <xacro:if value="${type == 'pen-gripper'}">
+      <joint name="pen_gripper_joint" type="fixed">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="arm_tool_link"/>
+        <child link="pen_gripper_base_link"/>
+      </joint>
+
+      <link name="pen_gripper_base_link">
+        <inertial>
+          <origin xyz="0.00031569 -2.3649E-05 0.022532" rpy="0 0 0"/>
+          <mass value="0.33922"/>
+          <inertia ixx="0.00019797" ixy="5.0773E-08" ixz="3.91E-07" iyy="0.00020508" iyz="-2.2918E-08" izz="0.0002014" />
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0" rpy="0 0 0" />
+          <geometry>
+          <mesh filename="package://pal_sea_arm_description/meshes/pal_sea_arm_standalone/pen_gripper_link.stl" />
+          </geometry>
+          <material name="">
+            <color rgba="0.89412 0.91373 0.92941 1" />
+          </material>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0" rpy="0 0 0" />
+          <geometry>
+            <mesh filename="package://pal_sea_arm_description/meshes/pal_sea_arm_standalone/pen_gripper_link.stl" />
+          </geometry>
+        </collision>
+      </link>
+
+      <joint name="pen_gripper_tip_joint" type="fixed">
+        <origin xyz="0 0 0.157" rpy="0 0 0"/>
+        <parent link="pen_gripper_base_link"/>
+        <child link="pen_gripper_tip_link"/>
+      </joint>
+
+      <link name="pen_gripper_tip_link">
+        <inertial>
+          <origin xyz="0 0 0.157" rpy="0 0 0"/>
+          <mass value="0.1"/>
+          <inertia ixx="3.91E-07" ixy="0" ixz="0" iyy="2.2918E-08" iyz="0" izz="2.2918E-08" />
+        </inertial>
+      </link>
+    </xacro:if>      
+    
+
+  <!--Allegro Hand-->
+  <xacro:if value="${type == 'allegro-hand'}">
+    <xacro:include filename="$(find allegro_hand_description)/urdf/allegro_hand.urdf.xacro" />
+    <link name="${name}_coupler_link">
+        <inertial>
+            <origin xyz="-7.7517E-05 -0.00017089 0.003965" rpy="0 0 0"/>
+            <mass value="0.033254"/>
+            <inertia
+                ixx="1.2371E-05" ixy="1.4319E-07" ixz="2.7745E-07"
+                iyy="1.5119E-05" iyz="-2.1946E-08"
+                izz="2.722E-05"/>
+        </inertial>
+        <visual>
+            <geometry>
+                <mesh filename="package://pal_sea_arm_description/meshes/arm_tiago_pro/allegro_coupler_link.STL" scale="${reflect} 1 1" />
+            </geometry>
+            <origin rpy="0 0 0" xyz="0 0 0 "/>
+            <material name="pal/DarkGrey"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0.004" rpy="0 0 0"/>
+            <geometry>
+              <cylinder radius="0.0375" length="0.008"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <gazebo reference="${name}_coupler_link">
+        <material>Gazebo/DarkGrey</material>
+        <mu1>0.9</mu1>
+        <mu2>0.9</mu2>
+    </gazebo>
+
+    <joint name="${name}_coupler_joint" type="fixed">
+        <parent link="${parent}" />
+        <child link="${name}_coupler_link" />
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+        <axis xyz="0 0 0" />
+    </joint>
+
+    <link name="${name}_allegro_tc_out_link">
+        <inertial>
+            <origin xyz="-0.00052526 0.0003415 -0.0041487" rpy="0 0 0"/>
+            <mass value="0.03447"/>
+            <inertia
+                ixx="1.6829E-05" ixy="2.9746E-07" ixz="-4.1936E-08"
+                iyy="1.4935E-05" iyz="2.7742E-08"
+                izz="3.0915E-05"/>
+        </inertial>
+        <visual>
+            <geometry>
+                <mesh filename="package://pal_sea_arm_description/meshes/arm_tiago_pro/allegro_tc_out_link.STL" scale="${reflect} 1 1" />
+            </geometry>
+            <origin rpy="0 0 0" xyz="0 0 0 "/>
+            <material name="pal/DarkGrey"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 -0.006" rpy="0 0 0"/>
+            <geometry>
+              <cylinder radius="0.0375" length="0.012"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <gazebo reference="${name}_allegro_tc_out_link">
+        <material>Gazebo/DarkGrey</material>
+        <mu1>0.9</mu1>
+        <mu2>0.9</mu2>
+    </gazebo>
+
+    <joint name="${name}_tc_joint" type="fixed">
+        <parent link="${name}_coupler_link" />
+        <child link="${name}_allegro_tc_out_link" />
+        <origin xyz="0 0 0.018" rpy="0 0 0" />
+        <axis xyz="0 0 0" />
+    </joint>
+
+    <xacro:allegro_hand name="${name}" parent="${name}_allegro_tc_out_link" reflect="${reflect}">
+      <origin xyz="0.00956 0.001 0.094" rpy="0.0 0.0 0"/>
+    </xacro:allegro_hand>
+  </xacro:if>
+
+
+    <!-- PAL Pro Prototype -->
+    <!-- <xacro:if value="${type == 'pal-pro-gripper-prototype'}">
+      <xacro:include filename="$(find pal_pro_gripper_description)/urdf/pro_gripper_prototype.urdf.xacro" />
+      <xacro:pal_pro_gripper_prototype name="${name}" parent="${parent}">
+        <origin xyz="0.052 0.0 0.0" rpy="0 ${90 * deg_to_rad} 0"/>
+      </xacro:pal_pro_gripper_prototype>
+    </xacro:if> -->
+
+    <!-- Custom -->
+    <!-- <xacro:if value="${type == 'custom' and not is_dual}">
+    <xacro:include filename="$(find custom_ee_description)/urdf/end-effector.urdf.xacro" />
+    <xacro:end_effector parent="${parent}">
+      <origin xyz="0.0 0 0" rpy="0 0 0"/>
+    </xacro:end_effector>
+  </xacro:if> -->
+
+    <!-- Custom dual-->
+    <!-- <xacro:if value="${type == 'custom' and is_dual}"> -->
+    <!-- If right -->
+    <!-- <xacro:if value="${reflect == 1}">
+    <xacro:include filename="$(find custom_dual_ee_description)/urdf/end-effector-right.urdf.xacro" />
+    <xacro:end_effector_right parent="${parent}">
+      <origin xyz="0.0 0 0" rpy="0 0 0"/>
+    </xacro:end_effector_right>
+    </xacro:if> -->
+    <!-- If left -->
+    <!-- <xacro:if value="${reflect == -1}">
+    <xacro:include filename="$(find custom_dual_ee_description)/urdf/end-effector-left.urdf.xacro" />
+    <xacro:end_effector_left parent="${parent}">
+      <origin xyz="0.0 0 0" rpy="0 0 0"/>
+    </xacro:end_effector_left>
+    </xacro:if>
+  </xacro:if> -->
+
+  </xacro:macro>
+
+</robot>

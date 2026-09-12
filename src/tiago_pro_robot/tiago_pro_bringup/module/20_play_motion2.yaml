@@ -1,0 +1,11 @@
+play_motion2:
+  launch: "tiago_pro_bringup tiago_pro_play_motion2.launch.py
+           arm_type_left:=@arm_type_left@
+           arm_type_right:=@arm_type_right@
+           end_effector_right:=@end_effector_right@
+           end_effector_left:=@end_effector_left@
+           wrist_model_right:=@wrist_model_right@
+           wrist_model_left:=@wrist_model_left@
+           ft_sensor_right:=@ft_sensor_right@
+           ft_sensor_left:=@ft_sensor_left@
+           has_teleop_arms:=@has_teleop_arms@"
