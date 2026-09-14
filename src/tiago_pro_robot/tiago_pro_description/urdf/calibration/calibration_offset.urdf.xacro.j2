@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+
+  Copyright (c) 2023, PAL Robotics, S.L.
+  All rights reserved.
+
+-->
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+	<!--Constant parameters-->
+	<xacro:property name="arm_left_1_joint_offset" value="{{ arm_left_1_joint_offset|default(0.0, true) }}" />
+	<xacro:property name="arm_left_2_joint_offset" value="{{ arm_left_2_joint_offset|default(0.0, true) }}" />
+	<xacro:property name="arm_left_3_joint_offset" value="{{ arm_left_3_joint_offset|default(0.0, true) }}" />
+	<xacro:property name="arm_left_4_joint_offset" value="{{ arm_left_4_joint_offset|default(0.0, true) }}" />
+	<xacro:property name="arm_left_5_joint_offset" value="{{ arm_left_5_joint_offset|default(0.0, true) }}" />
+	<xacro:property name="arm_left_6_joint_offset" value="{{ arm_left_6_joint_offset|default(0.0, true) }}" />
+	<xacro:property name="arm_left_7_joint_offset" value="{{ arm_left_7_joint_offset|default(0.0, true) }}" />
+	
+	<xacro:property name="arm_right_1_joint_offset" value="{{ arm_right_1_joint_offset|default(0.0, true) }}" />
+  	<xacro:property name="arm_right_2_joint_offset" value="{{ arm_right_2_joint_offset|default(0.0, true) }}" />
+  	<xacro:property name="arm_right_3_joint_offset" value="{{ arm_right_3_joint_offset|default(0.0, true) }}" />
+  	<xacro:property name="arm_right_4_joint_offset" value="{{ arm_right_4_joint_offset|default(0.0, true) }}" />
+  	<xacro:property name="arm_right_5_joint_offset" value="{{ arm_right_5_joint_offset|default(0.0, true) }}" />
+  	<xacro:property name="arm_right_6_joint_offset" value="{{ arm_right_6_joint_offset|default(0.0, true) }}" />
+  	<xacro:property name="arm_right_7_joint_offset" value="{{ arm_right_7_joint_offset|default(0.0, true) }}" />
+
+	<xacro:property name="head_1_joint_offset" value="{{ head_1_joint_offset|default(0.0, true) }}" />
+  	<xacro:property name="head_2_joint_offset" value="{{ head_2_joint_offset|default(0.0, true) }}" />
+
+</robot>

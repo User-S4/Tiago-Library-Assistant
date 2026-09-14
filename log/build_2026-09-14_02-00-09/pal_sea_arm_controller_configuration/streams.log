@@ -1,0 +1,74 @@
+[0.032s] Invoking command in '/opt/erc_ws/build/pal_sea_arm_controller_configuration': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/erc_ws/src/pal_sea_arm/pal_sea_arm_controller_configuration -DCMAKE_INSTALL_PREFIX=/opt/erc_ws/install/pal_sea_arm_controller_configuration
+[0.092s] -- The C compiler identification is GNU 11.4.0
+[0.157s] -- The CXX compiler identification is GNU 11.4.0
+[0.164s] -- Detecting C compiler ABI info
+[0.236s] -- Detecting C compiler ABI info - done
+[0.241s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.241s] -- Detecting C compile features
+[0.241s] -- Detecting C compile features - done
+[0.244s] -- Detecting CXX compiler ABI info
+[0.320s] -- Detecting CXX compiler ABI info - done
+[0.327s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.327s] -- Detecting CXX compile features
+[0.328s] -- Detecting CXX compile features - done
+[0.331s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.472s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.620s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.644s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.647s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.647s] -- Added test 'lint_cmake' to check CMake code style
+[0.648s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.649s] -- Added test 'xmllint' to check XML markup files
+[0.652s] -- Configuring done
+[0.656s] -- Generating done
+[0.658s] -- Build files have been written to: /opt/erc_ws/build/pal_sea_arm_controller_configuration
+[0.663s] Invoked command in '/opt/erc_ws/build/pal_sea_arm_controller_configuration' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/erc_ws/src/pal_sea_arm/pal_sea_arm_controller_configuration -DCMAKE_INSTALL_PREFIX=/opt/erc_ws/install/pal_sea_arm_controller_configuration
+[0.664s] Invoking command in '/opt/erc_ws/build/pal_sea_arm_controller_configuration': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/erc_ws/build/pal_sea_arm_controller_configuration -- -j16 -l16
+[0.709s] Invoked command in '/opt/erc_ws/build/pal_sea_arm_controller_configuration' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/erc_ws/build/pal_sea_arm_controller_configuration -- -j16 -l16
+[0.711s] Invoking command in '/opt/erc_ws/build/pal_sea_arm_controller_configuration': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/erc_ws/build/pal_sea_arm_controller_configuration
+[0.727s] -- Install configuration: ""
+[0.728s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config
+[0.728s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/arm_controller_short_wrist.yaml
+[0.728s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/ft_broadcaster.yaml
+[0.730s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/arm_gravity_compensation_controller_effort_short_wrist.yaml
+[0.730s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/arm_gravity_compensation_controller_torque.yaml
+[0.733s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/arm_controller.yaml
+[0.735s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/joint_torque_state_broadcaster.yaml
+[0.736s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/joint_state_broadcaster.yaml
+[0.737s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/arm_gravity_compensation_controller_effort.yaml
+[0.737s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/ati_controller.yaml
+[0.737s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/gazebo_controller_manager_cfg.yaml
+[0.738s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/mujoco_controller_manager_cfg.yaml
+[0.738s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/inertia_shaping_controller
+[0.739s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/inertia_shaping_controller/XS_analytic_params.yaml
+[0.739s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/inertia_shaping_controller/S_minus_params.yaml
+[0.739s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/inertia_shaping_controller/XS_params.yaml
+[0.739s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/inertia_shaping_controller/S_minus_analytic_params.yaml
+[0.740s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/inertia_shaping_controller/S_plus_params.yaml
+[0.740s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/inertia_shaping_controller/S_plus_analytic_params.yaml
+[0.741s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/sea_state_broadcaster.yaml
+[0.741s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/config/rokubi_controller.yaml
+[0.741s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/launch
+[0.741s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/launch/gravity_compensation_controller.launch.py
+[0.742s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/launch/sea_state_broadcaster_controller.launch.py
+[0.742s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/launch/ft_sensor_controller.launch.py
+[0.743s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/launch/inertia_shaping_controllers.launch.py
+[0.743s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/launch/ft_sensor_broadcaster.launch.py
+[0.744s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/launch/arm_controller.launch.py
+[0.744s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/launch/default_controllers.launch.py
+[0.744s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/ament_index/resource_index/package_run_dependencies/pal_sea_arm_controller_configuration
+[0.746s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/ament_index/resource_index/parent_prefix_path/pal_sea_arm_controller_configuration
+[0.746s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/environment/ament_prefix_path.sh
+[0.746s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/environment/ament_prefix_path.dsv
+[0.746s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/environment/path.sh
+[0.746s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/environment/path.dsv
+[0.746s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/local_setup.bash
+[0.747s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/local_setup.sh
+[0.747s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/local_setup.zsh
+[0.747s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/local_setup.dsv
+[0.747s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/package.dsv
+[0.747s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/ament_index/resource_index/packages/pal_sea_arm_controller_configuration
+[0.748s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/cmake/pal_sea_arm_controller_configurationConfig.cmake
+[0.748s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/cmake/pal_sea_arm_controller_configurationConfig-version.cmake
+[0.748s] -- Installing: /opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/package.xml
+[0.763s] Invoked command in '/opt/erc_ws/build/pal_sea_arm_controller_configuration' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/erc_ws/build/pal_sea_arm_controller_configuration

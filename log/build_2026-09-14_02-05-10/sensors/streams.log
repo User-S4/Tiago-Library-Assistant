@@ -1,0 +1,26 @@
+[1.404s] Invoking command in '/opt/erc_ws/build/sensors': PYTHONPATH=/opt/erc_ws/build/sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/erc_ws/install/sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /opt/erc_ws/build/sensors/build --no-deps symlink_data
+[1.596s] running develop
+[1.725s] running egg_info
+[1.725s] creating sensors.egg-info
+[1.725s] writing sensors.egg-info/PKG-INFO
+[1.726s] writing dependency_links to sensors.egg-info/dependency_links.txt
+[1.726s] writing entry points to sensors.egg-info/entry_points.txt
+[1.726s] writing requirements to sensors.egg-info/requires.txt
+[1.726s] writing top-level names to sensors.egg-info/top_level.txt
+[1.726s] writing manifest file 'sensors.egg-info/SOURCES.txt'
+[1.727s] reading manifest file 'sensors.egg-info/SOURCES.txt'
+[1.728s] writing manifest file 'sensors.egg-info/SOURCES.txt'
+[1.729s] running build_ext
+[1.731s] Creating /opt/erc_ws/install/sensors/lib/python3.10/site-packages/sensors.egg-link (link to .)
+[1.731s] Installing depth_to_cloud script to /opt/erc_ws/install/sensors/lib/sensors
+[1.731s] 
+[1.732s] Installed /opt/erc_ws/build/sensors
+[1.732s] running symlink_data
+[1.732s] creating /opt/erc_ws/install/sensors/share/ament_index
+[1.733s] creating /opt/erc_ws/install/sensors/share/ament_index/resource_index
+[1.733s] creating /opt/erc_ws/install/sensors/share/ament_index/resource_index/packages
+[1.733s] symbolically linking /opt/erc_ws/build/sensors/resource/sensors -> /opt/erc_ws/install/sensors/share/ament_index/resource_index/packages
+[1.733s] symbolically linking /opt/erc_ws/build/sensors/package.xml -> /opt/erc_ws/install/sensors/share/sensors
+[1.733s] creating /opt/erc_ws/install/sensors/share/sensors/launch
+[1.733s] symbolically linking /opt/erc_ws/build/sensors/launch/depth_to_cloud.launch.py -> /opt/erc_ws/install/sensors/share/sensors/launch
+[1.784s] Invoked command in '/opt/erc_ws/build/sensors' returned '0': PYTHONPATH=/opt/erc_ws/build/sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/erc_ws/install/sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /opt/erc_ws/build/sensors/build --no-deps symlink_data

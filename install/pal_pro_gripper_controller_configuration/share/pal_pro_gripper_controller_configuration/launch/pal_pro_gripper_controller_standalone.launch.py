@@ -1,0 +1,1 @@
+/opt/erc_ws/src/pal_pro_gripper/pal_pro_gripper_controller_configuration/launch/pal_pro_gripper_controller_standalone.launch.py

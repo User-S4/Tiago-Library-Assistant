@@ -1,0 +1,16 @@
+/opt/erc_ws/install/pal_pro_gripper_bringup/share/pal_pro_gripper_bringup/launch/pal_pro_gripper_bringup.launch.py
+/opt/erc_ws/install/pal_pro_gripper_bringup/share/ament_index/resource_index/package_run_dependencies/pal_pro_gripper_bringup
+/opt/erc_ws/install/pal_pro_gripper_bringup/share/ament_index/resource_index/parent_prefix_path/pal_pro_gripper_bringup
+/opt/erc_ws/install/pal_pro_gripper_bringup/share/pal_pro_gripper_bringup/environment/ament_prefix_path.sh
+/opt/erc_ws/install/pal_pro_gripper_bringup/share/pal_pro_gripper_bringup/environment/ament_prefix_path.dsv
+/opt/erc_ws/install/pal_pro_gripper_bringup/share/pal_pro_gripper_bringup/environment/path.sh
+/opt/erc_ws/install/pal_pro_gripper_bringup/share/pal_pro_gripper_bringup/environment/path.dsv
+/opt/erc_ws/install/pal_pro_gripper_bringup/share/pal_pro_gripper_bringup/local_setup.bash
+/opt/erc_ws/install/pal_pro_gripper_bringup/share/pal_pro_gripper_bringup/local_setup.sh
+/opt/erc_ws/install/pal_pro_gripper_bringup/share/pal_pro_gripper_bringup/local_setup.zsh
+/opt/erc_ws/install/pal_pro_gripper_bringup/share/pal_pro_gripper_bringup/local_setup.dsv
+/opt/erc_ws/install/pal_pro_gripper_bringup/share/pal_pro_gripper_bringup/package.dsv
+/opt/erc_ws/install/pal_pro_gripper_bringup/share/ament_index/resource_index/packages/pal_pro_gripper_bringup
+/opt/erc_ws/install/pal_pro_gripper_bringup/share/pal_pro_gripper_bringup/cmake/pal_pro_gripper_bringupConfig.cmake
+/opt/erc_ws/install/pal_pro_gripper_bringup/share/pal_pro_gripper_bringup/cmake/pal_pro_gripper_bringupConfig-version.cmake
+/opt/erc_ws/install/pal_pro_gripper_bringup/share/pal_pro_gripper_bringup/package.xml

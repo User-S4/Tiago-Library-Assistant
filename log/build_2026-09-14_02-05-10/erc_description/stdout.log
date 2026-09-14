@@ -1,0 +1,62 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /opt/erc_ws/build/erc_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/book/meshes/erc_base_book.STL
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/book/sdf/erc_book.sdf
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/collection_bin/.gitkeep
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/collection_bin/meshes/erc_base_collection_bin.STL
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/collection_bin/sdf/erc_collection_bin.sdf
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/.gitkeep
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/sdf/erc_number_marker.sdf
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/0.png
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/1.png
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/2.png
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/3.png
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/4.png
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/5.png
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/6.png
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/7.png
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/8.png
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/9.png
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/combined.jpg
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/shelf/.gitkeep
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/shelf/meshes/erc_base_shelf.STL
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/shelf/sdf/erc_shelf.sdf
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/table/meshes/erc_base_table.STL
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/models/table/sdf/erc_table.sdf
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/worlds/.gitkeep
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/worlds/erc_world.sdf
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/materials/textures/arena_floor.png
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/urdf/tiago_pro.urdf
+-- Symlinking: /opt/erc_ws/install/erc_description/share/ament_index/resource_index/package_run_dependencies/erc_description
+-- Symlinking: /opt/erc_ws/install/erc_description/share/ament_index/resource_index/parent_prefix_path/erc_description
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/environment/ament_prefix_path.sh
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/environment/ament_prefix_path.dsv
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/environment/path.sh
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/environment/path.dsv
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/local_setup.bash
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/local_setup.sh
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/local_setup.zsh
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/local_setup.dsv
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/package.dsv
+-- Symlinking: /opt/erc_ws/install/erc_description/share/ament_index/resource_index/packages/erc_description
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/cmake/erc_descriptionConfig.cmake
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/cmake/erc_descriptionConfig-version.cmake
+-- Symlinking: /opt/erc_ws/install/erc_description/share/erc_description/package.xml

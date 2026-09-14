@@ -1,0 +1,15 @@
+/opt/erc_ws/install/tiago_pro_robot/share/ament_index/resource_index/package_run_dependencies/tiago_pro_robot
+/opt/erc_ws/install/tiago_pro_robot/share/ament_index/resource_index/parent_prefix_path/tiago_pro_robot
+/opt/erc_ws/install/tiago_pro_robot/share/tiago_pro_robot/environment/ament_prefix_path.sh
+/opt/erc_ws/install/tiago_pro_robot/share/tiago_pro_robot/environment/ament_prefix_path.dsv
+/opt/erc_ws/install/tiago_pro_robot/share/tiago_pro_robot/environment/path.sh
+/opt/erc_ws/install/tiago_pro_robot/share/tiago_pro_robot/environment/path.dsv
+/opt/erc_ws/install/tiago_pro_robot/share/tiago_pro_robot/local_setup.bash
+/opt/erc_ws/install/tiago_pro_robot/share/tiago_pro_robot/local_setup.sh
+/opt/erc_ws/install/tiago_pro_robot/share/tiago_pro_robot/local_setup.zsh
+/opt/erc_ws/install/tiago_pro_robot/share/tiago_pro_robot/local_setup.dsv
+/opt/erc_ws/install/tiago_pro_robot/share/tiago_pro_robot/package.dsv
+/opt/erc_ws/install/tiago_pro_robot/share/ament_index/resource_index/packages/tiago_pro_robot
+/opt/erc_ws/install/tiago_pro_robot/share/tiago_pro_robot/cmake/tiago_pro_robotConfig.cmake
+/opt/erc_ws/install/tiago_pro_robot/share/tiago_pro_robot/cmake/tiago_pro_robotConfig-version.cmake
+/opt/erc_ws/install/tiago_pro_robot/share/tiago_pro_robot/package.xml

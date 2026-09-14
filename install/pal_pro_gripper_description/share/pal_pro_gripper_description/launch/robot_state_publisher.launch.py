@@ -1,0 +1,1 @@
+/opt/erc_ws/src/pal_pro_gripper/pal_pro_gripper_description/launch/robot_state_publisher.launch.py

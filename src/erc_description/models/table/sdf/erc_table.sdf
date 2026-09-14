@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <model name="erc_table">    
+    <static>true</static>
+    <link name="table_base_link">
+      
+      <visual name="base_link_table_visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model:///erc_description/models/table/meshes/erc_base_table.STL</uri>
+          
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+        </material>
+      </visual>
+
+      <collision name="base_link_table_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model:///erc_description/models/table/meshes/erc_base_table.STL</uri>
+          
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

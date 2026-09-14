@@ -1,0 +1,1 @@
+controller_manager:joint_trajectory_controller:launch:launch_pal:pal_pro_gripper_controller_configuration:ros2controlcli

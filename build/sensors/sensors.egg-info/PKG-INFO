@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sensors
+Version: 0.1.0
+Summary: Sensor-level processing (RealSense-D435-like depth point cloud) for the ERC 2026 head RGBD camera.
+Home-page: UNKNOWN
+Maintainer: dfl-perception
+Maintainer-email: bjonguk@gmail.com
+License: Apache-2.0
+Platform: UNKNOWN
+
+UNKNOWN
+

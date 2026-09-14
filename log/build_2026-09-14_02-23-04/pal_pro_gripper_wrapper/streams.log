@@ -1,0 +1,17 @@
+[2.149s] Invoking command in '/opt/erc_ws/build/pal_pro_gripper_wrapper': PYTHONPATH=/opt/erc_ws/build/pal_pro_gripper_wrapper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /opt/erc_ws/build/pal_pro_gripper_wrapper/build --no-deps symlink_data
+[2.428s] running develop
+[2.600s] running egg_info
+[2.600s] writing pal_pro_gripper_wrapper.egg-info/PKG-INFO
+[2.600s] writing dependency_links to pal_pro_gripper_wrapper.egg-info/dependency_links.txt
+[2.600s] writing entry points to pal_pro_gripper_wrapper.egg-info/entry_points.txt
+[2.600s] writing requirements to pal_pro_gripper_wrapper.egg-info/requires.txt
+[2.600s] writing top-level names to pal_pro_gripper_wrapper.egg-info/top_level.txt
+[2.601s] reading manifest file 'pal_pro_gripper_wrapper.egg-info/SOURCES.txt'
+[2.601s] writing manifest file 'pal_pro_gripper_wrapper.egg-info/SOURCES.txt'
+[2.601s] running build_ext
+[2.601s] Creating /opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages/pal-pro-gripper-wrapper.egg-link (link to .)
+[2.601s] Installing gripper_grasper_srv script to /opt/erc_ws/install/pal_pro_gripper_wrapper/lib/pal_pro_gripper_wrapper
+[2.601s] 
+[2.601s] Installed /opt/erc_ws/build/pal_pro_gripper_wrapper
+[2.601s] running symlink_data
+[2.657s] Invoked command in '/opt/erc_ws/build/pal_pro_gripper_wrapper' returned '0': PYTHONPATH=/opt/erc_ws/build/pal_pro_gripper_wrapper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /opt/erc_ws/build/pal_pro_gripper_wrapper/build --no-deps symlink_data

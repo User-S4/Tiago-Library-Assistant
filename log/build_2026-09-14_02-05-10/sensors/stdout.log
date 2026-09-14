@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating sensors.egg-info
+writing sensors.egg-info/PKG-INFO
+writing dependency_links to sensors.egg-info/dependency_links.txt
+writing entry points to sensors.egg-info/entry_points.txt
+writing requirements to sensors.egg-info/requires.txt
+writing top-level names to sensors.egg-info/top_level.txt
+writing manifest file 'sensors.egg-info/SOURCES.txt'
+reading manifest file 'sensors.egg-info/SOURCES.txt'
+writing manifest file 'sensors.egg-info/SOURCES.txt'
+running build_ext
+Creating /opt/erc_ws/install/sensors/lib/python3.10/site-packages/sensors.egg-link (link to .)
+Installing depth_to_cloud script to /opt/erc_ws/install/sensors/lib/sensors
+
+Installed /opt/erc_ws/build/sensors
+running symlink_data
+creating /opt/erc_ws/install/sensors/share/ament_index
+creating /opt/erc_ws/install/sensors/share/ament_index/resource_index
+creating /opt/erc_ws/install/sensors/share/ament_index/resource_index/packages
+symbolically linking /opt/erc_ws/build/sensors/resource/sensors -> /opt/erc_ws/install/sensors/share/ament_index/resource_index/packages
+symbolically linking /opt/erc_ws/build/sensors/package.xml -> /opt/erc_ws/install/sensors/share/sensors
+creating /opt/erc_ws/install/sensors/share/sensors/launch
+symbolically linking /opt/erc_ws/build/sensors/launch/depth_to_cloud.launch.py -> /opt/erc_ws/install/sensors/share/sensors/launch

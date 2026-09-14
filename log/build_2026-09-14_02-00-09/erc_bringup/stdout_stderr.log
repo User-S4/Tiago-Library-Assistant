@@ -1,0 +1,43 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /opt/erc_ws/build/erc_bringup
+-- Install configuration: ""
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/launch
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/launch/simulation.launch.py
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/launch/competition_run.launch.py
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/config
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/config/controller_params.yaml
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/config/head_camera_bridge.yaml
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/config/gazebo_controller_manager_cfg.yaml
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/rviz
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/rviz/competition.rviz
+-- Installing: /opt/erc_ws/install/erc_bringup/lib/erc_bringup/gripper_command_clamp.py
+-- Installing: /opt/erc_ws/install/erc_bringup/share/ament_index/resource_index/package_run_dependencies/erc_bringup
+-- Installing: /opt/erc_ws/install/erc_bringup/share/ament_index/resource_index/parent_prefix_path/erc_bringup
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/environment/ament_prefix_path.sh
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/environment/ament_prefix_path.dsv
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/environment/path.sh
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/environment/path.dsv
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/local_setup.bash
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/local_setup.sh
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/local_setup.zsh
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/local_setup.dsv
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/package.dsv
+-- Installing: /opt/erc_ws/install/erc_bringup/share/ament_index/resource_index/packages/erc_bringup
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/cmake/erc_bringupConfig.cmake
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/cmake/erc_bringupConfig-version.cmake
+-- Installing: /opt/erc_ws/install/erc_bringup/share/erc_bringup/package.xml

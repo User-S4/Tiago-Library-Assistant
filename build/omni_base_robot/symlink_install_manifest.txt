@@ -1,0 +1,15 @@
+/opt/erc_ws/install/omni_base_robot/share/ament_index/resource_index/package_run_dependencies/omni_base_robot
+/opt/erc_ws/install/omni_base_robot/share/ament_index/resource_index/parent_prefix_path/omni_base_robot
+/opt/erc_ws/install/omni_base_robot/share/omni_base_robot/environment/ament_prefix_path.sh
+/opt/erc_ws/install/omni_base_robot/share/omni_base_robot/environment/ament_prefix_path.dsv
+/opt/erc_ws/install/omni_base_robot/share/omni_base_robot/environment/path.sh
+/opt/erc_ws/install/omni_base_robot/share/omni_base_robot/environment/path.dsv
+/opt/erc_ws/install/omni_base_robot/share/omni_base_robot/local_setup.bash
+/opt/erc_ws/install/omni_base_robot/share/omni_base_robot/local_setup.sh
+/opt/erc_ws/install/omni_base_robot/share/omni_base_robot/local_setup.zsh
+/opt/erc_ws/install/omni_base_robot/share/omni_base_robot/local_setup.dsv
+/opt/erc_ws/install/omni_base_robot/share/omni_base_robot/package.dsv
+/opt/erc_ws/install/omni_base_robot/share/ament_index/resource_index/packages/omni_base_robot
+/opt/erc_ws/install/omni_base_robot/share/omni_base_robot/cmake/omni_base_robotConfig.cmake
+/opt/erc_ws/install/omni_base_robot/share/omni_base_robot/cmake/omni_base_robotConfig-version.cmake
+/opt/erc_ws/install/omni_base_robot/share/omni_base_robot/package.xml

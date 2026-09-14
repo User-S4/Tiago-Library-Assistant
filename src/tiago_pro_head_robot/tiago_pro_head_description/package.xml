@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>tiago_pro_head_description</name>
+  <version>1.12.0</version>
+  <description>The tiago_pro_head_description package</description>
+  <maintainer email="aina.irisarri@pal-robotics.com">Aina Irisarri</maintainer>
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>tiago_pro_head_controller_configuration</exec_depend>
+  <exec_depend>realsense2_description</exec_depend>
+  <exec_depend>pal_urdf_utils</exec_depend>
+  <exec_depend>launch_param_builder</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <test_depend>launch_testing_ament_cmake</test_depend>
+  <test_depend>urdf_test</test_depend>
+  <test_depend>ament_cmake_pytest</test_depend>
+
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

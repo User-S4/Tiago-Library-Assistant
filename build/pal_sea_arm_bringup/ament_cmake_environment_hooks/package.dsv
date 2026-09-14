@@ -1,0 +1,4 @@
+source;share/pal_sea_arm_bringup/local_setup.bash
+source;share/pal_sea_arm_bringup/local_setup.dsv
+source;share/pal_sea_arm_bringup/local_setup.sh
+source;share/pal_sea_arm_bringup/local_setup.zsh

@@ -1,0 +1,5 @@
+Panels: []
+Visualization Manager:
+  Displays:
+    - {Class: rviz_default_plugins/RobotModel, Enabled: true}
+    - {Class: rviz_default_plugins/TF, Enabled: true}

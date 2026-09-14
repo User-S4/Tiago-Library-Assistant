@@ -1,0 +1,47 @@
+InertiaShapingEffortAnalyticDOBControlParameters:
+    acceleration_differentiator_parameters:
+      order: 5
+      differentiator_type: OneSide
+      differentiator_order: FirstOrder
+    observer_filter_type: ButterworthFilterd
+    observer_filter_parameters:
+      filter_parameters:
+        - order: 5
+          type: LowPass
+          composition_type: Sequence
+          cutoff1: 10.0
+          cutoff2: 0.0
+    torque_filter_type: ButterworthFilterd
+    torque_filter_parameters:
+      filter_parameters:
+        - order: 2
+          type: LowPass
+          composition_type: Sequence
+          cutoff1: 40.0
+          cutoff2: 0.0
+    feedback_acceleration_filter_type: ButterworthFilterd
+    feedback_acceleration_filter_parameters:
+      filter_parameters:
+        - order: 5
+          type: LowPass
+          composition_type: Sequence
+          cutoff1: 10.0
+          cutoff2: 0.0
+    torque_derivative_filter_type: ButterworthFilterd
+    torque_derivative_filter_parameters:
+      filter_parameters:
+        - order: 5
+          type: LowPass
+          composition_type: Sequence
+          cutoff1: 10.0
+          cutoff2: 0.0
+    feedback_acceleration_compensation_gain: 0.0
+    feedforward_acceleration_gain: 0.0
+    torque_feedback_gain: 0.5
+    torque_derivative_feedback_gain: 0.0
+    observer_feedback_gain: 0.3
+    velocity_friction_compensation_tolerance: 1e-2
+    feed_forward_acceleration_gain: 0.0
+    use_filtered_torque_sensor: true
+    use_filtered_acceleration: true
+    use_filtered_command: true

@@ -1,0 +1,79 @@
+Built target ament_cmake_python_symlink_omni_base_description
+running egg_info
+writing omni_base_description.egg-info/PKG-INFO
+writing dependency_links to omni_base_description.egg-info/dependency_links.txt
+writing top-level names to omni_base_description.egg-info/top_level.txt
+reading manifest file 'omni_base_description.egg-info/SOURCES.txt'
+writing manifest file 'omni_base_description.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_omni_base_description_egg
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/environment/pythonpath.sh
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/environment/pythonpath.dsv
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description-2.18.0-py3.10.egg-info/PKG-INFO
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description-2.18.0-py3.10.egg-info/SOURCES.txt
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description-2.18.0-py3.10.egg-info/dependency_links.txt
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description-2.18.0-py3.10.egg-info/top_level.txt
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description/__init__.py
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description/launch_arguments.py
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/rviz/omni_base.rviz
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/launch/robot_state_publisher.launch.py
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/launch/show.launch.py
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/meshes/base/base_antenna_link.stl
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/meshes/base/base_antenna_link_reflected.stl
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/meshes/base/base_dock_link.stl
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/meshes/base/base_link.stl
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/meshes/cameras_add_on/camera_horizon.stl
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/meshes/cameras_add_on/cameras_add_on.stl
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/meshes/wheels/suspension_front_link.stl
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/meshes/wheels/suspension_front_link_reflected.stl
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/meshes/wheels/suspension_rear_link.stl
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/meshes/wheels/suspension_rear_link_reflected.stl
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/meshes/wheels/wheel_link.stl
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/meshes/wheels/wheel_link_reflected.stl
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/config/omni_base_configuration.yaml
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/robots/omni_base.urdf.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/mujoco/assets/decomposed/metadata.json
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/mujoco/assets/decomposed/wheel_link/mtl_m6_wheel_link
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/mujoco/assets/decomposed/wheel_link/wheel_link.obj
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/mujoco/assets/decomposed/wheel_link/wheel_link/material.mtl
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/mujoco/assets/decomposed/wheel_link/wheel_link/wheel_link.obj
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/mujoco/assets/decomposed/wheel_link/wheel_link/wheel_link.xml
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/mujoco/assets/decomposed/wheel_link/wheel_link/wheel_link_collision_0.obj
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/mujoco/assets/decomposed/wheel_link/wheel_link/wheel_link_collision_1.obj
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/mujoco/assets/decomposed/wheel_link_reflected/mtl_m8_wheel_link_reflected
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/mujoco/assets/decomposed/wheel_link_reflected/wheel_link_reflected.obj
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/mujoco/assets/decomposed/wheel_link_reflected/wheel_link_reflected/material.mtl
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/mujoco/assets/decomposed/wheel_link_reflected/wheel_link_reflected/wheel_link_reflected.obj
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/mujoco/assets/decomposed/wheel_link_reflected/wheel_link_reflected/wheel_link_reflected.xml
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/mujoco/assets/decomposed/wheel_link_reflected/wheel_link_reflected/wheel_link_reflected_collision_0.obj
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/mujoco/assets/decomposed/wheel_link_reflected/wheel_link_reflected/wheel_link_reflected_collision_1.obj
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/mujoco/mj_tags.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/ros2_control/gazebo_controller_manager_cfg.yaml
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/ros2_control/ros2_control.urdf.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/urdf/base/base.gazebo.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/urdf/base/base.urdf.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/urdf/base/base_sensors.urdf.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/urdf/cameras_add_on/camera_horizon_add_on.urdf.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/urdf/cameras_add_on/cameras.urdf.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/urdf/cameras_add_on/cameras_add_on.urdf.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/urdf/objects/antenna.urdf.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/urdf/wheels/wheel.gazebo.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/urdf/wheels/wheel.ros2_control.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/urdf/wheels/wheel.urdf.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/ament_index/resource_index/package_run_dependencies/omni_base_description
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/ament_index/resource_index/parent_prefix_path/omni_base_description
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/environment/path.sh
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/environment/path.dsv
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/local_setup.bash
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/local_setup.sh
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/local_setup.zsh
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/local_setup.dsv
+-- Symlinking: /opt/erc_ws/install/omni_base_description/share/omni_base_description/package.dsv
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/ament_index/resource_index/packages/omni_base_description
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/cmake/omni_base_descriptionConfig.cmake
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/cmake/omni_base_descriptionConfig-version.cmake
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_description/share/omni_base_description/package.xml
+Listing '/opt/erc_ws/install/omni_base_description/local/lib/python3.10/dist-packages/omni_base_description'...

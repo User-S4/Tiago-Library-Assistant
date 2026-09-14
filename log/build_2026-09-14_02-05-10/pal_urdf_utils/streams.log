@@ -1,0 +1,121 @@
+[0.192s] Invoking command in '/opt/erc_ws/build/pal_urdf_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake /opt/erc_ws/src/pal_urdf_utils -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/erc_ws/install/pal_urdf_utils
+[0.556s] -- The C compiler identification is GNU 11.4.0
+[0.556s] -- The CXX compiler identification is GNU 11.4.0
+[0.557s] -- Detecting C compiler ABI info
+[0.557s] -- Detecting C compiler ABI info - done
+[0.557s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.558s] -- Detecting C compile features
+[0.558s] -- Detecting C compile features - done
+[0.559s] -- Detecting CXX compiler ABI info
+[0.559s] -- Detecting CXX compiler ABI info - done
+[0.559s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.559s] -- Detecting CXX compile features
+[0.559s] -- Detecting CXX compile features - done
+[0.560s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.560s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.592s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.710s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.735s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.744s] -- Added test 'lint_cmake' to check CMake code style
+[0.748s] -- Added test 'xmllint' to check XML markup files
+[0.752s] -- Configuring done
+[0.757s] -- Generating done
+[0.758s] -- Build files have been written to: /opt/erc_ws/build/pal_urdf_utils
+[0.783s] Invoked command in '/opt/erc_ws/build/pal_urdf_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake /opt/erc_ws/src/pal_urdf_utils -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/opt/erc_ws/install/pal_urdf_utils
+[0.785s] Invoking command in '/opt/erc_ws/build/pal_urdf_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/pal_urdf_utils -- -j16 -l16
+[0.826s] Invoked command in '/opt/erc_ws/build/pal_urdf_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/pal_urdf_utils -- -j16 -l16
+[0.836s] Invoking command in '/opt/erc_ws/build/pal_urdf_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/pal_urdf_utils
+[0.843s] -- Install configuration: ""
+[0.843s] -- Execute custom install script
+[0.846s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/OS1-64.urdf.xacro
+[0.855s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/elp_rgb.gazebo.xacro
+[0.867s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/elp_rgb.urdf.xacro
+[0.876s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/imx179_camera.gazebo.xacro
+[0.885s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/openni.gazebo.xacro
+[0.894s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/openni_talos.gazebo.xacro
+[0.903s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/orbbec_astra.urdf.xacro
+[0.910s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/orbbec_astra_pro.gazebo.xacro
+[0.920s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/orbbec_astra_pro.urdf.xacro
+[0.929s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/realsense_d435.gazebo.xacro
+[0.938s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/realsense_d435.urdf.xacro
+[0.947s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/realsense_d435i.gazebo.xacro
+[0.958s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/realsense_d435i.urdf.xacro
+[0.965s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/realsense_d455.gazebo.xacro
+[0.976s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/realsense_d455.urdf.xacro
+[0.984s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/realsense_t265.gazebo.xacro
+[0.998s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/realsense_t265.urdf.xacro
+[1.004s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/rpi_camera.gazebo.xacro
+[1.012s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/structure_sensor.gazebo.xacro
+[1.020s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/structure_sensor.urdf.xacro
+[1.029s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/camera/xtion_pro_live.urdf.xacro
+[1.037s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/deg_to_rad.urdf.xacro
+[1.046s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/ft_sensors/ati.urdf.xacro
+[1.053s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/ft_sensors/ati_talos.gazebo.xacro
+[1.062s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/ft_sensors/ati_talos.urdf.xacro
+[1.074s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/ft_sensors/ft_sensor.gazebo.xacro
+[1.083s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/ft_sensors/ft_sensor.urdf.xacro
+[1.093s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/ft_sensors/ftsensor.ros2_control.xacro
+[1.103s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/ft_sensors/rokubi.urdf.xacro
+[1.111s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/ft_sensors/schunk.gazebo.xacro
+[1.121s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/ft_sensors/schunk.urdf.xacro
+[1.129s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/interaction_sensors/imu.gazebo.xacro
+[1.138s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/interaction_sensors/imu.urdf.xacro
+[1.146s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/interaction_sensors/imu_sensors.ros2_control.xacro
+[1.156s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/interaction_sensors/imu_talos.gazebo.xacro
+[1.161s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/interaction_sensors/imu_talos.urdf.xacro
+[1.169s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/interaction_sensors/microphone.urdf.xacro
+[1.176s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/laser/hokuyo_urg_04lx_ug01_laser.gazebo.xacro
+[1.183s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/laser/hokuyo_urg_04lx_ug01_laser.urdf.xacro
+[1.191s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/laser/range.gazebo.xacro
+[1.199s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/laser/range.urdf.xacro
+[1.206s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/laser/sick_nanoscan3_laser.gazebo.xacro
+[1.216s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/laser/sick_nanoscan3_laser.urdf.xacro
+[1.221s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/laser/sick_picoscan150core_laser.gazebo.xacro
+[1.228s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/laser/sick_picoscan150core_laser.urdf.xacro
+[1.234s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/laser/sick_tim551_laser.gazebo.xacro
+[1.242s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/laser/sick_tim551_laser.urdf.xacro
+[1.249s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/laser/sick_tim561_laser.gazebo.xacro
+[1.256s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/laser/sick_tim561_laser.urdf.xacro
+[1.262s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/laser/sick_tim571_laser.gazebo.xacro
+[1.268s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/laser/sick_tim571_laser.urdf.xacro
+[1.275s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/laser/ydlidar_tg15_laser.gazebo.xacro
+[1.281s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/laser/ydlidar_tg15_laser.urdf.xacro
+[1.288s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/laser/ydlidar_tg30_laser.gazebo.xacro
+[1.296s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/laser/ydlidar_tg30_laser.urdf.xacro
+[1.306s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/lidar/robosense_airy96_lidar.urdf.xacro
+[1.313s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/lidar/robosense_e1r_lidar.urdf.xacro
+[1.322s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/materials.urdf.xacro
+[1.328s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/urdf/pi.urdf.xacro
+[1.334s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/meshes/camera/elp_camera.stl
+[1.342s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/meshes/camera/head_front_camera.stl
+[1.350s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/meshes/camera/orbbec.STL
+[1.356s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/meshes/camera/os1_64.dae
+[1.363s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/meshes/camera/structure_sensor.stl
+[1.370s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/meshes/camera/t265.stl
+[1.378s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/meshes/camera/xtion_pro_live.dae
+[1.385s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/meshes/ft_sensors/ati_ft_sensor.stl
+[1.394s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/meshes/ft_sensors/rokubi_ft_sensor.stl
+[1.403s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/meshes/laser/hokuyo_urg_04lx_ug01.stl
+[1.412s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/meshes/laser/sick_picoscan150core.stl
+[1.420s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/meshes/laser/sick_tim551.stl
+[1.429s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/meshes/laser/srf05.stl
+[1.435s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/meshes/laser/ydlidar.dae
+[1.441s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/meshes/laser/ydlidar.stl
+[1.447s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/meshes/lidar/robosense_airy96.stl
+[1.454s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/meshes/lidar/robosense_e1r.stl
+[1.462s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/ament_index/resource_index/package_run_dependencies/pal_urdf_utils
+[1.469s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/ament_index/resource_index/parent_prefix_path/pal_urdf_utils
+[1.476s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/environment/ament_prefix_path.sh
+[1.482s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/environment/ament_prefix_path.dsv
+[1.491s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/environment/path.sh
+[1.500s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/environment/path.dsv
+[1.508s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.bash
+[1.515s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.sh
+[1.521s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.zsh
+[1.528s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/local_setup.dsv
+[1.534s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/package.dsv
+[1.540s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/ament_index/resource_index/packages/pal_urdf_utils
+[1.546s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/cmake/pal_urdf_utilsConfig.cmake
+[1.552s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/cmake/pal_urdf_utilsConfig-version.cmake
+[1.559s] -- Symlinking: /opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/package.xml
+[1.568s] Invoked command in '/opt/erc_ws/build/pal_urdf_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/pal_urdf_utils

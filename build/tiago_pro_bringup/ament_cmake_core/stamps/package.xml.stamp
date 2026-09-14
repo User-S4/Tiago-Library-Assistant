@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>tiago_pro_bringup</name>
+  <version>2.5.0</version>
+  <description>Launch files to upload the TIAGo pro robot description and start the controllers</description>
+  <maintainer email="sai.kishor@pal-robotics.com">Sai Kishor Kothakota</maintainer>
+  <maintainer email="ilenia.perrella@pal-robotics.com">Ilenia Perrella</maintainer>
+  <author email="sai.kishor@pal-robotics.com">Sai Kishor Kothakota</author>
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+  <build_depend condition="$PAL_DISTRO >= alum">pal_configuration_cmake</build_depend>
+
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>diagnostic_aggregator</exec_depend>
+  <exec_depend>tiago_pro_controller_configuration</exec_depend>
+  <exec_depend>tiago_pro_head_bringup</exec_depend>
+  <exec_depend>joy</exec_depend>
+  <exec_depend>joy_teleop</exec_depend>
+  <exec_depend>twist_mux</exec_depend>
+  <exec_depend>play_motion2</exec_depend>
+  <exec_depend>play_motion2_cli</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">collision_aware_joint_trajectory_wrapper</exec_depend>
+  <exec_depend>pal_pro_gripper_wrapper</exec_depend>
+  <exec_depend condition="$PAL_DISTRO > 0">pal_joy_teleop_cfg</exec_depend>
+
+<!--  <exec_depend>robot_pose</exec_depend>-->
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>

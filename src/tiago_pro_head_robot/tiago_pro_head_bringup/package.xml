@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>tiago_pro_head_bringup</name>
+  <version>1.12.0</version>
+  <description>The tiago_pro_head_bringup package</description>
+  <maintainer email="aina.irisarri@pal-robotics.com">Aina Irisarri</maintainer>
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+
+  <exec_depend>tiago_pro_head_controller_configuration</exec_depend>
+  <exec_depend>tiago_pro_head_description</exec_depend>
+  <exec_depend>play_motion2</exec_depend>
+  <exec_depend>play_motion2_cli</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

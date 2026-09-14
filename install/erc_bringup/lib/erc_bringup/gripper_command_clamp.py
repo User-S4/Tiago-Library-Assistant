@@ -1,0 +1,1 @@
+/opt/erc_ws/src/erc_bringup/scripts/gripper_command_clamp.py

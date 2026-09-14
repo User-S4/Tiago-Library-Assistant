@@ -1,0 +1,15 @@
+/opt/erc_ws/install/pal_pro_gripper/share/ament_index/resource_index/package_run_dependencies/pal_pro_gripper
+/opt/erc_ws/install/pal_pro_gripper/share/ament_index/resource_index/parent_prefix_path/pal_pro_gripper
+/opt/erc_ws/install/pal_pro_gripper/share/pal_pro_gripper/environment/ament_prefix_path.sh
+/opt/erc_ws/install/pal_pro_gripper/share/pal_pro_gripper/environment/ament_prefix_path.dsv
+/opt/erc_ws/install/pal_pro_gripper/share/pal_pro_gripper/environment/path.sh
+/opt/erc_ws/install/pal_pro_gripper/share/pal_pro_gripper/environment/path.dsv
+/opt/erc_ws/install/pal_pro_gripper/share/pal_pro_gripper/local_setup.bash
+/opt/erc_ws/install/pal_pro_gripper/share/pal_pro_gripper/local_setup.sh
+/opt/erc_ws/install/pal_pro_gripper/share/pal_pro_gripper/local_setup.zsh
+/opt/erc_ws/install/pal_pro_gripper/share/pal_pro_gripper/local_setup.dsv
+/opt/erc_ws/install/pal_pro_gripper/share/pal_pro_gripper/package.dsv
+/opt/erc_ws/install/pal_pro_gripper/share/ament_index/resource_index/packages/pal_pro_gripper
+/opt/erc_ws/install/pal_pro_gripper/share/pal_pro_gripper/cmake/pal_pro_gripperConfig.cmake
+/opt/erc_ws/install/pal_pro_gripper/share/pal_pro_gripper/cmake/pal_pro_gripperConfig-version.cmake
+/opt/erc_ws/install/pal_pro_gripper/share/pal_pro_gripper/package.xml

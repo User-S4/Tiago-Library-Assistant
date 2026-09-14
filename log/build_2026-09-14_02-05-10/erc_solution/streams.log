@@ -1,0 +1,29 @@
+[1.400s] Invoking command in '/opt/erc_ws/build/erc_solution': PYTHONPATH=/opt/erc_ws/build/erc_solution/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/erc_ws/install/erc_solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /opt/erc_ws/build/erc_solution/build --no-deps symlink_data
+[1.592s] running develop
+[1.685s] running egg_info
+[1.685s] creating erc_solution.egg-info
+[1.685s] writing erc_solution.egg-info/PKG-INFO
+[1.686s] writing dependency_links to erc_solution.egg-info/dependency_links.txt
+[1.686s] writing entry points to erc_solution.egg-info/entry_points.txt
+[1.686s] writing requirements to erc_solution.egg-info/requires.txt
+[1.686s] writing top-level names to erc_solution.egg-info/top_level.txt
+[1.686s] writing manifest file 'erc_solution.egg-info/SOURCES.txt'
+[1.688s] reading manifest file 'erc_solution.egg-info/SOURCES.txt'
+[1.688s] writing manifest file 'erc_solution.egg-info/SOURCES.txt'
+[1.689s] running build_ext
+[1.689s] Creating /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc-solution.egg-link (link to .)
+[1.690s] Installing book_colour_detector script to /opt/erc_ws/install/erc_solution/lib/erc_solution
+[1.691s] Installing column_navigator script to /opt/erc_ws/install/erc_solution/lib/erc_solution
+[1.691s] Installing grasp_controller script to /opt/erc_ws/install/erc_solution/lib/erc_solution
+[1.691s] Installing shelf_column_detector script to /opt/erc_ws/install/erc_solution/lib/erc_solution
+[1.692s] 
+[1.692s] Installed /opt/erc_ws/build/erc_solution
+[1.692s] running symlink_data
+[1.692s] creating /opt/erc_ws/install/erc_solution/share/ament_index
+[1.693s] creating /opt/erc_ws/install/erc_solution/share/ament_index/resource_index
+[1.693s] creating /opt/erc_ws/install/erc_solution/share/ament_index/resource_index/packages
+[1.693s] symbolically linking /opt/erc_ws/build/erc_solution/resource/erc_solution -> /opt/erc_ws/install/erc_solution/share/ament_index/resource_index/packages
+[1.693s] symbolically linking /opt/erc_ws/build/erc_solution/package.xml -> /opt/erc_ws/install/erc_solution/share/erc_solution
+[1.693s] creating /opt/erc_ws/install/erc_solution/share/erc_solution/launch
+[1.694s] symbolically linking /opt/erc_ws/build/erc_solution/launch/solution.launch.py -> /opt/erc_ws/install/erc_solution/share/erc_solution/launch
+[1.748s] Invoked command in '/opt/erc_ws/build/erc_solution' returned '0': PYTHONPATH=/opt/erc_ws/build/erc_solution/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/erc_ws/install/erc_solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /opt/erc_ws/build/erc_solution/build --no-deps symlink_data

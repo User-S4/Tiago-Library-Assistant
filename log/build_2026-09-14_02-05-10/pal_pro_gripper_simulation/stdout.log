@@ -1,0 +1,43 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /opt/erc_ws/build/pal_pro_gripper_simulation
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/launch/pal_pro_gripper_gazebo.launch.py
+-- Symlinking: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/launch/robot_spawn.launch.py
+-- Symlinking: /opt/erc_ws/install/pal_pro_gripper_simulation/share/ament_index/resource_index/package_run_dependencies/pal_pro_gripper_simulation
+-- Symlinking: /opt/erc_ws/install/pal_pro_gripper_simulation/share/ament_index/resource_index/parent_prefix_path/pal_pro_gripper_simulation
+-- Symlinking: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/environment/ament_prefix_path.sh
+-- Symlinking: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/environment/ament_prefix_path.dsv
+-- Symlinking: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/environment/path.sh
+-- Symlinking: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/environment/path.dsv
+-- Symlinking: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/local_setup.bash
+-- Symlinking: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/local_setup.sh
+-- Symlinking: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/local_setup.zsh
+-- Symlinking: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/local_setup.dsv
+-- Symlinking: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/package.dsv
+-- Symlinking: /opt/erc_ws/install/pal_pro_gripper_simulation/share/ament_index/resource_index/packages/pal_pro_gripper_simulation
+-- Symlinking: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/cmake/pal_pro_gripper_simulationConfig.cmake
+-- Symlinking: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/cmake/pal_pro_gripper_simulationConfig-version.cmake
+-- Symlinking: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/package.xml

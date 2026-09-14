@@ -1,0 +1,86 @@
+[0.348s] Invoking command in '/opt/erc_ws/build/erc_description': CMAKE_PREFIX_PATH=/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake /opt/erc_ws/src/erc_description -DCMAKE_INSTALL_PREFIX=/opt/erc_ws/install/erc_description
+[0.544s] -- The C compiler identification is GNU 11.4.0
+[0.544s] -- The CXX compiler identification is GNU 11.4.0
+[0.544s] -- Detecting C compiler ABI info
+[0.544s] -- Detecting C compiler ABI info - done
+[0.544s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.544s] -- Detecting C compile features
+[0.544s] -- Detecting C compile features - done
+[0.544s] -- Detecting CXX compiler ABI info
+[0.546s] -- Detecting CXX compiler ABI info - done
+[0.551s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.551s] -- Detecting CXX compile features
+[0.551s] -- Detecting CXX compile features - done
+[0.554s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.667s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.835s] -- Configuring done
+[0.843s] -- Generating done
+[0.845s] -- Build files have been written to: /opt/erc_ws/build/erc_description
+[0.848s] Invoked command in '/opt/erc_ws/build/erc_description' returned '0': CMAKE_PREFIX_PATH=/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake /opt/erc_ws/src/erc_description -DCMAKE_INSTALL_PREFIX=/opt/erc_ws/install/erc_description
+[0.850s] Invoking command in '/opt/erc_ws/build/erc_description': CMAKE_PREFIX_PATH=/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/erc_description -- -j16 -l16
+[0.885s] Invoked command in '/opt/erc_ws/build/erc_description' returned '0': CMAKE_PREFIX_PATH=/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/erc_description -- -j16 -l16
+[0.900s] Invoking command in '/opt/erc_ws/build/erc_description': CMAKE_PREFIX_PATH=/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/erc_description
+[0.906s] -- Install configuration: ""
+[0.906s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models
+[0.908s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/shelf
+[0.909s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/shelf/sdf
+[0.909s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/shelf/sdf/erc_shelf.sdf
+[0.909s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/shelf/.gitkeep
+[0.909s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/shelf/meshes
+[0.910s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/shelf/meshes/erc_base_shelf.STL
+[0.910s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/table
+[0.910s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/table/sdf
+[0.910s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/table/sdf/erc_table.sdf
+[0.911s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/table/meshes
+[0.911s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/table/meshes/erc_base_table.STL
+[0.911s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker
+[0.912s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/sdf
+[0.912s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/sdf/erc_number_marker.sdf
+[0.912s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures
+[0.914s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/1.png
+[0.915s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/9.png
+[0.915s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/8.png
+[0.916s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/3.png
+[0.917s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/6.png
+[0.917s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/5.png
+[0.919s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/2.png
+[0.919s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/0.png
+[0.919s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/7.png
+[0.920s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/combined.jpg
+[0.920s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/textures/4.png
+[0.920s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/number_marker/.gitkeep
+[0.920s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/collection_bin
+[0.920s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/collection_bin/sdf
+[0.920s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/collection_bin/sdf/erc_collection_bin.sdf
+[0.921s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/collection_bin/.gitkeep
+[0.921s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/collection_bin/meshes
+[0.921s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/collection_bin/meshes/erc_base_collection_bin.STL
+[0.921s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/book
+[0.921s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/book/sdf
+[0.921s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/book/sdf/erc_book.sdf
+[0.922s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/book/meshes
+[0.922s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/models/book/meshes/erc_base_book.STL
+[0.922s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/worlds
+[0.923s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/worlds/.gitkeep
+[0.923s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/worlds/erc_world.sdf
+[0.923s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/materials
+[0.923s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/materials/textures
+[0.923s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/materials/textures/arena_floor.png
+[0.924s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/urdf
+[0.924s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/urdf/tiago_pro.urdf
+[0.926s] -- Installing: /opt/erc_ws/install/erc_description/share/ament_index/resource_index/package_run_dependencies/erc_description
+[0.928s] -- Installing: /opt/erc_ws/install/erc_description/share/ament_index/resource_index/parent_prefix_path/erc_description
+[0.928s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/environment/ament_prefix_path.sh
+[0.928s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/environment/ament_prefix_path.dsv
+[0.928s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/environment/path.sh
+[0.929s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/environment/path.dsv
+[0.930s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/local_setup.bash
+[0.930s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/local_setup.sh
+[0.930s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/local_setup.zsh
+[0.931s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/local_setup.dsv
+[0.931s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/package.dsv
+[0.931s] -- Installing: /opt/erc_ws/install/erc_description/share/ament_index/resource_index/packages/erc_description
+[0.931s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/cmake/erc_descriptionConfig.cmake
+[0.933s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/cmake/erc_descriptionConfig-version.cmake
+[0.933s] -- Installing: /opt/erc_ws/install/erc_description/share/erc_description/package.xml
+[0.937s] Invoked command in '/opt/erc_ws/build/erc_description' returned '0': CMAKE_PREFIX_PATH=/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/erc_description

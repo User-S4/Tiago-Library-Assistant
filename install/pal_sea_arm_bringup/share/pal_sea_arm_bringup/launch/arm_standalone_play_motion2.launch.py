@@ -1,0 +1,1 @@
+/opt/erc_ws/src/pal_sea_arm/pal_sea_arm_bringup/launch/arm_standalone_play_motion2.launch.py

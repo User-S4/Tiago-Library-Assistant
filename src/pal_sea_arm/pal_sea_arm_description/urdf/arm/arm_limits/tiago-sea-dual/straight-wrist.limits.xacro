@@ -1,0 +1,21 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!-- Joint limits -->
+  <xacro:property name="arm_5_joint_ub" value="150" />
+  <xacro:property name="arm_5_joint_lb" value="-150" />
+  <xacro:property name="arm_6_joint_ub" value="120" />
+  <xacro:property name="arm_6_joint_lb" value="-120" />
+  <xacro:property name="arm_7_joint_ub" value="140" />
+  <xacro:property name="arm_7_joint_lb" value="-140" />
+
+  <!-- Velocity limits -->
+  <xacro:property name="arm_5_max_velocity" value="1.95" />
+  <xacro:property name="arm_6_max_velocity" value="1.95" />
+  <xacro:property name="arm_7_max_velocity" value="1.95" />
+
+  <!-- Effort limits -->
+  <xacro:property name="arm_5_max_effort" value="50" />
+  <xacro:property name="arm_6_max_effort" value="50" />
+  <xacro:property name="arm_7_max_effort" value="50" />
+
+</robot>

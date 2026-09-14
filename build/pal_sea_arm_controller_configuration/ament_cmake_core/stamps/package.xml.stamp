@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>pal_sea_arm_controller_configuration</name>
+  <version>2.8.4</version>
+  <description>The pal_sea_arm_controller_configuration package</description>
+
+  <maintainer email="thomas.peyrucain@pal-robotics.com">Thomas Peyrucain</maintainer>
+  <maintainer email="ilenia.perrella@pal-robotics.com">Ilenia Perrella</maintainer>
+
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+
+  <exec_depend condition="$PAL_DISTRO >= alum">inertia_shaping_effort_control</exec_depend>
+
+
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>joint_trajectory_controller</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">sea_state_broadcaster</exec_depend>
+  <exec_depend>pal_pro_gripper_controller_configuration</exec_depend>
+  <exec_depend condition="$PAL_DISTRO >= alum">input_state_broadcaster</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_pal</exec_depend>
+
+  <exec_depend condition="$PAL_DISTRO > 0">gravity_compensation_controller2</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <exec_depend>ros2controlcli</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>

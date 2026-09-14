@@ -1,0 +1,17 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_robot/share/ament_index/resource_index/package_run_dependencies/omni_base_robot
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_robot/share/ament_index/resource_index/parent_prefix_path/omni_base_robot
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_robot/share/omni_base_robot/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_robot/share/omni_base_robot/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_robot/share/omni_base_robot/environment/path.sh
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_robot/share/omni_base_robot/environment/path.dsv
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_robot/share/omni_base_robot/local_setup.bash
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_robot/share/omni_base_robot/local_setup.sh
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_robot/share/omni_base_robot/local_setup.zsh
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_robot/share/omni_base_robot/local_setup.dsv
+-- Symlinking: /opt/erc_ws/install/omni_base_robot/share/omni_base_robot/package.dsv
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_robot/share/ament_index/resource_index/packages/omni_base_robot
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_robot/share/omni_base_robot/cmake/omni_base_robotConfig.cmake
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_robot/share/omni_base_robot/cmake/omni_base_robotConfig-version.cmake
+-- Up-to-date symlink: /opt/erc_ws/install/omni_base_robot/share/omni_base_robot/package.xml

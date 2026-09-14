@@ -1,0 +1,1 @@
+/opt/erc_ws/build/pal_sea_arm_controller_configuration/ament_cmake_core/pal_sea_arm_controller_configurationConfig-version.cmake

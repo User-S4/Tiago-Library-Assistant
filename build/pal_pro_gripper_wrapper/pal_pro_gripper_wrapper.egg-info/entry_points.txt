@@ -1,0 +1,3 @@
+[console_scripts]
+gripper_grasper_srv = pal_pro_gripper_wrapper.gripper_grasper_srv:main
+

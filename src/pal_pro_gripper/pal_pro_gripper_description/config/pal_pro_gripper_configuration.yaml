@@ -1,0 +1,4 @@
+tool_changer:
+  description: 'The arm has a tool changer'
+  choices: ['False', 'True']
+  default_value: 'True'

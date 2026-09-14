@@ -1,0 +1,72 @@
+/**:
+  ros__parameters:
+    motions:
+      home_pilot_arms:
+        joints: [arm_teleop_left_1_joint, arm_teleop_left_2_joint, arm_teleop_left_3_joint, arm_teleop_left_4_joint, arm_teleop_left_5_joint, arm_teleop_left_6_joint, arm_teleop_left_7_joint, arm_teleop_right_1_joint, arm_teleop_right_2_joint, arm_teleop_right_3_joint, arm_teleop_right_4_joint, arm_teleop_right_5_joint, arm_teleop_right_6_joint, arm_teleop_right_7_joint]
+        times_from_start: [0.0, 5.0, 10.0]
+        positions: [1.8557, -1.5919, 0.35538, -2.0502, 0.10524, -1.5976, 0.0, -1.8614, -1.6008, -0.34892, -1.9818, 0.10153, -1.5829, 0.0,
+                    0.26, -1.6008, 0.3489, -1.9818, 0.0, -1.5829, 0.0, -0.26, -1.6008, -0.3489, -1.9818, -0.0, -1.5829, 0.0,
+                    0.36, -1.83, 0.47, -2.35, 0.0, -1.2, 0.0, -0.36, -1.83, -0.47, -2.35, -0.0, -1.2, 0.0]
+        meta:
+          name: Home teleop arms
+          usage: demo
+          description: Go home with the two teleop arms
+
+      offer_pilot_arms:
+        joints: [arm_teleop_left_1_joint, arm_teleop_left_2_joint, arm_teleop_left_3_joint, arm_teleop_left_4_joint, arm_teleop_left_5_joint, arm_teleop_left_6_joint, arm_teleop_left_7_joint, arm_teleop_right_1_joint, arm_teleop_right_2_joint, arm_teleop_right_3_joint, arm_teleop_right_4_joint, arm_teleop_right_5_joint, arm_teleop_right_6_joint, arm_teleop_right_7_joint]
+        times_from_start: [0.0]
+        positions: [-0.25843, -0.57522, 0.50314, -2.0337, 0.0, 1.0543, 1.5708, 0.25843, -0.57522, -0.50314, -2.0337, 0.0, 1.0543, -1.5708]
+        meta:
+          name: offer teleop arms
+          usage: demo
+          description: offer with the two teleop arms
+
+      offer_pilot_left:
+        joints: [arm_teleop_left_1_joint, arm_teleop_left_2_joint, arm_teleop_left_3_joint, arm_teleop_left_4_joint, arm_teleop_left_5_joint, arm_teleop_left_6_joint, arm_teleop_left_7_joint]
+        times_from_start: [0.0]
+        positions: [-0.25843, -0.57522, 0.50314, -2.0337, 0.0, 1.0543, 1.5708]
+        meta:
+          name: offer_left
+          usage: demo
+          description: offer_left   
+
+      offer_pilot_right:
+        joints: [arm_teleop_right_1_joint, arm_teleop_right_2_joint, arm_teleop_right_3_joint, arm_teleop_right_4_joint, arm_teleop_right_5_joint, arm_teleop_right_6_joint, arm_teleop_right_7_joint]
+        times_from_start: [0.0]
+        positions: [0.25843, -0.57522, -0.50314, -2.0337, 0.0, 1.0543, -1.5708]
+        meta:
+          name: offer_right teleop arm
+          usage: demo
+          description: offer_right teleop arm
+
+      starting_pilot_arms:
+        joints: [arm_teleop_left_1_joint, arm_teleop_left_2_joint, arm_teleop_left_3_joint, arm_teleop_left_4_joint, arm_teleop_left_5_joint, arm_teleop_left_6_joint, arm_teleop_left_7_joint, arm_teleop_right_1_joint, arm_teleop_right_2_joint, arm_teleop_right_3_joint, arm_teleop_right_4_joint, arm_teleop_right_5_joint, arm_teleop_right_6_joint, arm_teleop_right_7_joint]
+        times_from_start: [0.0, 5.0]
+        positions: [1.8557, -1.5919, 0.35538, -2.2, 0.10524, -1.5976, 0.0, -1.8614, -1.6008, -0.34892, -1.9818, 0.10153, -1.5829, 0.0,
+                    2.8, -1.81, -0.56, -2.20, -2.6, 0.91, -0.26, -2.8, -1.81, 0.56, -2.20, 2.6, 0.91, 0.26]
+        meta:
+          name: Starting pose for pilot arms
+          usage: demo
+          description: Starting pose for pilot arms
+
+      starting_robot_arms:
+        joints: [torso_lift_joint, arm_left_1_joint, arm_left_2_joint, arm_left_3_joint, arm_left_4_joint, arm_left_5_joint, arm_left_6_joint, arm_left_7_joint, arm_right_1_joint, arm_right_2_joint, arm_right_3_joint, arm_right_4_joint, arm_right_5_joint, arm_right_6_joint, arm_right_7_joint]
+        times_from_start: [0.0, 5.0]
+        positions: [0.14, 1.8557, -1.5919, 0.35538, -2.2, 0.10524, -1.5976, 0.0, -1.8614, -1.6008, -0.34892, -1.9818, 0.10153, -1.5829, 0.0,
+                    0.27, 2.8, -1.81, -0.56, -2.20, -2.6, 0.91, -0.26, -2.8, -1.81, 0.56, -2.20, 2.6, 0.91, 0.26]
+        meta:
+          name: Starting pose for teleoperate the robot arms
+          usage: demo
+          description: Starting pose for teleoperate the robot arms
+
+      boxing_pilot_arms:
+        joints: [arm_teleop_left_1_joint, arm_teleop_left_2_joint, arm_teleop_left_3_joint, arm_teleop_left_4_joint, arm_teleop_left_5_joint, arm_teleop_left_6_joint, arm_teleop_left_7_joint, arm_teleop_right_1_joint, arm_teleop_right_2_joint, arm_teleop_right_3_joint, arm_teleop_right_4_joint, arm_teleop_right_5_joint, arm_teleop_right_6_joint, arm_teleop_right_7_joint]
+        times_from_start: [0.0, 5.0, 7.0, 9.0]
+        positions: [1.8557, -1.5919, 0.35538, -2.0502, 0.10524, -1.5976, 0.0, -1.8614, -1.6008, -0.34892, -1.9818, 0.10153, -1.5829, 0.0,
+                    0.26, -1.6008, 0.3489, -1.9818, 0.0, -1.5829, 0.0, -0.26, -1.6008, -0.3489, -1.9818, -0.0, -1.5829, 0.0,
+                    0.36, -1.83, 0.47, -2.35, 0.0, -1.2, 0.0, -0.36, -1.83, -0.47, -2.35, -0.0, -1.2, 0.0,
+                    0.19759, -1.92098, 0.35155, -0.99125, 0.0, -1.46099, 0.0, -0.19759, -1.92098, -0.35155, -0.99125, 0.0, -1.46099, 0.0]
+        meta:
+          name: Boxing teleop arms
+          usage: demo
+          description: Boxing with the two teleop arms

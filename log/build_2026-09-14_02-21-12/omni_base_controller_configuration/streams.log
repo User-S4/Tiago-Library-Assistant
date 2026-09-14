@@ -1,0 +1,25 @@
+[0.626s] Invoking command in '/opt/erc_ws/build/omni_base_controller_configuration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/omni_base_controller_configuration -- -j16 -l16
+[1.200s] Invoked command in '/opt/erc_ws/build/omni_base_controller_configuration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/omni_base_controller_configuration -- -j16 -l16
+[1.201s] Invoking command in '/opt/erc_ws/build/omni_base_controller_configuration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/omni_base_controller_configuration
+[1.237s] -- Install configuration: ""
+[1.238s] -- Execute custom install script
+[1.238s] -- Up-to-date symlink: /opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/config/joint_state_broadcaster.yaml
+[1.239s] -- Up-to-date symlink: /opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/config/mobile_base_controller.yaml
+[1.239s] -- Up-to-date symlink: /opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/launch/default_controllers.launch.py
+[1.239s] -- Up-to-date symlink: /opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/launch/mobile_base_controller.launch.py
+[1.240s] -- Up-to-date symlink: /opt/erc_ws/install/omni_base_controller_configuration/share/ament_index/resource_index/package_run_dependencies/omni_base_controller_configuration
+[1.240s] -- Up-to-date symlink: /opt/erc_ws/install/omni_base_controller_configuration/share/ament_index/resource_index/parent_prefix_path/omni_base_controller_configuration
+[1.240s] -- Up-to-date symlink: /opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/environment/ament_prefix_path.sh
+[1.240s] -- Up-to-date symlink: /opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/environment/ament_prefix_path.dsv
+[1.240s] -- Up-to-date symlink: /opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/environment/path.sh
+[1.240s] -- Up-to-date symlink: /opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/environment/path.dsv
+[1.241s] -- Up-to-date symlink: /opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/local_setup.bash
+[1.242s] -- Up-to-date symlink: /opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/local_setup.sh
+[1.250s] -- Up-to-date symlink: /opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/local_setup.zsh
+[1.253s] -- Up-to-date symlink: /opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/local_setup.dsv
+[1.253s] -- Symlinking: /opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/package.dsv
+[1.258s] -- Up-to-date symlink: /opt/erc_ws/install/omni_base_controller_configuration/share/ament_index/resource_index/packages/omni_base_controller_configuration
+[1.258s] -- Up-to-date symlink: /opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/cmake/omni_base_controller_configurationConfig.cmake
+[1.258s] -- Up-to-date symlink: /opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/cmake/omni_base_controller_configurationConfig-version.cmake
+[1.258s] -- Up-to-date symlink: /opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/package.xml
+[1.273s] Invoked command in '/opt/erc_ws/build/omni_base_controller_configuration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/omni_base_controller_configuration

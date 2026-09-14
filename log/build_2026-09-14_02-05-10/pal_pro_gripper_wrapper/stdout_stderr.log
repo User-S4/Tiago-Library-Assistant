@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating pal_pro_gripper_wrapper.egg-info
+writing pal_pro_gripper_wrapper.egg-info/PKG-INFO
+writing dependency_links to pal_pro_gripper_wrapper.egg-info/dependency_links.txt
+writing entry points to pal_pro_gripper_wrapper.egg-info/entry_points.txt
+writing requirements to pal_pro_gripper_wrapper.egg-info/requires.txt
+writing top-level names to pal_pro_gripper_wrapper.egg-info/top_level.txt
+writing manifest file 'pal_pro_gripper_wrapper.egg-info/SOURCES.txt'
+reading manifest file 'pal_pro_gripper_wrapper.egg-info/SOURCES.txt'
+writing manifest file 'pal_pro_gripper_wrapper.egg-info/SOURCES.txt'
+running build_ext
+Creating /opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages/pal-pro-gripper-wrapper.egg-link (link to .)
+Installing gripper_grasper_srv script to /opt/erc_ws/install/pal_pro_gripper_wrapper/lib/pal_pro_gripper_wrapper
+
+Installed /opt/erc_ws/build/pal_pro_gripper_wrapper
+running symlink_data
+creating /opt/erc_ws/install/pal_pro_gripper_wrapper/share/ament_index
+creating /opt/erc_ws/install/pal_pro_gripper_wrapper/share/ament_index/resource_index
+creating /opt/erc_ws/install/pal_pro_gripper_wrapper/share/ament_index/resource_index/packages
+symbolically linking /opt/erc_ws/build/pal_pro_gripper_wrapper/resource/pal_pro_gripper_wrapper -> /opt/erc_ws/install/pal_pro_gripper_wrapper/share/ament_index/resource_index/packages
+symbolically linking /opt/erc_ws/build/pal_pro_gripper_wrapper/package.xml -> /opt/erc_ws/install/pal_pro_gripper_wrapper/share/pal_pro_gripper_wrapper
+creating /opt/erc_ws/install/pal_pro_gripper_wrapper/share/pal_pro_gripper_wrapper/config
+symbolically linking /opt/erc_ws/build/pal_pro_gripper_wrapper/config/gripper.yaml -> /opt/erc_ws/install/pal_pro_gripper_wrapper/share/pal_pro_gripper_wrapper/config
+creating /opt/erc_ws/install/pal_pro_gripper_wrapper/share/pal_pro_gripper_wrapper/launch
+symbolically linking /opt/erc_ws/build/pal_pro_gripper_wrapper/launch/pal_pro_gripper_wrapper.launch.py -> /opt/erc_ws/install/pal_pro_gripper_wrapper/share/pal_pro_gripper_wrapper/launch

@@ -1,0 +1,21 @@
+running develop
+running egg_info
+writing erc_solution.egg-info/PKG-INFO
+writing dependency_links to erc_solution.egg-info/dependency_links.txt
+writing entry points to erc_solution.egg-info/entry_points.txt
+writing requirements to erc_solution.egg-info/requires.txt
+writing top-level names to erc_solution.egg-info/top_level.txt
+reading manifest file 'erc_solution.egg-info/SOURCES.txt'
+writing manifest file 'erc_solution.egg-info/SOURCES.txt'
+running build_ext
+Creating /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc-solution.egg-link (link to .)
+Installing book_colour_detector script to /opt/erc_ws/install/erc_solution/lib/erc_solution
+Installing column_navigator script to /opt/erc_ws/install/erc_solution/lib/erc_solution
+Installing grasp_controller script to /opt/erc_ws/install/erc_solution/lib/erc_solution
+Installing shelf_column_detector script to /opt/erc_ws/install/erc_solution/lib/erc_solution
+
+Installed /opt/erc_ws/build/erc_solution
+running symlink_data
+symbolically linking /opt/erc_ws/build/erc_solution/resource/erc_solution -> /opt/erc_ws/install/erc_solution/share/ament_index/resource_index/packages
+symbolically linking /opt/erc_ws/build/erc_solution/package.xml -> /opt/erc_ws/install/erc_solution/share/erc_solution
+symbolically linking /opt/erc_ws/build/erc_solution/launch/solution.launch.py -> /opt/erc_ws/install/erc_solution/share/erc_solution/launch

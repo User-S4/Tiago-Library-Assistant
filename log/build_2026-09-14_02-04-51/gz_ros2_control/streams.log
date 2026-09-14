@@ -1,0 +1,10 @@
+[0.517s] Invoking command in '/opt/erc_ws/build/gz_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/gz_ros2_control -- -j16 -l16
+[0.550s] [35m[1mConsolidate compiler generated dependencies of target ign_ros2_control-system[0m
+[0.550s] [35m[1mConsolidate compiler generated dependencies of target gz_ros2_control-system[0m
+[0.550s] [35m[1mConsolidate compiler generated dependencies of target gz_hardware_plugins[0m
+[0.567s] [ 16%] [32m[1mLinking CXX shared library libign_ros2_control-system.so[0m
+[0.567s] [ 33%] [32m[1mLinking CXX shared library libgz_ros2_control-system.so[0m
+[0.569s] [ 50%] [32m[1mLinking CXX shared library libgz_hardware_plugins.so[0m
+[1.216s] [ 66%] Built target gz_hardware_plugins
+[1.279s] [100%] Built target ign_ros2_control-system
+[1.279s] [100%] Built target gz_ros2_control-system

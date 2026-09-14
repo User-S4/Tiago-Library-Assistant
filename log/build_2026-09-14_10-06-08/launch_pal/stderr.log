@@ -1,0 +1,2 @@
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:355: UserWarning: Unbuilt egg for erc-solution [unknown version] (/opt/erc_ws/build/erc_solution)
+  self.local_index = Environment(self.shadow_path + sys.path)

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+  Copyright (c) 2024 PAL Robotics S.L. All rights reserved.
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:macro name="pal_sea_arm" params="name parent *origin arm_type tool_changer wrist_model reflect:=1 joint_reflect:=1 arm_1_offset arm_2_offset arm_3_offset arm_4_offset arm_5_offset arm_6_offset arm_7_offset no_safety_eps:=False limits_v2:=False">
+
+    <!-- PROPERTIES -->
+
+    <xacro:property name="arm_eps" value="${0.00 if no_safety_eps else 0.07}"/>
+    <xacro:property name="mesh_folder"/>
+    <xacro:property name="inertia_version"/>
+
+    <!-- Tiago Pro -->
+    <xacro:if value="${arm_type in ['tiago-pro', 'tiago-pro-s']}">
+      <xacro:property name="mesh_folder" value="arm_tiago_pro"/>
+      <xacro:if value="${arm_type == 'tiago-pro'}">
+        <xacro:property name="inertia_version" value="tiago-pro"/>
+      </xacro:if>
+      <xacro:if value="${arm_type == 'tiago-pro-s'}">
+        <xacro:property name="inertia_version" value="tiago-pro-s"/>
+      </xacro:if>
+      <xacro:property name="arm_type" value="tiago-pro"/>
+    </xacro:if>
+
+    <!-- Standalone arm -->
+    <xacro:if value="${arm_type in ['pal-sea-arm-standalone']}">
+      <xacro:property name="mesh_folder" value="pal_sea_arm_standalone"/>
+    </xacro:if>
+
+    <!-- Tiago SEA -->
+    <xacro:if value="${arm_type in ['tiago-sea', 'tiago-sea-dual']}">
+      <xacro:property name="mesh_folder" value="arm_tiago_sea"/>
+    </xacro:if>
+
+    <!-- INCLUDES -->
+
+    <xacro:include filename="$(find pal_sea_arm_description)/urdf/arm/arm_limits/${arm_type}/arm.limits.xacro"/>
+    <xacro:include filename="$(find pal_sea_arm_description)/urdf/arm/arm_limits/${arm_type}/${wrist_model}.limits.xacro"/>
+    <xacro:include filename="$(find pal_sea_arm_description)/urdf/arm/arm_properties/${arm_type}/arm.properties.xacro"/>
+    <xacro:include filename="$(find pal_sea_arm_description)/urdf/arm/arm_properties/${arm_type}/${wrist_model}.properties.xacro"/>
+
+    <!-- ARM DEFINITION -->
+    <xacro:property name="joint_type" value="${'continuous' if arm_type == 'pal-sea-arm-standalone' else 'revolute'}" />
+    
+    <!-- ARM 1 LINK -->
+    <link name="${name}_1_link">
+      <xacro:inertial_link_1 reflect="${reflect}"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://pal_sea_arm_description/meshes/${mesh_folder}/arm_1_link.stl" scale="1 1 ${reflect}" />
+        </geometry>
+        <material name="pal/DarkGrey"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://pal_sea_arm_description/meshes/${mesh_folder}/arm_1_link_collision.stl" scale="1 1 ${reflect}" />
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- ARM 1 JOINT -->
+    <joint name="${name}_1_joint" type="${joint_type}">
+      
+      <xacro:insert_block name="origin"/>      
+      <parent link="${parent}" />
+      <child link="${name}_1_link" />
+      <axis xyz="0 0 1" />
+
+      <xacro:if value="${joint_type == 'continuous'}">
+        <limit effort="${arm_1_max_effort}" velocity="${arm_1_max_velocity}" />
+      </xacro:if>
+      
+      <xacro:if value="${joint_type == 'revolute'}">
+        <xacro:if value="${limits_v2}">
+          <limit lower="${arm_1_joint_lb_v2 * deg_to_rad}" upper="${arm_1_joint_ub_v2 * deg_to_rad}" effort="${arm_1_max_effort}" velocity="${arm_1_max_velocity}" />
+          <safety_controller k_position="${arm_k_position}" k_velocity="${arm_k_velocity}" soft_lower_limit="${arm_1_joint_lb_v2 * deg_to_rad  + arm_eps}" soft_upper_limit="${arm_1_joint_ub_v2 * deg_to_rad  - arm_eps}" />
+        </xacro:if>
+        <xacro:unless value="${limits_v2}">
+          <limit lower="${arm_1_joint_lb * deg_to_rad}" upper="${arm_1_joint_ub * deg_to_rad}" effort="${arm_1_max_effort}" velocity="${arm_1_max_velocity}" />
+          <safety_controller k_position="${arm_k_position}" k_velocity="${arm_k_velocity}" soft_lower_limit="${arm_1_joint_lb * deg_to_rad  + arm_eps}" soft_upper_limit="${arm_1_joint_ub * deg_to_rad  - arm_eps}" />
+        </xacro:unless>
+      </xacro:if>
+
+      <dynamics friction="${arm_friction}" damping="${arm_damping}"/>
+    </joint>
+
+    <!-- ARM 2 LINK -->
+    <link name="${name}_2_link">
+      <xacro:inertial_link_2 reflect="${reflect}"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://pal_sea_arm_description/meshes/${mesh_folder}/arm_2_link.stl" scale="1 1 ${reflect}" />
+        </geometry>
+        <material name="pal/DarkGrey"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://pal_sea_arm_description/meshes/${mesh_folder}/arm_2_link_collision.stl" scale="1 1 ${reflect}" />
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- ARM 2 JOINT -->
+    <joint name="${name}_2_joint" type="revolute">
+      <xacro:origin_joint_2 reflect="${reflect}"/>
+      <parent link="${name}_1_link" />
+      <child link="${name}_2_link" />
+      <axis xyz="0 0 1" />
+      <limit lower="${arm_2_joint_lb * deg_to_rad}" upper="${arm_2_joint_ub * deg_to_rad}" effort="${arm_2_max_effort}" velocity="${arm_2_max_velocity}" />
+      <dynamics friction="${arm_friction}" damping="${arm_damping}"/>
+      <safety_controller k_position="${arm_k_position}" k_velocity="${arm_k_velocity}" soft_lower_limit="${arm_2_joint_lb * deg_to_rad  + arm_eps}" soft_upper_limit="${arm_2_joint_ub * deg_to_rad - arm_eps}" />
+    </joint>
+
+    <!-- ARM 3 LINK -->
+    <link name="${name}_3_link">
+      <xacro:inertial_link_3 reflect="${reflect}"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://pal_sea_arm_description/meshes/${mesh_folder}/arm_3_link.stl" scale="1 1 ${reflect}" />
+        </geometry>
+        <material name="pal/DarkGrey"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://pal_sea_arm_description/meshes/${mesh_folder}/arm_3_link_collision.stl" scale="1 1 ${reflect}" />
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- ARM 3 JOINT -->
+    <joint name="${name}_3_joint" type="${joint_type}">
+
+      <xacro:origin_joint_3 reflect="${reflect}"/>
+      <parent link="${name}_2_link" />
+      <child link="${name}_3_link" />
+      <axis xyz="0 0 1" />
+    
+      <xacro:if value="${joint_type == 'continuous'}">
+        <limit effort="${arm_3_max_effort}" velocity="${arm_3_max_velocity}" />
+      </xacro:if>
+
+      <xacro:if value="${joint_type == 'revolute'}">
+        <xacro:if value="${limits_v2}">
+          <limit lower="${arm_3_joint_lb_v2 * deg_to_rad}" upper="${arm_3_joint_ub_v2 * deg_to_rad}" effort="${arm_3_max_effort}" velocity="${arm_3_max_velocity}" />
+        <safety_controller k_position="${arm_k_position}" k_velocity="${arm_k_velocity}" soft_lower_limit="${arm_3_joint_lb_v2 * deg_to_rad  + arm_eps}" soft_upper_limit="${arm_3_joint_ub_v2 * deg_to_rad - arm_eps}" />
+        </xacro:if>
+        <xacro:unless value="${limits_v2}">
+          <limit lower="${arm_3_joint_lb * deg_to_rad}" upper="${arm_3_joint_ub * deg_to_rad}" effort="${arm_3_max_effort}" velocity="${arm_3_max_velocity}" />
+          <safety_controller k_position="${arm_k_position}" k_velocity="${arm_k_velocity}" soft_lower_limit="${arm_3_joint_lb * deg_to_rad  + arm_eps}" soft_upper_limit="${arm_3_joint_ub * deg_to_rad - arm_eps}" />
+        </xacro:unless>
+      </xacro:if>
+
+        <dynamics friction="${arm_friction}" damping="${arm_damping}"/>
+    </joint>
+
+    <!-- ARM 4 LINK -->
+    <link name="${name}_4_link">
+      <xacro:inertial_link_4 reflect="${reflect}"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://pal_sea_arm_description/meshes/${mesh_folder}/arm_4_link.stl" scale="1 1 ${reflect}" />
+        </geometry>
+        <material name="pal/DarkGrey"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://pal_sea_arm_description/meshes/${mesh_folder}/arm_4_link_collision.stl" scale="1 1 ${reflect}" />
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- ARM 4 JOINT -->
+    <joint name="${name}_4_joint" type="revolute">
+      <xacro:origin_joint_4 reflect="${reflect}"/>
+      <parent link="${name}_3_link" />
+      <child link="${name}_4_link" />
+      <axis xyz="0 0 1" />
+      <limit lower="${arm_4_joint_lb * deg_to_rad}" upper="${arm_4_joint_ub * deg_to_rad}" effort="${arm_4_max_effort}" velocity="${arm_4_max_velocity}" />
+      <dynamics friction="${arm_friction}" damping="${arm_damping}"/>
+      <safety_controller k_position="${arm_k_position}" k_velocity="${arm_k_velocity}" soft_lower_limit="${arm_4_joint_lb * deg_to_rad  + arm_eps}" soft_upper_limit="${arm_4_joint_ub * deg_to_rad - arm_eps}" />
+    </joint>
+
+    <!-- ARM 5 LINK -->
+    <link name="${name}_5_link">
+      <xacro:inertial_link_5 reflect="${reflect}"/>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://pal_sea_arm_description/meshes/${mesh_folder}/${wrist_model}/arm_5_link.stl" scale="1 1 ${reflect}" />
+        </geometry>
+        <material name="pal/DarkGrey"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://pal_sea_arm_description/meshes/${mesh_folder}/${wrist_model}/arm_5_link_collision.stl" scale="1 1 ${reflect}" />
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- ARM 5 JOINT -->
+    <joint name="${name}_5_joint" type="${joint_type}">
+
+      <xacro:origin_joint_5 reflect="${reflect}"/>
+      <parent link="${name}_4_link" />
+      <child link="${name}_5_link" />
+      <axis xyz="0 0 1" />
+  
+      <xacro:if value="${joint_type == 'continuous'}">
+        <limit effort="${arm_5_max_effort}" velocity="${arm_5_max_velocity}" />
+      </xacro:if>
+
+      <xacro:if value="${joint_type == 'revolute'}">
+        <xacro:if value="${limits_v2}">
+          <limit lower="${arm_5_joint_lb_v2 * deg_to_rad}" upper="${arm_5_joint_ub_v2 * deg_to_rad}" effort="${arm_5_max_effort}" velocity="${arm_5_max_velocity}" />
+          <safety_controller k_position="${arm_k_position}" k_velocity="${arm_k_velocity}" soft_lower_limit="${arm_5_joint_lb_v2 * deg_to_rad  + arm_eps}" soft_upper_limit="${arm_5_joint_ub_v2 * deg_to_rad - arm_eps}" />
+        </xacro:if>
+        <xacro:unless value="${limits_v2}">
+          <limit lower="${arm_5_joint_lb * deg_to_rad}" upper="${arm_5_joint_ub * deg_to_rad}" effort="${arm_5_max_effort}" velocity="${arm_5_max_velocity}" />
+          <safety_controller k_position="${arm_k_position}" k_velocity="${arm_k_velocity}" soft_lower_limit="${arm_5_joint_lb * deg_to_rad  + arm_eps}" soft_upper_limit="${arm_5_joint_ub * deg_to_rad - arm_eps}" />
+        </xacro:unless>
+      </xacro:if>
+  
+      <dynamics friction="${arm_friction}" damping="${arm_damping}"/>
+    </joint>
+
+    <xacro:unless value="${wrist_model == 'short-wrist'}">
+      <!-- ARM 6 LINK -->
+      <link name="${name}_6_link">
+        <xacro:inertial_link_6 reflect="${reflect}"/>
+        <visual>
+          <origin xyz="0 0 0" rpy="0 0 0" />
+          <geometry>
+            <mesh filename="package://pal_sea_arm_description/meshes/${mesh_folder}/${wrist_model}/arm_6_link.stl" scale="1 1 ${reflect}" />
+          </geometry>
+          <material name="pal/DarkGrey"/>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0" rpy="0 0 0" />
+          <geometry>
+            <mesh filename="package://pal_sea_arm_description/meshes/${mesh_folder}/${wrist_model}/arm_6_link_collision.stl" scale="1 1 ${reflect}" />
+          </geometry>
+        </collision>
+      </link>
+
+      <!-- ARM 6 JOINT -->
+      <joint name="${name}_6_joint" type="revolute">
+        <xacro:origin_joint_6 reflect="${reflect}"/>
+        <parent link="${name}_5_link" />
+        <child link="${name}_6_link" />
+        <axis xyz="0 0 ${-1 if wrist_model=='spherical-wrist' else 1}" />
+        <limit lower="${arm_6_joint_lb * deg_to_rad}" upper="${arm_6_joint_ub * deg_to_rad}" effort="${arm_6_max_effort}" velocity="${arm_6_max_velocity}" />
+        <dynamics friction="${arm_friction}" damping="${arm_damping}"/>
+        <safety_controller k_position="${arm_k_position}" k_velocity="${arm_k_velocity}" soft_lower_limit="${arm_6_joint_lb * deg_to_rad  + arm_eps}" soft_upper_limit="${arm_6_joint_ub * deg_to_rad - arm_eps}" />
+      </joint>
+
+      <!-- ARM 7 LINK -->
+      <link name="${name}_7_link">
+        <xacro:inertial_link_7 reflect="${reflect}"/>
+        <visual>
+          <origin xyz="0 0 0" rpy="0 0 0" />
+          <geometry>
+            <mesh filename="package://pal_sea_arm_description/meshes/${mesh_folder}/${wrist_model}/arm_7_link.stl" scale="1 1 ${reflect}" />
+          </geometry>
+          <material name="pal/DarkGrey"/>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0" rpy="0 0 0" />
+          <geometry>
+            <mesh filename="package://pal_sea_arm_description/meshes/${mesh_folder}/${wrist_model}/arm_7_link_collision.stl" scale="1 1 ${reflect}" />
+          </geometry>
+        </collision>
+      </link>
+
+      <!-- ARM 7 JOINT -->
+      <joint name="${name}_7_joint" type="revolute">
+        <xacro:origin_joint_7 reflect="${reflect}"/>
+        <parent link="${name}_6_link" />
+        <child link="${name}_7_link" />
+        <axis xyz="0 0 1" />
+        <limit lower="${arm_7_joint_lb * deg_to_rad}" upper="${arm_7_joint_ub * deg_to_rad}" effort="${arm_7_max_effort}" velocity="${arm_7_max_velocity}" />
+        <dynamics friction="${arm_friction}" damping="${arm_damping}"/>
+        <safety_controller k_position="${arm_k_position}" k_velocity="${arm_k_velocity}" soft_lower_limit="${arm_7_joint_lb * deg_to_rad  + arm_eps}" soft_upper_limit="${arm_7_joint_ub * deg_to_rad - arm_eps}" />
+      </joint>
+    </xacro:unless>
+
+
+
+    <!--***********************-->
+    <!--        TOOL           -->
+    <!--***********************-->
+
+    <!-- With tool changer (the tool link is the tool changer)-->
+    <xacro:if value="${tool_changer}">
+      <link name="${name}_tool_link"/>
+      <joint name="${name}_tool_joint" type="fixed">
+        <xacro:if value="${wrist_model == 'short-wrist'}">
+          <parent link="${name}_5_link" />
+        </xacro:if>
+        <xacro:unless value="${wrist_model == 'short-wrist'}">
+          <parent link="${name}_7_link" />
+        </xacro:unless>
+        <child link="${name}_tool_link" />
+        <xacro:origin_joint_tool_changer reflect="${reflect}"/>
+      </joint>
+
+    </xacro:if>
+
+    <!-- Without tool changer (tool link just on top of link 7)-->
+    <xacro:unless value="${tool_changer}">
+      <link name="${name}_tool_link"/>
+      <joint name="${name}_tool_joint" type="fixed">
+        <xacro:if value="${wrist_model == 'short-wrist'}">
+          <parent link="${name}_5_link" />
+        </xacro:if>
+        <xacro:unless value="${wrist_model == 'short-wrist'}">
+          <parent link="${name}_7_link" />
+        </xacro:unless>
+        <child link="${name}_tool_link" />
+        <origin xyz="0 0 0" rpy="0 ${0 if reflect is 1 else 180 * deg_to_rad} 0.0" />
+      </joint>
+
+    </xacro:unless>
+
+    <!-- GAZEBO PROPERTIES -->
+    <gazebo reference="${name}_1_link">
+      <material>Gazebo/DarkGrey</material>
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <gazebo reference="${name}_1_joint">
+      <implicitSpringDamper>1</implicitSpringDamper>
+    </gazebo>
+
+    <gazebo reference="${name}_2_link">
+      <material>Gazebo/DarkGrey</material>
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <gazebo reference="${name}_2_joint">
+      <implicitSpringDamper>1</implicitSpringDamper>
+    </gazebo>
+
+    <gazebo reference="${name}_3_link">
+      <material>Gazebo/DarkGrey</material>
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <gazebo reference="${name}_3_joint">
+      <implicitSpringDamper>1</implicitSpringDamper>
+    </gazebo>
+
+    <gazebo reference="${name}_4_link">
+      <material>Gazebo/DarkGrey</material>
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <gazebo reference="${name}_4_joint">
+      <implicitSpringDamper>1</implicitSpringDamper>
+    </gazebo>
+
+    <gazebo reference="${name}_5_link">
+      <material>Gazebo/DarkGrey</material>
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <gazebo reference="${name}_5_joint">
+      <implicitSpringDamper>1</implicitSpringDamper>
+    </gazebo>
+
+  <xacro:unless value="${wrist_model == 'short-wrist'}">
+    <gazebo reference="${name}_6_link">
+      <material>Gazebo/DarkGrey</material>
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <gazebo reference="${name}_6_joint">
+      <implicitSpringDamper>1</implicitSpringDamper>
+    </gazebo>
+
+    <gazebo reference="${name}_7_link">
+      <material>Gazebo/DarkGrey</material>
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <gazebo reference="${name}_7_joint">
+      <implicitSpringDamper>1</implicitSpringDamper>
+      <provideFeedback>1</provideFeedback>
+    </gazebo>
+  </xacro:unless>
+
+    <gazebo reference="${name}_tool_link">
+      <material>Gazebo/DarkGrey</material>
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+
+  </xacro:macro>
+</robot>

@@ -1,0 +1,15 @@
+/opt/erc_ws/install/pal_sea_arm/share/ament_index/resource_index/package_run_dependencies/pal_sea_arm
+/opt/erc_ws/install/pal_sea_arm/share/ament_index/resource_index/parent_prefix_path/pal_sea_arm
+/opt/erc_ws/install/pal_sea_arm/share/pal_sea_arm/environment/ament_prefix_path.sh
+/opt/erc_ws/install/pal_sea_arm/share/pal_sea_arm/environment/ament_prefix_path.dsv
+/opt/erc_ws/install/pal_sea_arm/share/pal_sea_arm/environment/path.sh
+/opt/erc_ws/install/pal_sea_arm/share/pal_sea_arm/environment/path.dsv
+/opt/erc_ws/install/pal_sea_arm/share/pal_sea_arm/local_setup.bash
+/opt/erc_ws/install/pal_sea_arm/share/pal_sea_arm/local_setup.sh
+/opt/erc_ws/install/pal_sea_arm/share/pal_sea_arm/local_setup.zsh
+/opt/erc_ws/install/pal_sea_arm/share/pal_sea_arm/local_setup.dsv
+/opt/erc_ws/install/pal_sea_arm/share/pal_sea_arm/package.dsv
+/opt/erc_ws/install/pal_sea_arm/share/ament_index/resource_index/packages/pal_sea_arm
+/opt/erc_ws/install/pal_sea_arm/share/pal_sea_arm/cmake/pal_sea_armConfig.cmake
+/opt/erc_ws/install/pal_sea_arm/share/pal_sea_arm/cmake/pal_sea_armConfig-version.cmake
+/opt/erc_ws/install/pal_sea_arm/share/pal_sea_arm/package.xml

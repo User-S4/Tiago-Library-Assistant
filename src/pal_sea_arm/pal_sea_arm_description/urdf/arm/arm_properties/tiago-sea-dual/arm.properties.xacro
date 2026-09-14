@@ -1,0 +1,66 @@
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <xacro:macro name="inertial_link_1" params="reflect">
+        <inertial>
+            <origin xyz="0.1082 0.0106 ${0.0328 * reflect}" rpy="0 0 0" />
+            <mass value="1.121" />
+            <inertia ixx="8.0603E-04" ixy="-8.52034E-05" ixz="${-3.0124E-04 * reflect}" iyy="1.9301E-03" iyz="${1.9426E-05 * reflect}" izz="1.8484E-03" />
+        </inertial>
+    </xacro:macro>
+
+    <xacro:macro name="inertial_link_2" params="reflect">
+        <inertial>
+            <origin xyz="-0.0941 2.6612E-04  ${0.0414 * reflect}" rpy="0 0 0" />
+            <mass value="1.04393478668639" />
+            <inertia ixx="8.4202E-04" ixy="-5.7830E-06" ixz="${2.6145E-04 * reflect}" iyy="1.4185E-03" iyz="${-5.8148E-06 * reflect}" izz="1.4729E-03" />
+        </inertial>
+    </xacro:macro>
+
+    <xacro:macro name="origin_joint_2" params="reflect">
+        <origin xyz="0.13 0.0483 ${0.04* reflect}" rpy="${-90 * reflect * deg_to_rad} 0 ${180 * deg_to_rad}" />
+    </xacro:macro>
+
+    <xacro:macro name="inertial_link_3" params="reflect">
+        <inertial>
+            <origin xyz="0.0121 0.0151 ${-0.1344 * reflect}" rpy="0 0 0" />
+            <mass value="1.16187501225607" />
+            <inertia ixx="2.4587E-03" ixy="-1.2107E-05" ixz="${2.1354E-04 * reflect}" iyy="2.7652E-03" iyz="${6.0550E-05 * reflect}" izz="9.3005E-04" />
+        </inertial>
+    </xacro:macro>
+
+    <xacro:macro name="origin_joint_3" params="reflect">
+        <origin xyz="-0.1549 0 ${0.05 * reflect}" rpy="0 ${90 * reflect * deg_to_rad} 0" />
+    </xacro:macro>
+
+    <xacro:macro name="inertial_link_4" params="reflect">
+        <inertial>
+            <origin xyz="0.018 -0.1025 ${0.0419 * reflect}" rpy="0 0 0" />
+            <mass value="1.04356953296638" />
+            <inertia ixx="1.3967E-03" ixy="1.0609E-04" ixz="${-4.2876E-05 * reflect}" iyy="8.5657E-04" iyz="${2.5436E-04 * reflect}" izz="1.4862E-03" />
+        </inertial>
+    </xacro:macro>
+
+    <xacro:macro name="origin_joint_4" params="reflect">
+        <origin xyz="0.05 0.02 ${-0.1651 * reflect}" rpy="${90 * reflect * deg_to_rad} ${-0 * reflect * deg_to_rad} ${-90 * deg_to_rad}" />
+    </xacro:macro>
+
+    <xacro:macro name="origin_joint_5" params="reflect">
+        <origin xyz="0.02 -0.1546 ${0.05 * reflect}" rpy="${90 * reflect * deg_to_rad} 0 ${180 * deg_to_rad}" />
+    </xacro:macro>
+
+    <!-- Tool changer (can be present in both wrists)-->
+    <xacro:macro name="inertial_tool_changer_link" params="reflect">
+        <inertial>
+            <origin xyz="0.0019481 0.0017558 -0.0084934" rpy="0 0 0" />
+            <mass value="0.12272" />
+            <inertia ixx="5.1385E-05" ixy="8.5364E-07" ixz="-9.0329E-08" iyy="4.7962E-05" iyz="-1.8035E-07" izz="9.2935E-05" />
+        </inertial>
+    </xacro:macro>
+
+    <xacro:macro name="origin_joint_tool_changer" params="reflect">
+        <!-- @Lucien needs to fix, rotation remove to std gripper rotations -->
+        <!-- <origin xyz="0 0 0.017" rpy="0 0 1.570796" /> -->
+        <origin xyz="0 0 0.017" rpy="0 ${0 if reflect == 1 else 180 * deg_to_rad} 0.0" />
+    </xacro:macro>
+
+</robot>

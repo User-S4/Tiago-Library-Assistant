@@ -1,0 +1,156 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /opt/erc_ws/build/tiago_pro_controller_configuration
+-- Install configuration: ""
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/launch
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/launch/impedance_controller.launch.py
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/launch/velocity_controllers.launch.py
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/launch/tsid_default_controllers.launch.py
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/launch/default_controllers.launch.py
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/impedance_controller_arm.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/gains
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/gains/joint_space_controller_vel.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/gains/cartesian_vel_controller_robot_frame.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/gains/cartesian_vel_controller_ee_frame.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/gains/sin_joint_controller.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/gains/torso_joint_space_vel_controller.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/gains/sin_joint_controller_sim.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/gains/cartesian_space_controller_ee_frame_sim.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/gains/cartesian_space_controller_robot_frame.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/gains/torso_joint_space_controller_sim.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/gains/joint_space_controller_sim.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/gains/cartesian_space_controller_ee_frame.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/gains/cartesian_space_controller_robot_frame_sim.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/gains/torso_joint_space_controller.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/gains/torso_joint_space_vel_controller_sim.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/gains/joint_space_controller.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/gains/joint_space_controller_vel_sim.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/gains/cartesian_vel_controller_ee_frame_sim.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/gains/cartesian_vel_controller_robot_frame_sim.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/joint_space_controller_vel.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/cartesian_vel_controller_robot_frame.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/cartesian_vel_controller_ee_frame.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/sin_joint_controller.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/torso_joint_space_vel_controller.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/cartesian_space_controller_robot_frame.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/cartesian_space_controller_ee_frame.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/torso_joint_space_controller.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/tsid/joint_space_controller.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/torso_controller.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/impedance_controller_arm_jtc.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/joint_torque_state_broadcaster.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/joint_state_broadcaster.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/forward_controller_vel.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_right_5_joint.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_left_4_joint_safety.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_right_4_joint_safety.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_right_3_joint.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_right_4_joint.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_right_6_joint_safety.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/inner_finger_1_right_joint.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_right_7_joint_safety.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_left_5_joint.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/gripper_right_joint.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_left_6_joint.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/inner_finger_1_left_joint.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/gripper_left_joint.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_left_7_joint_safety.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_left_7_joint.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_right_5_joint_safety.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_right_2_joint.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_right_6_joint.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_left_3_joint_safety.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_left_1_joint_safety.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_left_2_joint.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_left_1_joint.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_left_2_joint_safety.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_right_7_joint.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_left_6_joint_safety.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_left_4_joint.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_right_1_joint_safety.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_left_3_joint.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_right_1_joint.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_left_5_joint_safety.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_right_2_joint_safety.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/arm_right_3_joint_safety.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/actuator_safety_specific_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/actuator_parameters/torso_lift_joint.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/arm_right_1_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/torso_yaw_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/arm_left_3_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/linear_actuator_left_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/gripper_right_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/torso_lift_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/inner_finger_1_left_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/gripper_left_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/inner_finger_1_right_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/arm_right_5_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/arm_left_2_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/arm_left_7_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/arm_right_2_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/arm_left_6_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/arm_right_3_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/arm_right_6_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/arm_right_7_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/arm_right_4_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/linear_actuator_right_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/arm_left_1_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/arm_left_4_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/no_control/arm_left_5_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/direct_position_control
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/direct_position_control/arm_right_1_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/direct_position_control/arm_left_3_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/direct_position_control/torso_lift_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/direct_position_control/arm_right_5_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/direct_position_control/arm_left_2_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/direct_position_control/arm_left_7_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/direct_position_control/arm_right_2_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/direct_position_control/arm_left_6_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/direct_position_control/arm_right_3_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/direct_position_control/arm_right_6_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/direct_position_control/arm_right_7_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/direct_position_control/arm_right_4_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/direct_position_control/arm_left_1_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/direct_position_control/arm_left_4_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/local_joint_control/direct_position_control/arm_left_5_joint_params.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/config/current_limit_controllers.yaml
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/ament_index/resource_index/package_run_dependencies/tiago_pro_controller_configuration
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/ament_index/resource_index/parent_prefix_path/tiago_pro_controller_configuration
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/environment/ament_prefix_path.sh
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/environment/ament_prefix_path.dsv
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/environment/path.sh
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/environment/path.dsv
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/local_setup.bash
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/local_setup.sh
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/local_setup.zsh
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/local_setup.dsv
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/package.dsv
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/ament_index/resource_index/packages/tiago_pro_controller_configuration
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/cmake/tiago_pro_controller_configurationConfig.cmake
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/cmake/tiago_pro_controller_configurationConfig-version.cmake
+-- Installing: /opt/erc_ws/install/tiago_pro_controller_configuration/share/tiago_pro_controller_configuration/package.xml

@@ -1,0 +1,8 @@
+setup.py
+pal_sea_arm_description/__init__.py
+pal_sea_arm_description/launch_arguments.py
+pal_sea_arm_description/pal_sea_arm_utils.py
+pal_sea_arm_description.egg-info/PKG-INFO
+pal_sea_arm_description.egg-info/SOURCES.txt
+pal_sea_arm_description.egg-info/dependency_links.txt
+pal_sea_arm_description.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+[2.361s] Invoking command in '/opt/erc_ws/build/launch_pal': PYTHONPATH=/opt/erc_ws/build/launch_pal/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /opt/erc_ws/build/launch_pal/build --no-deps symlink_data
+[2.650s] running develop
+[2.766s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:355: UserWarning: Unbuilt egg for erc-solution [unknown version] (/opt/erc_ws/build/erc_solution)
+[2.767s]   self.local_index = Environment(self.shadow_path + sys.path)
+[2.827s] running egg_info
+[2.828s] writing launch_pal.egg-info/PKG-INFO
+[2.828s] writing dependency_links to launch_pal.egg-info/dependency_links.txt
+[2.828s] writing entry points to launch_pal.egg-info/entry_points.txt
+[2.828s] writing requirements to launch_pal.egg-info/requires.txt
+[2.828s] writing top-level names to launch_pal.egg-info/top_level.txt
+[2.830s] reading manifest file 'launch_pal.egg-info/SOURCES.txt'
+[2.831s] writing manifest file 'launch_pal.egg-info/SOURCES.txt'
+[2.834s] running build_ext
+[2.835s] Creating /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch-pal.egg-link (link to .)
+[2.835s] 
+[2.835s] Installed /opt/erc_ws/build/launch_pal
+[2.835s] running symlink_data
+[2.882s] Invoked command in '/opt/erc_ws/build/launch_pal' returned '0': PYTHONPATH=/opt/erc_ws/build/launch_pal/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /opt/erc_ws/build/launch_pal/build --no-deps symlink_data

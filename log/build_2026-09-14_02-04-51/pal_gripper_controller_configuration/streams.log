@@ -1,0 +1,33 @@
+[0.361s] Invoking command in '/opt/erc_ws/build/pal_gripper_controller_configuration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/pal_gripper_controller_configuration -- -j16 -l16
+[0.739s] Invoked command in '/opt/erc_ws/build/pal_gripper_controller_configuration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/pal_gripper_controller_configuration -- -j16 -l16
+[0.740s] Invoking command in '/opt/erc_ws/build/pal_gripper_controller_configuration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/pal_gripper_controller_configuration
+[0.778s] -- Install configuration: ""
+[0.778s] -- Execute custom install script
+[0.778s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/current_limit_controllers.yaml
+[0.778s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/current_limit_controllers_left.yaml
+[0.778s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/current_limit_controllers_right.yaml
+[0.778s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/gazebo_controller_manager_cfg.yaml
+[0.778s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/gripper_controller.yaml
+[0.778s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/joint_state_broadcaster.yaml
+[0.779s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/joint_trajectory_controllers.yaml
+[0.779s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/config/pids.yaml
+[0.779s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/launch/current_limit_controllers.launch
+[0.780s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/launch/gripper_controller.launch
+[0.780s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/launch/joint_state_broadcaster.launch.py
+[0.780s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/launch/pal_gripper_controller.launch.py
+[0.780s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/ament_index/resource_index/package_run_dependencies/pal_gripper_controller_configuration
+[0.780s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/ament_index/resource_index/parent_prefix_path/pal_gripper_controller_configuration
+[0.780s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/environment/ament_prefix_path.sh
+[0.780s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/environment/ament_prefix_path.dsv
+[0.780s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/environment/path.sh
+[0.780s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/environment/path.dsv
+[0.781s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/local_setup.bash
+[0.781s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/local_setup.sh
+[0.781s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/local_setup.zsh
+[0.781s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/local_setup.dsv
+[0.781s] -- Symlinking: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/package.dsv
+[0.803s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/ament_index/resource_index/packages/pal_gripper_controller_configuration
+[0.804s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/cmake/pal_gripper_controller_configurationConfig.cmake
+[0.806s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/cmake/pal_gripper_controller_configurationConfig-version.cmake
+[0.806s] -- Up-to-date symlink: /opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/package.xml
+[0.816s] Invoked command in '/opt/erc_ws/build/pal_gripper_controller_configuration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/pal_gripper_controller_configuration

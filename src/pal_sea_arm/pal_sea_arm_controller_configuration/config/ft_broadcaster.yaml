@@ -1,0 +1,6 @@
+${FT_SIDE_PREFIX}_broadcaster:
+  ros__parameters:
+    type: force_torque_sensor_broadcaster/ForceTorqueSensorBroadcaster
+    update_rate: 100
+    frame_id: ${LINK_SIDE_PREFIX}_ft_sensor_link
+    sensor_name: ${LINK_SIDE_PREFIX}_ft_sensor

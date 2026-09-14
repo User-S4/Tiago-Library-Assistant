@@ -1,0 +1,9 @@
+/opt/erc_ws/build/erc_bringup/CMakeFiles/uninstall.dir
+/opt/erc_ws/build/erc_bringup/CMakeFiles/erc_bringup_uninstall.dir
+/opt/erc_ws/build/erc_bringup/CMakeFiles/test.dir
+/opt/erc_ws/build/erc_bringup/CMakeFiles/edit_cache.dir
+/opt/erc_ws/build/erc_bringup/CMakeFiles/rebuild_cache.dir
+/opt/erc_ws/build/erc_bringup/CMakeFiles/list_install_components.dir
+/opt/erc_ws/build/erc_bringup/CMakeFiles/install.dir
+/opt/erc_ws/build/erc_bringup/CMakeFiles/install/local.dir
+/opt/erc_ws/build/erc_bringup/CMakeFiles/install/strip.dir

@@ -1,0 +1,6 @@
+tsid_default_controllers:
+  launch: "tiago_pro_controller_configuration tsid_default_controllers.launch.py
+           arm_type_right:=@arm_type_right@
+           arm_type_left:=@arm_type_left@"
+  finishes: True
+  dependencies: ["Hardware/Controller Manager/Hardware Components Activity"]  

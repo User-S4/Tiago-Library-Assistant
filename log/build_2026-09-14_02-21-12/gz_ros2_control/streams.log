@@ -1,0 +1,40 @@
+[0.865s] Invoking command in '/opt/erc_ws/build/gz_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/gz_ros2_control -- -j16 -l16
+[0.923s] [35m[1mConsolidate compiler generated dependencies of target gz_ros2_control-system[0m
+[0.951s] [ 33%] Built target gz_ros2_control-system
+[0.962s] [35m[1mConsolidate compiler generated dependencies of target ign_ros2_control-system[0m
+[0.984s] [ 66%] Built target ign_ros2_control-system
+[0.997s] [35m[1mConsolidate compiler generated dependencies of target gz_hardware_plugins[0m
+[1.020s] [100%] Built target gz_hardware_plugins
+[1.217s] Invoked command in '/opt/erc_ws/build/gz_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/gz_ros2_control -- -j16 -l16
+[1.220s] Invoking command in '/opt/erc_ws/build/gz_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/gz_ros2_control
+[1.230s] -- Install configuration: ""
+[1.231s] -- Execute custom install script
+[1.231s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/lib/libgz_hardware_plugins.so
+[1.231s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/include/gz_ros2_control/gz_ros2_control_plugin.hpp
+[1.231s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/include/gz_ros2_control/gz_system.hpp
+[1.231s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/include/gz_ros2_control/gz_system_interface.hpp
+[1.233s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/gz_ros2_control/environment/library_path.sh
+[1.233s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/gz_ros2_control/environment/library_path.dsv
+[1.234s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/lib/libgz_ros2_control-system.so
+[1.234s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/lib/libign_ros2_control-system.so
+[1.234s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/gz_ros2_control//gz_hardware_plugins.xml
+[1.234s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/gz_ros2_control/environment/gz_ros2_control.dsv
+[1.234s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/ament_index/resource_index/package_run_dependencies/gz_ros2_control
+[1.234s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/ament_index/resource_index/parent_prefix_path/gz_ros2_control
+[1.234s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/gz_ros2_control/environment/ament_prefix_path.sh
+[1.234s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/gz_ros2_control/environment/ament_prefix_path.dsv
+[1.234s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/gz_ros2_control/environment/path.sh
+[1.234s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/gz_ros2_control/environment/path.dsv
+[1.234s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/gz_ros2_control/local_setup.bash
+[1.234s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/gz_ros2_control/local_setup.sh
+[1.234s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/gz_ros2_control/local_setup.zsh
+[1.234s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/gz_ros2_control/local_setup.dsv
+[1.238s] -- Symlinking: /opt/erc_ws/install/gz_ros2_control/share/gz_ros2_control/package.dsv
+[1.249s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/ament_index/resource_index/packages/gz_ros2_control
+[1.249s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/ament_index/resource_index/gz_ros2_control__pluginlib__plugin/gz_ros2_control
+[1.249s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/gz_ros2_control/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.249s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/gz_ros2_control/cmake/ament_cmake_export_libraries-extras.cmake
+[1.250s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/gz_ros2_control/cmake/gz_ros2_controlConfig.cmake
+[1.250s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/gz_ros2_control/cmake/gz_ros2_controlConfig-version.cmake
+[1.250s] -- Up-to-date symlink: /opt/erc_ws/install/gz_ros2_control/share/gz_ros2_control/package.xml
+[1.385s] Invoked command in '/opt/erc_ws/build/gz_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/gz_ros2_control

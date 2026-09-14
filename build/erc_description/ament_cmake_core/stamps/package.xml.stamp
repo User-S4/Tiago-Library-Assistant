@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>erc_description</name>
+  <version>1.0.0</version>
+  <description>ERC 2026 — arena models and world files</description>
+  <maintainer email="erc@dubaifuturelabs.ae">ERC Committee</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

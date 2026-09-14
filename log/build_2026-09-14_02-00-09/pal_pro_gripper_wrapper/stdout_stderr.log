@@ -1,0 +1,39 @@
+running egg_info
+creating ../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info
+writing ../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info/PKG-INFO
+writing dependency_links to ../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info/dependency_links.txt
+writing entry points to ../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info/entry_points.txt
+writing requirements to ../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info/requires.txt
+writing top-level names to ../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info/top_level.txt
+writing manifest file '../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info/SOURCES.txt'
+reading manifest file '../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info/SOURCES.txt'
+writing manifest file '../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /opt/erc_ws/build/pal_pro_gripper_wrapper/build
+creating /opt/erc_ws/build/pal_pro_gripper_wrapper/build/lib
+creating /opt/erc_ws/build/pal_pro_gripper_wrapper/build/lib/pal_pro_gripper_wrapper
+copying pal_pro_gripper_wrapper/__init__.py -> /opt/erc_ws/build/pal_pro_gripper_wrapper/build/lib/pal_pro_gripper_wrapper
+copying pal_pro_gripper_wrapper/gripper_grasper_srv.py -> /opt/erc_ws/build/pal_pro_gripper_wrapper/build/lib/pal_pro_gripper_wrapper
+running install
+running install_lib
+creating /opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages/pal_pro_gripper_wrapper
+copying /opt/erc_ws/build/pal_pro_gripper_wrapper/build/lib/pal_pro_gripper_wrapper/__init__.py -> /opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages/pal_pro_gripper_wrapper
+copying /opt/erc_ws/build/pal_pro_gripper_wrapper/build/lib/pal_pro_gripper_wrapper/gripper_grasper_srv.py -> /opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages/pal_pro_gripper_wrapper
+byte-compiling /opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages/pal_pro_gripper_wrapper/__init__.py to __init__.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages/pal_pro_gripper_wrapper/gripper_grasper_srv.py to gripper_grasper_srv.cpython-310.pyc
+running install_data
+creating /opt/erc_ws/install/pal_pro_gripper_wrapper/share/ament_index
+creating /opt/erc_ws/install/pal_pro_gripper_wrapper/share/ament_index/resource_index
+creating /opt/erc_ws/install/pal_pro_gripper_wrapper/share/ament_index/resource_index/packages
+copying resource/pal_pro_gripper_wrapper -> /opt/erc_ws/install/pal_pro_gripper_wrapper/share/ament_index/resource_index/packages
+copying package.xml -> /opt/erc_ws/install/pal_pro_gripper_wrapper/share/pal_pro_gripper_wrapper
+creating /opt/erc_ws/install/pal_pro_gripper_wrapper/share/pal_pro_gripper_wrapper/config
+copying config/gripper.yaml -> /opt/erc_ws/install/pal_pro_gripper_wrapper/share/pal_pro_gripper_wrapper/config
+creating /opt/erc_ws/install/pal_pro_gripper_wrapper/share/pal_pro_gripper_wrapper/launch
+copying launch/pal_pro_gripper_wrapper.launch.py -> /opt/erc_ws/install/pal_pro_gripper_wrapper/share/pal_pro_gripper_wrapper/launch
+running install_egg_info
+Copying ../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info to /opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages/pal_pro_gripper_wrapper-1.12.5-py3.10.egg-info
+running install_scripts
+Installing gripper_grasper_srv script to /opt/erc_ws/install/pal_pro_gripper_wrapper/lib/pal_pro_gripper_wrapper
+writing list of installed files to '/opt/erc_ws/build/pal_pro_gripper_wrapper/install.log'

@@ -1,0 +1,241 @@
+[0.018s] Invoking command in '/opt/erc_ws/build/pal_sea_arm_description': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/erc_ws/src/pal_sea_arm/pal_sea_arm_description -DCMAKE_INSTALL_PREFIX=/opt/erc_ws/install/pal_sea_arm_description
+[0.056s] -- The C compiler identification is GNU 11.4.0
+[0.099s] -- The CXX compiler identification is GNU 11.4.0
+[0.106s] -- Detecting C compiler ABI info
+[0.158s] -- Detecting C compiler ABI info - done
+[0.162s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.163s] -- Detecting C compile features
+[0.163s] -- Detecting C compile features - done
+[0.165s] -- Detecting CXX compiler ABI info
+[0.226s] -- Detecting CXX compiler ABI info - done
+[0.231s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.231s] -- Detecting CXX compile features
+[0.231s] -- Detecting CXX compile features - done
+[0.234s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.367s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.531s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.561s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.582s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.591s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.592s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.592s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.592s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.612s] -- Found PythonExtra: .so  
+[0.939s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.947s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.949s] -- Added test 'lint_cmake' to check CMake code style
+[0.950s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.954s] -- Added test 'xmllint' to check XML markup files
+[0.955s] -- Configuring done
+[0.959s] -- Generating done
+[0.961s] -- Build files have been written to: /opt/erc_ws/build/pal_sea_arm_description
+[0.965s] Invoked command in '/opt/erc_ws/build/pal_sea_arm_description' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/erc_ws/src/pal_sea_arm/pal_sea_arm_description -DCMAKE_INSTALL_PREFIX=/opt/erc_ws/install/pal_sea_arm_description
+[0.966s] Invoking command in '/opt/erc_ws/build/pal_sea_arm_description': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/erc_ws/build/pal_sea_arm_description -- -j16 -l16
+[1.006s] Built target ament_cmake_python_copy_pal_sea_arm_description
+[1.194s] running egg_info
+[1.195s] creating pal_sea_arm_description.egg-info
+[1.195s] writing pal_sea_arm_description.egg-info/PKG-INFO
+[1.195s] writing dependency_links to pal_sea_arm_description.egg-info/dependency_links.txt
+[1.195s] writing top-level names to pal_sea_arm_description.egg-info/top_level.txt
+[1.196s] writing manifest file 'pal_sea_arm_description.egg-info/SOURCES.txt'
+[1.197s] reading manifest file 'pal_sea_arm_description.egg-info/SOURCES.txt'
+[1.197s] writing manifest file 'pal_sea_arm_description.egg-info/SOURCES.txt'
+[1.222s] Built target ament_cmake_python_build_pal_sea_arm_description_egg
+[1.234s] Invoked command in '/opt/erc_ws/build/pal_sea_arm_description' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/erc_ws/build/pal_sea_arm_description -- -j16 -l16
+[1.238s] Invoking command in '/opt/erc_ws/build/pal_sea_arm_description': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/erc_ws/build/pal_sea_arm_description
+[1.242s] -- Install configuration: ""
+[1.243s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/environment/pythonpath.sh
+[1.243s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/environment/pythonpath.dsv
+[1.243s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/local/lib/python3.10/dist-packages/pal_sea_arm_description-2.8.4-py3.10.egg-info
+[1.245s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/local/lib/python3.10/dist-packages/pal_sea_arm_description-2.8.4-py3.10.egg-info/top_level.txt
+[1.245s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/local/lib/python3.10/dist-packages/pal_sea_arm_description-2.8.4-py3.10.egg-info/dependency_links.txt
+[1.245s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/local/lib/python3.10/dist-packages/pal_sea_arm_description-2.8.4-py3.10.egg-info/PKG-INFO
+[1.245s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/local/lib/python3.10/dist-packages/pal_sea_arm_description-2.8.4-py3.10.egg-info/SOURCES.txt
+[1.246s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/local/lib/python3.10/dist-packages/pal_sea_arm_description
+[1.246s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/local/lib/python3.10/dist-packages/pal_sea_arm_description/launch_arguments.py
+[1.246s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/local/lib/python3.10/dist-packages/pal_sea_arm_description/__init__.py
+[1.246s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/local/lib/python3.10/dist-packages/pal_sea_arm_description/pal_sea_arm_utils.py
+[1.273s] Listing '/opt/erc_ws/install/pal_sea_arm_description/local/lib/python3.10/dist-packages/pal_sea_arm_description'...
+[1.274s] Compiling '/opt/erc_ws/install/pal_sea_arm_description/local/lib/python3.10/dist-packages/pal_sea_arm_description/__init__.py'...
+[1.274s] Compiling '/opt/erc_ws/install/pal_sea_arm_description/local/lib/python3.10/dist-packages/pal_sea_arm_description/launch_arguments.py'...
+[1.274s] Compiling '/opt/erc_ws/install/pal_sea_arm_description/local/lib/python3.10/dist-packages/pal_sea_arm_description/pal_sea_arm_utils.py'...
+[1.277s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/config
+[1.278s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/config/pal_sea_arm_configuration.yaml
+[1.278s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/config/show.rviz
+[1.279s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/gazebo
+[1.281s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/gazebo/gazebo.urdf.xacro
+[1.281s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/launch
+[1.281s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/launch/show.launch.py
+[1.282s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/launch/robot_state_publisher.launch.py
+[1.282s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes
+[1.282s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/humanoid
+[1.282s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/humanoid/arm_cover
+[1.282s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/humanoid/arm_cover/arm_cover_link.stl
+[1.283s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/humanoid/arm_cover/arm_cover_link_collision.stl
+[1.283s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/humanoid/arm
+[1.284s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/humanoid/arm/arm_base_link.STL
+[1.284s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/humanoid/arm/arm3_link.STL
+[1.287s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/humanoid/arm/arm4_link.STL
+[1.288s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/humanoid/arm/fake_forearm_left_link.stl
+[1.290s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/humanoid/arm/arm1_link.STL
+[1.291s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/humanoid/arm/fake_forearm_right_link.stl
+[1.294s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/humanoid/arm/arm2_link.STL
+[1.296s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone
+[1.297s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/arm_2_link.stl
+[1.300s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/tool_changer_link_original.stl
+[1.303s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/arm_3_link.stl
+[1.306s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/tool_changer_link_collision.stl
+[1.307s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/arm_2_link_collision.stl
+[1.308s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/spherical-wrist
+[1.308s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/spherical-wrist/arm_6_link.stl
+[1.311s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/spherical-wrist/arm_5_link_collision.stl
+[1.313s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/spherical-wrist/arm_6_link_collision.stl
+[1.313s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/spherical-wrist/arm_7_link.stl
+[1.314s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/spherical-wrist/arm_7_link_collision.stl
+[1.316s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/spherical-wrist/arm_5_link.stl
+[1.318s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/arm_4_link_collision.stl
+[1.320s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/arm_1_link_collision.stl
+[1.320s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/pen_gripper_link.stl
+[1.322s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/arm_3_link_collision.stl
+[1.323s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/arm_1_link.stl
+[1.326s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/straight-wrist
+[1.326s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/straight-wrist/arm_6_link.stl
+[1.329s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/straight-wrist/arm_5_link_collision.stl
+[1.329s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/straight-wrist/arm_6_link_collision.stl
+[1.330s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/straight-wrist/arm_7_link.stl
+[1.331s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/straight-wrist/arm_7_link_collision.stl
+[1.333s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/straight-wrist/arm_5_link.stl
+[1.335s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/tool_changer_link.stl
+[1.337s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/base_link.stl
+[1.339s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/pal_sea_arm_standalone/arm_4_link.stl
+[1.343s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_sea
+[1.343s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_sea/arm_2_link.stl
+[1.347s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_sea/tool_changer_link_original.stl
+[1.349s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_sea/arm_3_link.stl
+[1.351s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_sea/tool_changer_link_collision.stl
+[1.352s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_sea/arm_2_link_collision.stl
+[1.353s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_sea/arm_4_link_collision.stl
+[1.354s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_sea/arm_1_link_collision.stl
+[1.356s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_sea/arm_3_link_collision.stl
+[1.356s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_sea/arm_1_link.stl
+[1.359s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_sea/straight-wrist
+[1.359s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_sea/straight-wrist/arm_6_link.stl
+[1.362s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_sea/straight-wrist/arm_5_link_collision.stl
+[1.363s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_sea/straight-wrist/arm_6_link_collision.stl
+[1.364s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_sea/straight-wrist/arm_7_link.stl
+[1.365s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_sea/straight-wrist/arm_7_link_collision.stl
+[1.366s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_sea/straight-wrist/arm_5_link.stl
+[1.368s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_sea/tool_changer_link.stl
+[1.370s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_sea/arm_4_link.stl
+[1.373s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro
+[1.373s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/allegro_coupler_link.STL
+[1.374s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/arm_2_link.stl
+[1.376s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/short-wrist
+[1.376s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/short-wrist/arm_5_link_collision.stl
+[1.377s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/short-wrist/arm_5_link.stl
+[1.378s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/allegro_tc_out_link.STL
+[1.379s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/end_effector_camera_realsense_d435.stl
+[1.382s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/arm_3_link.stl
+[1.383s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/tool_changer_link_collision.stl
+[1.384s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/arm_base_link.stl
+[1.385s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/arm_2_link_collision.stl
+[1.385s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/end_effector_camera_realsense_d405.stl
+[1.387s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/spherical-wrist
+[1.388s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/spherical-wrist/arm_6_link.stl
+[1.389s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/spherical-wrist/arm_5_link_collision.stl
+[1.389s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/spherical-wrist/arm_6_link_collision.stl
+[1.390s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/spherical-wrist/arm_7_link.stl
+[1.393s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/spherical-wrist/arm_7_link_collision.stl
+[1.394s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/spherical-wrist/arm_5_link.stl
+[1.395s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/arm_4_link_collision.stl
+[1.395s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/arm_1_link_collision.stl
+[1.396s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/arm_3_link_collision.stl
+[1.397s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/arm_1_link.stl
+[1.399s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/straight-wrist
+[1.399s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/straight-wrist/arm_6_link.stl
+[1.402s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/straight-wrist/arm_5_link_collision.stl
+[1.403s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/straight-wrist/arm_6_link_collision.stl
+[1.404s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/straight-wrist/arm_7_link.stl
+[1.405s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/straight-wrist/arm_7_link_collision.stl
+[1.406s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/straight-wrist/arm_5_link.stl
+[1.409s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/tool_changer_link.stl
+[1.409s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/meshes/arm_tiago_pro/arm_4_link.stl
+[1.411s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/robots
+[1.411s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/robots/pal_sea_arm.urdf.xacro
+[1.411s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/ros2_control
+[1.412s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/ros2_control/transmissions.urdf.xacro
+[1.412s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/ros2_control/gazebo_controller_manager_cfg.yaml
+[1.412s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/ros2_control/ros2_control.urdf.xacro
+[1.413s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/mujoco
+[1.413s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/mujoco/mj_tags.xacro
+[1.414s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf
+[1.414s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/calibration_constants.urdf.xacro
+[1.414s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm
+[1.414s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm.urdf.xacro
+[1.415s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties
+[1.415s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/pal-sea-arm-standalone
+[1.415s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/pal-sea-arm-standalone/short-wrist.properties.xacro
+[1.416s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/pal-sea-arm-standalone/arm.properties.xacro
+[1.416s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/pal-sea-arm-standalone/straight-wrist.properties.xacro
+[1.416s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/pal-sea-arm-standalone/spherical-wrist.properties.xacro
+[1.417s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/humanoid
+[1.417s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/humanoid/4dof_arm.urdf.xacro
+[1.417s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/humanoid/arm.urdf.xacro
+[1.418s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/humanoid/arm_cover.urdf.xacro
+[1.418s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/humanoid/ros2_control.urdf.xacro
+[1.419s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/humanoid/7dof_arm.urdf.xacro
+[1.419s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/humanoid/5dof_arm.urdf.xacro
+[1.419s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/tiago-sea-dual
+[1.420s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/tiago-sea-dual/arm.properties.xacro
+[1.420s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/tiago-sea-dual/straight-wrist.properties.xacro
+[1.421s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/tiago-pro
+[1.421s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/tiago-pro/short-wrist.properties.xacro
+[1.421s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/tiago-pro/arm.properties.xacro
+[1.421s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/tiago-pro/straight-wrist.properties.xacro
+[1.422s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/tiago-pro/spherical-wrist.properties.xacro
+[1.423s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/tiago-sea
+[1.423s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/tiago-sea/arm.properties.xacro
+[1.424s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_properties/tiago-sea/straight-wrist.properties.xacro
+[1.424s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_limits
+[1.424s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_limits/pal-sea-arm-standalone
+[1.424s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_limits/pal-sea-arm-standalone/spherical-wrist.limits.xacro
+[1.425s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_limits/pal-sea-arm-standalone/arm.limits.xacro
+[1.425s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_limits/pal-sea-arm-standalone/straight-wrist.limits.xacro
+[1.425s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_limits/pal-sea-arm-standalone/short-wrist.limits.xacro
+[1.426s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_limits/tiago-sea-dual
+[1.426s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_limits/tiago-sea-dual/arm.limits.xacro
+[1.426s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_limits/tiago-sea-dual/straight-wrist.limits.xacro
+[1.427s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_limits/tiago-pro
+[1.427s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_limits/tiago-pro/spherical-wrist.limits.xacro
+[1.427s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_limits/tiago-pro/arm.limits.xacro
+[1.427s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_limits/tiago-pro/straight-wrist.limits.xacro
+[1.428s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_limits/tiago-pro/short-wrist.limits.xacro
+[1.428s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_limits/tiago-sea
+[1.428s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_limits/tiago-sea/arm.limits.xacro
+[1.429s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm_limits/tiago-sea/straight-wrist.limits.xacro
+[1.429s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/arm/arm.ros2_control.xacro
+[1.430s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/end_effector
+[1.430s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/end_effector/grasping_frames.xacro
+[1.430s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/end_effector/end_effector.urdf.xacro
+[1.431s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/end_effector/humanoid
+[1.431s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/end_effector/humanoid/rh8d_hand.urdf.xacro
+[1.431s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/end_effector/humanoid/pal_pro_gripper.urdf.xacro
+[1.432s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/end_effector/humanoid/ros2_control.urdf.xacro
+[1.432s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/end_effector_camera
+[1.433s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/urdf/end_effector_camera/end_effector_camera.urdf.xacro
+[1.433s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/ament_index/resource_index/package_run_dependencies/pal_sea_arm_description
+[1.434s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/ament_index/resource_index/parent_prefix_path/pal_sea_arm_description
+[1.434s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/environment/ament_prefix_path.sh
+[1.434s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/environment/ament_prefix_path.dsv
+[1.434s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/environment/path.sh
+[1.434s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/environment/path.dsv
+[1.435s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/local_setup.bash
+[1.435s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/local_setup.sh
+[1.435s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/local_setup.zsh
+[1.435s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/local_setup.dsv
+[1.435s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/package.dsv
+[1.435s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/ament_index/resource_index/packages/pal_sea_arm_description
+[1.435s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/cmake/pal_sea_arm_descriptionConfig.cmake
+[1.435s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/cmake/pal_sea_arm_descriptionConfig-version.cmake
+[1.436s] -- Installing: /opt/erc_ws/install/pal_sea_arm_description/share/pal_sea_arm_description/package.xml
+[1.437s] Invoked command in '/opt/erc_ws/build/pal_sea_arm_description' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/erc_ws/build/pal_sea_arm_description

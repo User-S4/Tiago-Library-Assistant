@@ -1,0 +1,7 @@
+torso_joint_space_controller:
+  ros__parameters:
+    joint_pos_gain:
+      torso_lift_joint:
+        kp: 50.0
+        kd: 100.0
+    

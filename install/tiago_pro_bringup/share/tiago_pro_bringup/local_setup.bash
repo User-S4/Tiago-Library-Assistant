@@ -1,0 +1,1 @@
+/opt/erc_ws/build/tiago_pro_bringup/ament_cmake_environment_hooks/local_setup.bash

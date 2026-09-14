@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+config/gripper.yaml
+launch/pal_pro_gripper_wrapper.launch.py
+pal_pro_gripper_wrapper/__init__.py
+pal_pro_gripper_wrapper/gripper_grasper_srv.py
+pal_pro_gripper_wrapper.egg-info/PKG-INFO
+pal_pro_gripper_wrapper.egg-info/SOURCES.txt
+pal_pro_gripper_wrapper.egg-info/dependency_links.txt
+pal_pro_gripper_wrapper.egg-info/entry_points.txt
+pal_pro_gripper_wrapper.egg-info/requires.txt
+pal_pro_gripper_wrapper.egg-info/top_level.txt
+pal_pro_gripper_wrapper.egg-info/zip-safe
+resource/pal_pro_gripper_wrapper

@@ -1,0 +1,108 @@
+running egg_info
+creating ../../build/launch_pal/launch_pal.egg-info
+writing ../../build/launch_pal/launch_pal.egg-info/PKG-INFO
+writing dependency_links to ../../build/launch_pal/launch_pal.egg-info/dependency_links.txt
+writing entry points to ../../build/launch_pal/launch_pal.egg-info/entry_points.txt
+writing requirements to ../../build/launch_pal/launch_pal.egg-info/requires.txt
+writing top-level names to ../../build/launch_pal/launch_pal.egg-info/top_level.txt
+writing manifest file '../../build/launch_pal/launch_pal.egg-info/SOURCES.txt'
+reading manifest file '../../build/launch_pal/launch_pal.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/launch_pal/launch_pal.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /opt/erc_ws/build/launch_pal/build
+creating /opt/erc_ws/build/launch_pal/build/lib
+creating /opt/erc_ws/build/launch_pal/build/lib/launch_pal
+copying launch_pal/composition_utils.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal
+copying launch_pal/logging_utils.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal
+copying launch_pal/param_utils.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal
+copying launch_pal/__init__.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal
+copying launch_pal/pal_parameters.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal
+copying launch_pal/calibration_utils.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal
+copying launch_pal/include_utils.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal
+copying launch_pal/robot_utils.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal
+copying launch_pal/arg_utils.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal
+creating /opt/erc_ws/build/launch_pal/build/lib/launch_pal/robot_arguments
+copying launch_pal/robot_arguments/__init__.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal/robot_arguments
+copying launch_pal/robot_arguments/robot.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal/robot_arguments
+copying launch_pal/robot_arguments/common.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal/robot_arguments
+creating /opt/erc_ws/build/launch_pal/build/lib/launch_pal/actions
+copying launch_pal/actions/validate_xacro_args.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal/actions
+copying launch_pal/actions/__init__.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal/actions
+copying launch_pal/actions/validate_launch_args.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal/actions
+copying launch_pal/actions/check_public_sim.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal/actions
+creating /opt/erc_ws/build/launch_pal/build/lib/launch_pal/conditions
+copying launch_pal/conditions/if_node_running.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal/conditions
+copying launch_pal/conditions/__init__.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal/conditions
+copying launch_pal/conditions/unless_node_running.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal/conditions
+creating /opt/erc_ws/build/launch_pal/build/lib/launch_pal/substitutions
+copying launch_pal/substitutions/robot_info_file.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal/substitutions
+copying launch_pal/substitutions/concat_substitution.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal/substitutions
+copying launch_pal/substitutions/__init__.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal/substitutions
+copying launch_pal/substitutions/load_file.py -> /opt/erc_ws/build/launch_pal/build/lib/launch_pal/substitutions
+running install
+running install_lib
+creating /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/pal_parameters.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal
+creating /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/robot_arguments
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/robot_arguments/robot.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/robot_arguments
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/robot_arguments/__init__.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/robot_arguments
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/robot_arguments/common.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/robot_arguments
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/logging_utils.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/__init__.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/arg_utils.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal
+creating /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/conditions
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/conditions/unless_node_running.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/conditions
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/conditions/__init__.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/conditions
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/conditions/if_node_running.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/conditions
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/calibration_utils.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/composition_utils.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/param_utils.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/robot_utils.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal
+creating /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/substitutions
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/substitutions/robot_info_file.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/substitutions
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/substitutions/__init__.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/substitutions
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/substitutions/concat_substitution.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/substitutions
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/substitutions/load_file.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/substitutions
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/include_utils.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal
+creating /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/actions
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/actions/check_public_sim.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/actions
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/actions/__init__.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/actions
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/actions/validate_launch_args.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/actions
+copying /opt/erc_ws/build/launch_pal/build/lib/launch_pal/actions/validate_xacro_args.py -> /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/actions
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/pal_parameters.py to pal_parameters.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/robot_arguments/robot.py to robot.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/robot_arguments/__init__.py to __init__.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/robot_arguments/common.py to common.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/logging_utils.py to logging_utils.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/__init__.py to __init__.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/arg_utils.py to arg_utils.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/conditions/unless_node_running.py to unless_node_running.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/conditions/__init__.py to __init__.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/conditions/if_node_running.py to if_node_running.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/calibration_utils.py to calibration_utils.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/composition_utils.py to composition_utils.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/param_utils.py to param_utils.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/robot_utils.py to robot_utils.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/substitutions/robot_info_file.py to robot_info_file.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/substitutions/__init__.py to __init__.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/substitutions/concat_substitution.py to concat_substitution.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/substitutions/load_file.py to load_file.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/include_utils.py to include_utils.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/actions/check_public_sim.py to check_public_sim.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/actions/__init__.py to __init__.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/actions/validate_launch_args.py to validate_launch_args.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal/actions/validate_xacro_args.py to validate_xacro_args.cpython-310.pyc
+running install_data
+creating /opt/erc_ws/install/launch_pal/share/ament_index
+creating /opt/erc_ws/install/launch_pal/share/ament_index/resource_index
+creating /opt/erc_ws/install/launch_pal/share/ament_index/resource_index/packages
+copying resource/launch_pal -> /opt/erc_ws/install/launch_pal/share/ament_index/resource_index/packages
+copying package.xml -> /opt/erc_ws/install/launch_pal/share/launch_pal
+creating /opt/erc_ws/install/launch_pal/share/launch_pal/config
+copying config/robot_configuration.yaml -> /opt/erc_ws/install/launch_pal/share/launch_pal/config
+running install_egg_info
+Copying ../../build/launch_pal/launch_pal.egg-info to /opt/erc_ws/install/launch_pal/lib/python3.10/site-packages/launch_pal-0.22.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/opt/erc_ws/build/launch_pal/install.log'

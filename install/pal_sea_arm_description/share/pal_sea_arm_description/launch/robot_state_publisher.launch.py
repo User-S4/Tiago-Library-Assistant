@@ -1,0 +1,1 @@
+/opt/erc_ws/src/pal_sea_arm/pal_sea_arm_description/launch/robot_state_publisher.launch.py

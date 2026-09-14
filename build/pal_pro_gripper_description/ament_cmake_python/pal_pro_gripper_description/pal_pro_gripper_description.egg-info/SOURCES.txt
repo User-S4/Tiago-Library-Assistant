@@ -1,0 +1,7 @@
+setup.py
+pal_pro_gripper_description/__init__.py
+pal_pro_gripper_description/launch_arguments.py
+pal_pro_gripper_description.egg-info/PKG-INFO
+pal_pro_gripper_description.egg-info/SOURCES.txt
+pal_pro_gripper_description.egg-info/dependency_links.txt
+pal_pro_gripper_description.egg-info/top_level.txt

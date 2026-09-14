@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pal-pro-gripper-wrapper
+Version: 1.12.5
+Summary: Grasp controller to close with a determined error on position only    so to skip overheating.
+Home-page: UNKNOWN
+Maintainer: ['MVI']
+Maintainer-email: ['matteo.villani@pal-robotics.com']
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+
+UNKNOWN
+

@@ -1,0 +1,39 @@
+[0.018s] Invoking command in '/opt/erc_ws/build/tiago_pro_head_robot': AMENT_PREFIX_PATH=/opt/erc_ws/install/tiago_pro_head_bringup:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/tiago_pro_head_bringup:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/tiago_pro_head_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/erc_ws/src/tiago_pro_head_robot/tiago_pro_head_robot -DCMAKE_INSTALL_PREFIX=/opt/erc_ws/install/tiago_pro_head_robot
+[0.070s] -- The C compiler identification is GNU 11.4.0
+[0.120s] -- The CXX compiler identification is GNU 11.4.0
+[0.127s] -- Detecting C compiler ABI info
+[0.184s] -- Detecting C compiler ABI info - done
+[0.190s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.191s] -- Detecting C compile features
+[0.191s] -- Detecting C compile features - done
+[0.193s] -- Detecting CXX compiler ABI info
+[0.264s] -- Detecting CXX compiler ABI info - done
+[0.273s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.273s] -- Detecting CXX compile features
+[0.273s] -- Detecting CXX compile features - done
+[0.277s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.419s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.579s] -- Configuring done
+[0.586s] -- Generating done
+[0.588s] -- Build files have been written to: /opt/erc_ws/build/tiago_pro_head_robot
+[0.593s] Invoked command in '/opt/erc_ws/build/tiago_pro_head_robot' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/tiago_pro_head_bringup:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/tiago_pro_head_bringup:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/tiago_pro_head_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/erc_ws/src/tiago_pro_head_robot/tiago_pro_head_robot -DCMAKE_INSTALL_PREFIX=/opt/erc_ws/install/tiago_pro_head_robot
+[0.595s] Invoking command in '/opt/erc_ws/build/tiago_pro_head_robot': AMENT_PREFIX_PATH=/opt/erc_ws/install/tiago_pro_head_bringup:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/tiago_pro_head_bringup:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/tiago_pro_head_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/erc_ws/build/tiago_pro_head_robot -- -j16 -l16
+[0.628s] Invoked command in '/opt/erc_ws/build/tiago_pro_head_robot' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/tiago_pro_head_bringup:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/tiago_pro_head_bringup:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/tiago_pro_head_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/erc_ws/build/tiago_pro_head_robot -- -j16 -l16
+[0.630s] Invoking command in '/opt/erc_ws/build/tiago_pro_head_robot': AMENT_PREFIX_PATH=/opt/erc_ws/install/tiago_pro_head_bringup:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/tiago_pro_head_bringup:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/tiago_pro_head_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/erc_ws/build/tiago_pro_head_robot
+[0.635s] -- Install configuration: ""
+[0.636s] -- Installing: /opt/erc_ws/install/tiago_pro_head_robot/share/ament_index/resource_index/package_run_dependencies/tiago_pro_head_robot
+[0.637s] -- Installing: /opt/erc_ws/install/tiago_pro_head_robot/share/ament_index/resource_index/parent_prefix_path/tiago_pro_head_robot
+[0.637s] -- Installing: /opt/erc_ws/install/tiago_pro_head_robot/share/tiago_pro_head_robot/environment/ament_prefix_path.sh
+[0.638s] -- Installing: /opt/erc_ws/install/tiago_pro_head_robot/share/tiago_pro_head_robot/environment/ament_prefix_path.dsv
+[0.638s] -- Installing: /opt/erc_ws/install/tiago_pro_head_robot/share/tiago_pro_head_robot/environment/path.sh
+[0.638s] -- Installing: /opt/erc_ws/install/tiago_pro_head_robot/share/tiago_pro_head_robot/environment/path.dsv
+[0.638s] -- Installing: /opt/erc_ws/install/tiago_pro_head_robot/share/tiago_pro_head_robot/local_setup.bash
+[0.639s] -- Installing: /opt/erc_ws/install/tiago_pro_head_robot/share/tiago_pro_head_robot/local_setup.sh
+[0.639s] -- Installing: /opt/erc_ws/install/tiago_pro_head_robot/share/tiago_pro_head_robot/local_setup.zsh
+[0.639s] -- Installing: /opt/erc_ws/install/tiago_pro_head_robot/share/tiago_pro_head_robot/local_setup.dsv
+[0.639s] -- Installing: /opt/erc_ws/install/tiago_pro_head_robot/share/tiago_pro_head_robot/package.dsv
+[0.639s] -- Installing: /opt/erc_ws/install/tiago_pro_head_robot/share/ament_index/resource_index/packages/tiago_pro_head_robot
+[0.640s] -- Installing: /opt/erc_ws/install/tiago_pro_head_robot/share/tiago_pro_head_robot/cmake/tiago_pro_head_robotConfig.cmake
+[0.640s] -- Installing: /opt/erc_ws/install/tiago_pro_head_robot/share/tiago_pro_head_robot/cmake/tiago_pro_head_robotConfig-version.cmake
+[0.640s] -- Installing: /opt/erc_ws/install/tiago_pro_head_robot/share/tiago_pro_head_robot/package.xml
+[0.644s] Invoked command in '/opt/erc_ws/build/tiago_pro_head_robot' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/tiago_pro_head_bringup:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/tiago_pro_head_bringup:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/tiago_pro_head_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/erc_ws/build/tiago_pro_head_robot

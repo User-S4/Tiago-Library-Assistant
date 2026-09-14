@@ -1,0 +1,41 @@
+-- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found xacro: 2.1.1 (/opt/ros/humble/share/xacro/cmake)
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /opt/erc_ws/build/pal_gripper_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/gazebo/gazebo.urdf.xacro
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/meshes/gripper_finger_link.stl
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/meshes/gripper_finger_link_collision.stl
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/meshes/gripper_link.stl
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/meshes/gripper_link_collision.stl
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/robots/gripper_test.urdf.xacro
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/robots/upload.launch
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/robots/upload_gripper.launch
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/urdf/gripper.gazebo.xacro
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/urdf/gripper.ros2_control.xacro
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/urdf/gripper.transmission.xacro
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/urdf/gripper.urdf.xacro
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/ros2_control/ros2_control.urdf.xacro
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/ament_index/resource_index/package_run_dependencies/pal_gripper_description
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/ament_index/resource_index/parent_prefix_path/pal_gripper_description
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/environment/ament_prefix_path.sh
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/environment/ament_prefix_path.dsv
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/environment/path.sh
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/environment/path.dsv
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/local_setup.bash
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/local_setup.sh
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/local_setup.zsh
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/local_setup.dsv
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/package.dsv
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/ament_index/resource_index/packages/pal_gripper_description
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/cmake/pal_gripper_descriptionConfig.cmake
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/cmake/pal_gripper_descriptionConfig-version.cmake
+-- Symlinking: /opt/erc_ws/install/pal_gripper_description/share/pal_gripper_description/package.xml

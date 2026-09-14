@@ -1,0 +1,1 @@
+/opt/erc_ws/build/omni_base_robot/ament_cmake_environment_hooks/local_setup.bash

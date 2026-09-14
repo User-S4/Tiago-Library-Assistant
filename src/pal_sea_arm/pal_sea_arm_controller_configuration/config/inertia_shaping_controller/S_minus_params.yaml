@@ -1,0 +1,12 @@
+${ARM_SIDE_PREFIX}_${JOINT_POSITION}_joint_inertia_shaping_controller:
+  ros__parameters:
+    type: pal_local_joint_control/InertiaShapingEffortAnalyticDOBControl
+    joint_name: ${ARM_SIDE_PREFIX}_${JOINT_POSITION}_joint
+    control_params_file:
+      "${PARAMS_PATH}/${ACTUATOR_TYPE}_analytic_params.yaml"
+    velocity_pid: false
+
+    motor_inertia: 0.01
+    motor_torque_constant: -0.06
+    reduction_ratio: 101
+    torque_sensor_offset: 0.0

@@ -1,0 +1,55 @@
+Built target ament_cmake_python_symlink_tiago_pro_head_description
+running egg_info
+writing tiago_pro_head_description.egg-info/PKG-INFO
+writing dependency_links to tiago_pro_head_description.egg-info/dependency_links.txt
+writing top-level names to tiago_pro_head_description.egg-info/top_level.txt
+reading manifest file 'tiago_pro_head_description.egg-info/SOURCES.txt'
+writing manifest file 'tiago_pro_head_description.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_tiago_pro_head_description_egg
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/environment/pythonpath.sh
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/environment/pythonpath.dsv
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/local/lib/python3.10/dist-packages/tiago_pro_head_description-1.12.0-py3.10.egg-info/PKG-INFO
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/local/lib/python3.10/dist-packages/tiago_pro_head_description-1.12.0-py3.10.egg-info/SOURCES.txt
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/local/lib/python3.10/dist-packages/tiago_pro_head_description-1.12.0-py3.10.egg-info/dependency_links.txt
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/local/lib/python3.10/dist-packages/tiago_pro_head_description-1.12.0-py3.10.egg-info/top_level.txt
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/local/lib/python3.10/dist-packages/tiago_pro_head_description/__init__.py
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/local/lib/python3.10/dist-packages/tiago_pro_head_description/launch_arguments.py
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/launch/robot_state_publisher.launch.py
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/launch/show.launch.py
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/robots/tiago_pro_head.urdf.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/mujoco/mj_tags.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/meshes/head_1_link.stl
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/meshes/head_1_link_collision.stl
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/meshes/head_2_link.stl
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/meshes/head_2_link_collision.stl
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/meshes/head_base_link.stl
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/meshes/head_base_link_collision.stl
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/meshes/realsense-d435_cover_link.stl
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/meshes/realsense-d435i_cover_link.stl
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/meshes/realsense-d455_cover_link.stl
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/urdf/head.ros2_control.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/urdf/head.transmission.urdf.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/urdf/head.urdf.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/urdf/head_limits.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/ros2_control/gazebo_controller_manager_cfg.yaml
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/ros2_control/ros2_control.urdf.xacro
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/config/show.rviz
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/config/tiago_pro_head_configuration.yaml
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/ament_index/resource_index/package_run_dependencies/tiago_pro_head_description
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/ament_index/resource_index/parent_prefix_path/tiago_pro_head_description
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/environment/path.sh
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/environment/path.dsv
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/local_setup.bash
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/local_setup.sh
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/local_setup.zsh
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/local_setup.dsv
+-- Symlinking: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/package.dsv
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/ament_index/resource_index/packages/tiago_pro_head_description
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/cmake/tiago_pro_head_descriptionConfig.cmake
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/cmake/tiago_pro_head_descriptionConfig-version.cmake
+-- Up-to-date symlink: /opt/erc_ws/install/tiago_pro_head_description/share/tiago_pro_head_description/package.xml
+Listing '/opt/erc_ws/install/tiago_pro_head_description/local/lib/python3.10/dist-packages/tiago_pro_head_description'...

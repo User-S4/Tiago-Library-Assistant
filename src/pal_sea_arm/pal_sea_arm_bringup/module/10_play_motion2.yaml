@@ -1,0 +1,6 @@
+play_motion2:
+  launch: "pal_sea_arm_bringup arm_standalone_play_motion2.launch.py
+           arm_type:=@arm_type@
+           end_effector:=@end_effector@
+           wrist_model:=@wrist_model@
+           ft_sensor:=@ft_sensor@"

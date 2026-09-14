@@ -1,0 +1,51 @@
+[0.019s] Invoking command in '/opt/erc_ws/build/tiago_pro_head_controller_configuration': AMENT_PREFIX_PATH=/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/erc_ws/src/tiago_pro_head_robot/tiago_pro_head_controller_configuration -DCMAKE_INSTALL_PREFIX=/opt/erc_ws/install/tiago_pro_head_controller_configuration
+[0.077s] -- The C compiler identification is GNU 11.4.0
+[0.119s] -- The CXX compiler identification is GNU 11.4.0
+[0.125s] -- Detecting C compiler ABI info
+[0.181s] -- Detecting C compiler ABI info - done
+[0.186s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.187s] -- Detecting C compile features
+[0.187s] -- Detecting C compile features - done
+[0.189s] -- Detecting CXX compiler ABI info
+[0.255s] -- Detecting CXX compiler ABI info - done
+[0.260s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.261s] -- Detecting CXX compile features
+[0.261s] -- Detecting CXX compile features - done
+[0.264s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.388s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.546s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.575s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.576s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.577s] -- Added test 'lint_cmake' to check CMake code style
+[0.578s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.579s] -- Added test 'xmllint' to check XML markup files
+[0.581s] -- Configuring done
+[0.586s] -- Generating done
+[0.589s] -- Build files have been written to: /opt/erc_ws/build/tiago_pro_head_controller_configuration
+[0.595s] Invoked command in '/opt/erc_ws/build/tiago_pro_head_controller_configuration' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/erc_ws/src/tiago_pro_head_robot/tiago_pro_head_controller_configuration -DCMAKE_INSTALL_PREFIX=/opt/erc_ws/install/tiago_pro_head_controller_configuration
+[0.596s] Invoking command in '/opt/erc_ws/build/tiago_pro_head_controller_configuration': AMENT_PREFIX_PATH=/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/erc_ws/build/tiago_pro_head_controller_configuration -- -j16 -l16
+[0.627s] Invoked command in '/opt/erc_ws/build/tiago_pro_head_controller_configuration' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/erc_ws/build/tiago_pro_head_controller_configuration -- -j16 -l16
+[0.629s] Invoking command in '/opt/erc_ws/build/tiago_pro_head_controller_configuration': AMENT_PREFIX_PATH=/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/erc_ws/build/tiago_pro_head_controller_configuration
+[0.634s] -- Install configuration: ""
+[0.635s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/tiago_pro_head_controller_configuration/launch
+[0.636s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/tiago_pro_head_controller_configuration/launch/head_controller.launch.py
+[0.636s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/tiago_pro_head_controller_configuration/launch/default_controllers.launch.py
+[0.637s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/tiago_pro_head_controller_configuration/config
+[0.637s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/tiago_pro_head_controller_configuration/config/joint_state_broadcaster.yaml
+[0.638s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/tiago_pro_head_controller_configuration/config/head_controller.yaml
+[0.643s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/ament_index/resource_index/package_run_dependencies/tiago_pro_head_controller_configuration
+[0.644s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/ament_index/resource_index/parent_prefix_path/tiago_pro_head_controller_configuration
+[0.644s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/tiago_pro_head_controller_configuration/environment/ament_prefix_path.sh
+[0.644s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/tiago_pro_head_controller_configuration/environment/ament_prefix_path.dsv
+[0.644s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/tiago_pro_head_controller_configuration/environment/path.sh
+[0.644s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/tiago_pro_head_controller_configuration/environment/path.dsv
+[0.644s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/tiago_pro_head_controller_configuration/local_setup.bash
+[0.645s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/tiago_pro_head_controller_configuration/local_setup.sh
+[0.645s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/tiago_pro_head_controller_configuration/local_setup.zsh
+[0.647s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/tiago_pro_head_controller_configuration/local_setup.dsv
+[0.647s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/tiago_pro_head_controller_configuration/package.dsv
+[0.647s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/ament_index/resource_index/packages/tiago_pro_head_controller_configuration
+[0.648s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/tiago_pro_head_controller_configuration/cmake/tiago_pro_head_controller_configurationConfig.cmake
+[0.648s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/tiago_pro_head_controller_configuration/cmake/tiago_pro_head_controller_configurationConfig-version.cmake
+[0.648s] -- Installing: /opt/erc_ws/install/tiago_pro_head_controller_configuration/share/tiago_pro_head_controller_configuration/package.xml
+[0.652s] Invoked command in '/opt/erc_ws/build/tiago_pro_head_controller_configuration' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/erc_ws/build/tiago_pro_head_controller_configuration

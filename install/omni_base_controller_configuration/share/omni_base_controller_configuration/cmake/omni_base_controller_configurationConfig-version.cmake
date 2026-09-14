@@ -1,0 +1,1 @@
+/opt/erc_ws/build/omni_base_controller_configuration/ament_cmake_core/omni_base_controller_configurationConfig-version.cmake

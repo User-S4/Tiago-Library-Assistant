@@ -1,0 +1,24 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/erc_bringup/launch/competition_run.launch.py
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/erc_bringup/launch/simulation.launch.py
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/erc_bringup/config/controller_params.yaml
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/erc_bringup/config/gazebo_controller_manager_cfg.yaml
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/erc_bringup/config/head_camera_bridge.yaml
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/erc_bringup/rviz/competition.rviz
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/lib/erc_bringup/gripper_command_clamp.py
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/ament_index/resource_index/package_run_dependencies/erc_bringup
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/ament_index/resource_index/parent_prefix_path/erc_bringup
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/erc_bringup/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/erc_bringup/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/erc_bringup/environment/path.sh
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/erc_bringup/environment/path.dsv
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/erc_bringup/local_setup.bash
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/erc_bringup/local_setup.sh
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/erc_bringup/local_setup.zsh
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/erc_bringup/local_setup.dsv
+-- Symlinking: /opt/erc_ws/install/erc_bringup/share/erc_bringup/package.dsv
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/ament_index/resource_index/packages/erc_bringup
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/erc_bringup/cmake/erc_bringupConfig.cmake
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/erc_bringup/cmake/erc_bringupConfig-version.cmake
+-- Up-to-date symlink: /opt/erc_ws/install/erc_bringup/share/erc_bringup/package.xml

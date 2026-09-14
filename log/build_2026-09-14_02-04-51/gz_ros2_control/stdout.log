@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target ign_ros2_control-system[0m
+[35m[1mConsolidate compiler generated dependencies of target gz_ros2_control-system[0m
+[35m[1mConsolidate compiler generated dependencies of target gz_hardware_plugins[0m
+[ 16%] [32m[1mLinking CXX shared library libign_ros2_control-system.so[0m
+[ 33%] [32m[1mLinking CXX shared library libgz_ros2_control-system.so[0m
+[ 50%] [32m[1mLinking CXX shared library libgz_hardware_plugins.so[0m
+[ 66%] Built target gz_hardware_plugins
+[100%] Built target ign_ros2_control-system
+[100%] Built target gz_ros2_control-system

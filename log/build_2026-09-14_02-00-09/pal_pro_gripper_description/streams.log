@@ -1,0 +1,95 @@
+[0.018s] Invoking command in '/opt/erc_ws/build/pal_pro_gripper_description': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake /opt/erc_ws/src/pal_pro_gripper/pal_pro_gripper_description -DCMAKE_INSTALL_PREFIX=/opt/erc_ws/install/pal_pro_gripper_description
+[0.058s] -- The C compiler identification is GNU 11.4.0
+[0.096s] -- The CXX compiler identification is GNU 11.4.0
+[0.101s] -- Detecting C compiler ABI info
+[0.152s] -- Detecting C compiler ABI info - done
+[0.157s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.157s] -- Detecting C compile features
+[0.158s] -- Detecting C compile features - done
+[0.161s] -- Detecting CXX compiler ABI info
+[0.248s] -- Detecting CXX compiler ABI info - done
+[0.253s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.253s] -- Detecting CXX compile features
+[0.254s] -- Detecting CXX compile features - done
+[0.256s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.411s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.510s] -- Found xacro: 2.1.1 (/opt/ros/humble/share/xacro/cmake)
+[0.568s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.608s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.611s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.611s] -- Added test 'lint_cmake' to check CMake code style
+[0.612s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.613s] -- Added test 'xmllint' to check XML markup files
+[0.615s] -- Configuring done
+[0.620s] -- Generating done
+[0.622s] -- Build files have been written to: /opt/erc_ws/build/pal_pro_gripper_description
+[0.626s] Invoked command in '/opt/erc_ws/build/pal_pro_gripper_description' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake /opt/erc_ws/src/pal_pro_gripper/pal_pro_gripper_description -DCMAKE_INSTALL_PREFIX=/opt/erc_ws/install/pal_pro_gripper_description
+[0.629s] Invoking command in '/opt/erc_ws/build/pal_pro_gripper_description': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/pal_pro_gripper_description -- -j16 -l16
+[0.675s] Built target ament_cmake_python_copy_pal_pro_gripper_description
+[0.854s] running egg_info
+[0.855s] creating pal_pro_gripper_description.egg-info
+[0.855s] writing pal_pro_gripper_description.egg-info/PKG-INFO
+[0.856s] writing dependency_links to pal_pro_gripper_description.egg-info/dependency_links.txt
+[0.856s] writing top-level names to pal_pro_gripper_description.egg-info/top_level.txt
+[0.856s] writing manifest file 'pal_pro_gripper_description.egg-info/SOURCES.txt'
+[0.859s] reading manifest file 'pal_pro_gripper_description.egg-info/SOURCES.txt'
+[0.860s] writing manifest file 'pal_pro_gripper_description.egg-info/SOURCES.txt'
+[0.901s] Built target ament_cmake_python_build_pal_pro_gripper_description_egg
+[0.914s] Invoked command in '/opt/erc_ws/build/pal_pro_gripper_description' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/pal_pro_gripper_description -- -j16 -l16
+[0.916s] Invoking command in '/opt/erc_ws/build/pal_pro_gripper_description': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/pal_pro_gripper_description
+[0.921s] -- Install configuration: ""
+[0.922s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/environment/pythonpath.sh
+[0.922s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/environment/pythonpath.dsv
+[0.922s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description-1.12.5-py3.10.egg-info
+[0.923s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description-1.12.5-py3.10.egg-info/top_level.txt
+[0.924s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description-1.12.5-py3.10.egg-info/dependency_links.txt
+[0.924s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description-1.12.5-py3.10.egg-info/PKG-INFO
+[0.925s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description-1.12.5-py3.10.egg-info/SOURCES.txt
+[0.925s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description
+[0.925s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description/launch_arguments.py
+[0.925s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description/__init__.py
+[0.958s] Listing '/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description'...
+[0.958s] Compiling '/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description/__init__.py'...
+[0.958s] Compiling '/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages/pal_pro_gripper_description/launch_arguments.py'...
+[0.961s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/config
+[0.961s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/config/show.rviz
+[0.962s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/config/pal_pro_gripper_configuration.yaml
+[0.963s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/robots
+[0.963s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/robots/pal_pro_gripper.urdf.xacro
+[0.963s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/launch
+[0.964s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/launch/show.launch.py
+[0.964s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/launch/robot_state_publisher.launch.py
+[0.965s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/mujoco
+[0.965s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/mujoco/mj_tags.xacro
+[0.966s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/meshes
+[0.966s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/meshes/inner_finger.stl
+[0.968s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/meshes/base_link_ntc.stl
+[0.976s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/meshes/outer_finger.stl
+[0.976s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/meshes/fingertip.stl
+[0.979s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/meshes/screw.stl
+[0.980s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/meshes/base_link_tc.stl
+[0.981s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/urdf
+[0.982s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/urdf/gripper.properties.xacro
+[0.982s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/urdf/gripper.urdf.xacro
+[0.983s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/urdf/gripper.transmission.xacro
+[0.983s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/urdf/gripper.ros2_control.xacro
+[0.984s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/ros2_control
+[0.985s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/ros2_control/gazebo_controller_manager_cfg.yaml
+[0.986s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/ros2_control/ros2_control.urdf.xacro
+[0.987s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/ament_index/resource_index/package_run_dependencies/pal_pro_gripper_description
+[0.988s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/ament_index/resource_index/parent_prefix_path/pal_pro_gripper_description
+[0.992s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/environment/ament_prefix_path.sh
+[0.992s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/environment/ament_prefix_path.dsv
+[0.993s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/environment/path.sh
+[0.993s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/environment/path.dsv
+[0.993s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/local_setup.bash
+[0.994s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/local_setup.sh
+[0.995s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/local_setup.zsh
+[0.995s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/local_setup.dsv
+[0.996s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/package.dsv
+[0.996s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/ament_index/resource_index/packages/pal_pro_gripper_description
+[0.996s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.996s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/cmake/pal_pro_gripper_descriptionConfig.cmake
+[0.996s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/cmake/pal_pro_gripper_descriptionConfig-version.cmake
+[0.997s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/package.xml
+[1.021s] Invoked command in '/opt/erc_ws/build/pal_pro_gripper_description' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_urdf_utils:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/pal_pro_gripper_description

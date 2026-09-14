@@ -1,0 +1,1 @@
+/opt/erc_ws/build/omni_base_description/ament_cmake_python/omni_base_description/omni_base_description.egg-info/dependency_links.txt

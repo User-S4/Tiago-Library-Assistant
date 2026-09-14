@@ -1,0 +1,7 @@
+# generated from colcon_core/shell/template/command_prefix.sh.em
+. "/opt/erc_ws/install/launch_pal/share/launch_pal/package.sh"
+. "/opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/package.sh"
+. "/opt/erc_ws/install/pal_pro_gripper_wrapper/share/pal_pro_gripper_wrapper/package.sh"
+. "/opt/erc_ws/install/pal_pro_gripper_controller_configuration/share/pal_pro_gripper_controller_configuration/package.sh"
+. "/opt/erc_ws/install/tiago_pro_head_controller_configuration/share/tiago_pro_head_controller_configuration/package.sh"
+. "/opt/erc_ws/install/pal_sea_arm_controller_configuration/share/pal_sea_arm_controller_configuration/package.sh"

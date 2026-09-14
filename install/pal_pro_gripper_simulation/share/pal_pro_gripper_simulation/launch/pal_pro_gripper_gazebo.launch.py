@@ -1,0 +1,1 @@
+/opt/erc_ws/src/pal_pro_gripper/pal_pro_gripper_simulation/launch/pal_pro_gripper_gazebo.launch.py

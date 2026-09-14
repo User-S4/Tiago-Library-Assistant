@@ -1,0 +1,111 @@
+[0.023s] Invoking command in '/opt/erc_ws/build/tiago_pro_description': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_description:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/omni_base_description:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_description:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/omni_base_description:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_sea_arm_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/tiago_pro_head_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/omni_base_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/erc_ws/src/tiago_pro_robot/tiago_pro_description -DCMAKE_INSTALL_PREFIX=/opt/erc_ws/install/tiago_pro_description
+[0.068s] -- The C compiler identification is GNU 11.4.0
+[0.113s] -- The CXX compiler identification is GNU 11.4.0
+[0.119s] -- Detecting C compiler ABI info
+[0.183s] -- Detecting C compiler ABI info - done
+[0.189s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.190s] -- Detecting C compile features
+[0.190s] -- Detecting C compile features - done
+[0.192s] -- Detecting CXX compiler ABI info
+[0.260s] -- Detecting CXX compiler ABI info - done
+[0.265s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.265s] -- Detecting CXX compile features
+[0.265s] -- Detecting CXX compile features - done
+[0.268s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.413s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.566s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.595s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.613s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.621s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.621s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.621s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.621s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.638s] -- Found PythonExtra: .so  
+[0.928s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.931s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.932s] -- Added test 'lint_cmake' to check CMake code style
+[0.932s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.934s] -- Added test 'xmllint' to check XML markup files
+[0.937s] -- Configuring done
+[0.947s] -- Generating done
+[0.950s] -- Build files have been written to: /opt/erc_ws/build/tiago_pro_description
+[0.955s] Invoked command in '/opt/erc_ws/build/tiago_pro_description' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_description:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/omni_base_description:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_description:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/omni_base_description:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_sea_arm_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/tiago_pro_head_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/omni_base_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/erc_ws/src/tiago_pro_robot/tiago_pro_description -DCMAKE_INSTALL_PREFIX=/opt/erc_ws/install/tiago_pro_description
+[0.956s] Invoking command in '/opt/erc_ws/build/tiago_pro_description': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_description:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/omni_base_description:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_description:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/omni_base_description:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_sea_arm_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/tiago_pro_head_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/omni_base_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/erc_ws/build/tiago_pro_description -- -j16 -l16
+[0.995s] Built target ament_cmake_python_copy_tiago_pro_description
+[1.191s] running egg_info
+[1.191s] creating tiago_pro_description.egg-info
+[1.192s] writing tiago_pro_description.egg-info/PKG-INFO
+[1.192s] writing dependency_links to tiago_pro_description.egg-info/dependency_links.txt
+[1.192s] writing top-level names to tiago_pro_description.egg-info/top_level.txt
+[1.192s] writing manifest file 'tiago_pro_description.egg-info/SOURCES.txt'
+[1.194s] reading manifest file 'tiago_pro_description.egg-info/SOURCES.txt'
+[1.194s] writing manifest file 'tiago_pro_description.egg-info/SOURCES.txt'
+[1.220s] Built target ament_cmake_python_build_tiago_pro_description_egg
+[1.228s] Invoked command in '/opt/erc_ws/build/tiago_pro_description' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_description:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/omni_base_description:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_description:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/omni_base_description:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_sea_arm_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/tiago_pro_head_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/omni_base_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/erc_ws/build/tiago_pro_description -- -j16 -l16
+[1.231s] Invoking command in '/opt/erc_ws/build/tiago_pro_description': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_description:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/omni_base_description:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_description:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/omni_base_description:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_sea_arm_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/tiago_pro_head_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/omni_base_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/erc_ws/build/tiago_pro_description
+[1.236s] -- Install configuration: ""
+[1.237s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/environment/pythonpath.sh
+[1.238s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/environment/pythonpath.dsv
+[1.239s] -- Installing: /opt/erc_ws/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description-2.5.0-py3.10.egg-info
+[1.239s] -- Installing: /opt/erc_ws/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description-2.5.0-py3.10.egg-info/top_level.txt
+[1.239s] -- Installing: /opt/erc_ws/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description-2.5.0-py3.10.egg-info/dependency_links.txt
+[1.242s] -- Installing: /opt/erc_ws/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description-2.5.0-py3.10.egg-info/PKG-INFO
+[1.242s] -- Installing: /opt/erc_ws/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description-2.5.0-py3.10.egg-info/SOURCES.txt
+[1.242s] -- Installing: /opt/erc_ws/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description
+[1.242s] -- Installing: /opt/erc_ws/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description/launch_arguments.py
+[1.242s] -- Installing: /opt/erc_ws/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description/__init__.py
+[1.242s] -- Installing: /opt/erc_ws/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description/tiago_pro_launch_utils.py
+[1.271s] Listing '/opt/erc_ws/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description'...
+[1.271s] Compiling '/opt/erc_ws/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description/__init__.py'...
+[1.271s] Compiling '/opt/erc_ws/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description/launch_arguments.py'...
+[1.271s] Compiling '/opt/erc_ws/install/tiago_pro_description/local/lib/python3.10/dist-packages/tiago_pro_description/tiago_pro_launch_utils.py'...
+[1.275s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/config
+[1.276s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/config/tiago_pro_configuration.yaml
+[1.276s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/config/show_front.rviz
+[1.276s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/config/show.rviz
+[1.277s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/launch
+[1.277s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/launch/show.launch.py
+[1.277s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/launch/robot_state_publisher.launch.py
+[1.277s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/robots
+[1.277s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/robots/tiago_pro.urdf.xacro
+[1.278s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/meshes
+[1.278s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/meshes/torso
+[1.279s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/meshes/torso/torso_lift_link.stl
+[1.285s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/meshes/torso/laptop_tray_collision.stl
+[1.285s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/meshes/torso/torso_fixed.stl
+[1.289s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/meshes/torso/torso_lift_link_collision.stl
+[1.291s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/meshes/torso/torso_fixed_collision.stl
+[1.291s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/meshes/pilot_station
+[1.291s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/meshes/pilot_station/teleop_handle.stl
+[1.315s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/meshes/pilot_station/fixed_sit_station.stl
+[1.369s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/ros2_control
+[1.369s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/ros2_control/gazebo_controller_manager_cfg.yaml
+[1.370s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/ros2_control/ros2_control.urdf.xacro
+[1.370s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/urdf
+[1.370s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/urdf/torso
+[1.371s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/urdf/torso/torso.ros2_control.xacro
+[1.371s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/urdf/torso/torso.transmission.urdf.xacro
+[1.371s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/urdf/torso/torso.urdf.xacro
+[1.371s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/urdf/arm.mounting.xacro
+[1.371s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/urdf/calibration
+[1.371s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/urdf/calibration/calibration_offset.urdf.xacro.j2
+[1.371s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/urdf/calibration/calibration_offset.urdf.xacro
+[1.372s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/urdf/pilot_station
+[1.372s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/urdf/pilot_station/basestation.urdf.xacro
+[1.372s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/urdf/pilot_station/teleop_handle.urdf.xacro
+[1.372s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/ament_index/resource_index/package_run_dependencies/tiago_pro_description
+[1.373s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/ament_index/resource_index/parent_prefix_path/tiago_pro_description
+[1.373s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/environment/ament_prefix_path.sh
+[1.373s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/environment/ament_prefix_path.dsv
+[1.374s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/environment/path.sh
+[1.374s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/environment/path.dsv
+[1.374s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/local_setup.bash
+[1.374s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/local_setup.sh
+[1.375s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/local_setup.zsh
+[1.375s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/local_setup.dsv
+[1.376s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/package.dsv
+[1.376s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/ament_index/resource_index/packages/tiago_pro_description
+[1.377s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/cmake/tiago_pro_descriptionConfig.cmake
+[1.378s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/cmake/tiago_pro_descriptionConfig-version.cmake
+[1.378s] -- Installing: /opt/erc_ws/install/tiago_pro_description/share/tiago_pro_description/package.xml
+[1.380s] Invoked command in '/opt/erc_ws/build/tiago_pro_description' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_description:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/omni_base_description:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_sea_arm_description:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/omni_base_description:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_sea_arm_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/tiago_pro_head_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/omni_base_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/erc_ws/build/tiago_pro_description

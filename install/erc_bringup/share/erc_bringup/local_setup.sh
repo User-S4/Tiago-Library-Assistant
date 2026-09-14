@@ -1,0 +1,1 @@
+/opt/erc_ws/build/erc_bringup/ament_cmake_environment_hooks/local_setup.sh

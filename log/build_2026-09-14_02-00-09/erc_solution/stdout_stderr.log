@@ -1,0 +1,59 @@
+running develop
+Removing /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc-solution.egg-link (link to .)
+running egg_info
+writing ../../build/erc_solution/erc_solution.egg-info/PKG-INFO
+writing dependency_links to ../../build/erc_solution/erc_solution.egg-info/dependency_links.txt
+writing entry points to ../../build/erc_solution/erc_solution.egg-info/entry_points.txt
+writing requirements to ../../build/erc_solution/erc_solution.egg-info/requires.txt
+writing top-level names to ../../build/erc_solution/erc_solution.egg-info/top_level.txt
+reading manifest file '../../build/erc_solution/erc_solution.egg-info/SOURCES.txt'
+writing manifest file '../../build/erc_solution/erc_solution.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /opt/erc_ws/build/erc_solution/build
+creating /opt/erc_ws/build/erc_solution/build/lib
+creating /opt/erc_ws/build/erc_solution/build/lib/erc_solution
+copying erc_solution/book_colour_detector_backup.py -> /opt/erc_ws/build/erc_solution/build/lib/erc_solution
+copying erc_solution/__init__.py -> /opt/erc_ws/build/erc_solution/build/lib/erc_solution
+copying erc_solution/column_navigator_backup.py -> /opt/erc_ws/build/erc_solution/build/lib/erc_solution
+copying erc_solution/column_navigator.py -> /opt/erc_ws/build/erc_solution/build/lib/erc_solution
+copying erc_solution/shelf_column_detector.py -> /opt/erc_ws/build/erc_solution/build/lib/erc_solution
+copying erc_solution/book_colour_detector.py -> /opt/erc_ws/build/erc_solution/build/lib/erc_solution
+copying erc_solution/grasp_controller.py -> /opt/erc_ws/build/erc_solution/build/lib/erc_solution
+creating /opt/erc_ws/build/erc_solution/build/lib/erc_solution/manipulation
+copying erc_solution/manipulation/__init__.py -> /opt/erc_ws/build/erc_solution/build/lib/erc_solution/manipulation
+copying erc_solution/manipulation/grasp_controller.py -> /opt/erc_ws/build/erc_solution/build/lib/erc_solution/manipulation
+running install
+running install_lib
+creating /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution
+copying /opt/erc_ws/build/erc_solution/build/lib/erc_solution/book_colour_detector_backup.py -> /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution
+copying /opt/erc_ws/build/erc_solution/build/lib/erc_solution/shelf_column_detector.py -> /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution
+copying /opt/erc_ws/build/erc_solution/build/lib/erc_solution/__init__.py -> /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution
+copying /opt/erc_ws/build/erc_solution/build/lib/erc_solution/column_navigator.py -> /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution
+copying /opt/erc_ws/build/erc_solution/build/lib/erc_solution/column_navigator_backup.py -> /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution
+creating /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution/manipulation
+copying /opt/erc_ws/build/erc_solution/build/lib/erc_solution/manipulation/__init__.py -> /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution/manipulation
+copying /opt/erc_ws/build/erc_solution/build/lib/erc_solution/manipulation/grasp_controller.py -> /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution/manipulation
+copying /opt/erc_ws/build/erc_solution/build/lib/erc_solution/book_colour_detector.py -> /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution
+copying /opt/erc_ws/build/erc_solution/build/lib/erc_solution/grasp_controller.py -> /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution
+byte-compiling /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution/book_colour_detector_backup.py to book_colour_detector_backup.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution/shelf_column_detector.py to shelf_column_detector.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution/__init__.py to __init__.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution/column_navigator.py to column_navigator.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution/column_navigator_backup.py to column_navigator_backup.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution/manipulation/__init__.py to __init__.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution/manipulation/grasp_controller.py to grasp_controller.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution/book_colour_detector.py to book_colour_detector.cpython-310.pyc
+byte-compiling /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution/grasp_controller.py to grasp_controller.cpython-310.pyc
+running install_data
+copying resource/erc_solution -> /opt/erc_ws/install/erc_solution/share/ament_index/resource_index/packages
+copying package.xml -> /opt/erc_ws/install/erc_solution/share/erc_solution
+copying launch/solution.launch.py -> /opt/erc_ws/install/erc_solution/share/erc_solution/launch
+running install_egg_info
+Copying ../../build/erc_solution/erc_solution.egg-info to /opt/erc_ws/install/erc_solution/lib/python3.10/site-packages/erc_solution-0.0.0-py3.10.egg-info
+running install_scripts
+Installing book_colour_detector script to /opt/erc_ws/install/erc_solution/lib/erc_solution
+Installing column_navigator script to /opt/erc_ws/install/erc_solution/lib/erc_solution
+Installing grasp_controller script to /opt/erc_ws/install/erc_solution/lib/erc_solution
+Installing shelf_column_detector script to /opt/erc_ws/install/erc_solution/lib/erc_solution
+writing list of installed files to '/opt/erc_ws/build/erc_solution/install.log'

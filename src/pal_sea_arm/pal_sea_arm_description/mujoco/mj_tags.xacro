@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="pal_sea_arm">
+  
+    <!-- Actuators -->
+    <xacro:macro name="mj_arm_actuators" params="name arm_type wrist_model joint_reflect">
+
+      <xacro:include filename="$(find pal_sea_arm_description)/urdf/arm/arm_limits/${arm_type}/arm.limits.xacro"/>
+      <xacro:include filename="$(find pal_sea_arm_description)/urdf/arm/arm_limits/${arm_type}/${wrist_model}.limits.xacro"/>
+      <xacro:include filename="$(find pal_sea_arm_description)/urdf/arm/arm_properties/${arm_type}/arm.properties.xacro"/>
+      <xacro:include filename="$(find pal_sea_arm_description)/urdf/arm/arm_properties/${arm_type}/${wrist_model}.properties.xacro"/>
+
+      <xacro:if value="${mj_control == 'motor'}">
+        <motor name="${name}_1_joint_torque" joint="${name}_1_joint" ctrlrange="-46 46" />
+        <motor name="${name}_2_joint_torque" joint="${name}_2_joint" ctrlrange="-46 46" />
+        <motor name="${name}_3_joint_torque" joint="${name}_3_joint" ctrlrange="-46 46" />
+        <motor name="${name}_4_joint_torque" joint="${name}_4_joint" ctrlrange="-46 46" />
+        <motor name="${name}_5_joint_torque" joint="${name}_5_joint" ctrlrange="-46 46" />
+        <motor name="${name}_6_joint_torque" joint="${name}_6_joint" ctrlrange="-46 46" />
+        <motor name="${name}_7_joint_torque" joint="${name}_7_joint" ctrlrange="-46 46" />
+      </xacro:if>
+      <xacro:if value="${mj_control == 'position'}">
+        <position name="${name}_1_joint_position" joint="${name}_1_joint" ctrlrange="${arm_1_joint_lb * deg_to_rad} ${arm_1_joint_ub * deg_to_rad}" kp="1000" kv="50"/>
+        <position name="${name}_2_joint_position" joint="${name}_2_joint" ctrlrange="${arm_2_joint_lb * deg_to_rad} ${arm_2_joint_ub * deg_to_rad}" kp="1000" kv="60"/>
+        <position name="${name}_3_joint_position" joint="${name}_3_joint" ctrlrange="${arm_3_joint_lb * deg_to_rad} ${arm_3_joint_ub * deg_to_rad}" kp="1000" kv="50"/>
+        <position name="${name}_4_joint_position" joint="${name}_4_joint" ctrlrange="${arm_4_joint_lb * deg_to_rad} ${arm_4_joint_ub * deg_to_rad}" kp="500" kv="20"/>
+        <position name="${name}_5_joint_position" joint="${name}_5_joint" ctrlrange="${arm_5_joint_lb * deg_to_rad} ${arm_5_joint_ub * deg_to_rad}" kp="1000" kv="20"/>
+        <position name="${name}_6_joint_position" joint="${name}_6_joint" ctrlrange="${arm_6_joint_lb * deg_to_rad} ${arm_6_joint_ub * deg_to_rad}" kp="1000" kv="20"/>
+        <position name="${name}_7_joint_position" joint="${name}_7_joint" ctrlrange="${arm_7_joint_lb * deg_to_rad} ${arm_7_joint_ub * deg_to_rad}" kp="500" kv="20"/>
+      </xacro:if>
+    </xacro:macro>
+</robot>

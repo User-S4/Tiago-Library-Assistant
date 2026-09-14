@@ -1,0 +1,1 @@
+/opt/erc_ws/build/pal_pro_gripper_controller_configuration/ament_cmake_core/pal_pro_gripper_controller_configurationConfig-version.cmake

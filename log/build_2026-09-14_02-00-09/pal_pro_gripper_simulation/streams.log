@@ -1,0 +1,48 @@
+[0.037s] Invoking command in '/opt/erc_ws/build/pal_pro_gripper_simulation': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/erc_ws/src/pal_pro_gripper/pal_pro_gripper_simulation -DCMAKE_INSTALL_PREFIX=/opt/erc_ws/install/pal_pro_gripper_simulation
+[0.095s] -- The C compiler identification is GNU 11.4.0
+[0.160s] -- The CXX compiler identification is GNU 11.4.0
+[0.168s] -- Detecting C compiler ABI info
+[0.239s] -- Detecting C compiler ABI info - done
+[0.246s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.246s] -- Detecting C compile features
+[0.246s] -- Detecting C compile features - done
+[0.250s] -- Detecting CXX compiler ABI info
+[0.333s] -- Detecting CXX compiler ABI info - done
+[0.341s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.342s] -- Detecting CXX compile features
+[0.342s] -- Detecting CXX compile features - done
+[0.344s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.474s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.618s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.643s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.644s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.644s] -- Added test 'lint_cmake' to check CMake code style
+[0.644s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.644s] -- Added test 'xmllint' to check XML markup files
+[0.647s] -- Configuring done
+[0.649s] -- Generating done
+[0.653s] -- Build files have been written to: /opt/erc_ws/build/pal_pro_gripper_simulation
+[0.663s] Invoked command in '/opt/erc_ws/build/pal_pro_gripper_simulation' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /opt/erc_ws/src/pal_pro_gripper/pal_pro_gripper_simulation -DCMAKE_INSTALL_PREFIX=/opt/erc_ws/install/pal_pro_gripper_simulation
+[0.667s] Invoking command in '/opt/erc_ws/build/pal_pro_gripper_simulation': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/erc_ws/build/pal_pro_gripper_simulation -- -j16 -l16
+[0.705s] Invoked command in '/opt/erc_ws/build/pal_pro_gripper_simulation' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /opt/erc_ws/build/pal_pro_gripper_simulation -- -j16 -l16
+[0.720s] Invoking command in '/opt/erc_ws/build/pal_pro_gripper_simulation': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/erc_ws/build/pal_pro_gripper_simulation
+[0.725s] -- Install configuration: ""
+[0.725s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/launch
+[0.726s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/launch/pal_pro_gripper_gazebo.launch.py
+[0.726s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/launch/robot_spawn.launch.py
+[0.727s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_simulation/share/ament_index/resource_index/package_run_dependencies/pal_pro_gripper_simulation
+[0.727s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_simulation/share/ament_index/resource_index/parent_prefix_path/pal_pro_gripper_simulation
+[0.728s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/environment/ament_prefix_path.sh
+[0.728s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/environment/ament_prefix_path.dsv
+[0.728s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/environment/path.sh
+[0.728s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/environment/path.dsv
+[0.728s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/local_setup.bash
+[0.728s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/local_setup.sh
+[0.729s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/local_setup.zsh
+[0.729s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/local_setup.dsv
+[0.729s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/package.dsv
+[0.729s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_simulation/share/ament_index/resource_index/packages/pal_pro_gripper_simulation
+[0.729s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/cmake/pal_pro_gripper_simulationConfig.cmake
+[0.729s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/cmake/pal_pro_gripper_simulationConfig-version.cmake
+[0.730s] -- Installing: /opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/package.xml
+[0.771s] Invoked command in '/opt/erc_ws/build/pal_pro_gripper_simulation' returned '0': AMENT_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/erc_solution:/opt/ros/humble PYTHONPATH=/opt/erc_ws/install/pal_pro_gripper_description/local/lib/python3.10/dist-packages:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:/opt/erc_ws/install/launch_pal/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /opt/erc_ws/build/pal_pro_gripper_simulation

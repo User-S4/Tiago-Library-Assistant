@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>pal_sea_arm_bringup</name>
+  <version>2.8.4</version>
+  <description>Launch files to upload the robot description and start the controllers</description>
+  <maintainer email="david.terkuile@pal-robotics.com">David ter Kuile</maintainer>
+  <maintainer email="ilenia.perrella@pal-robotics.com">Ilenia Perrella</maintainer>
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+
+  <exec_depend>pal_sea_arm_controller_configuration</exec_depend>
+  <exec_depend>pal_sea_arm_description</exec_depend>
+  <exec_depend>joy</exec_depend>
+  <exec_depend>joy_teleop</exec_depend>
+  <exec_depend>launch_pal</exec_depend>
+  <exec_depend>play_motion2</exec_depend>
+  <exec_depend>play_motion2_msgs</exec_depend>
+  <exec_depend>play_motion2_cli</exec_depend>
+  <exec_depend>joint_trajectory_controller</exec_depend>
+  <exec_depend>joint_state_broadcaster</exec_depend>
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>

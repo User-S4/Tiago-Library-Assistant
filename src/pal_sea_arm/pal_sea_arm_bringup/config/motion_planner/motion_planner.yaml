@@ -1,0 +1,17 @@
+/**:
+  ros__parameters:
+    motion_planner:
+      dt: 0.02
+      motion_deadline_tolerance: 2.0
+      planning_groups: ["arm"]
+      groups:
+        arm:
+          controller_name: arm_controller
+          joints:
+            - arm_1_joint
+            - arm_2_joint
+            - arm_3_joint
+            - arm_4_joint
+            - arm_5_joint
+            - arm_6_joint
+            - arm_7_joint

@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<!--
+
+  Copyright (c) 2024 PAL Robotics S.L. All rights reserved.
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+      http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <!--<xacro:macro name="pal_sea_arm_end_effector_camera" params="name parent type camera_position">
+    Utility to create a tiago end effector camera (right or left).
+
+    Parameters:
+    - name: End effector name. The created links and joints are prepended with 'name_'
+    - parent: Parent link
+    - type: Type of camera to be used. Options are 'realsense-d405' or 'realsense-d435'
+    - camera_position: Position of the camera. Options are 'up' or 'down'.
+  -->
+  <xacro:macro name="pal_sea_arm_end_effector_camera" params="name parent type camera_position">
+
+    <!-- Realsense D405 -->
+    <xacro:if value="${type == 'realsense-d405'}">
+      <link name="${name}_camera_link">
+        <inertial>
+          <origin xyz="-7.7517E-05 -0.00017089 0.003965" rpy="0 0 0"/>
+          <mass
+            value="0.073091" />
+          <inertia
+            ixx="2.656E-05" ixy="-2.4789E-08" ixz="-2.1125E-07"
+            iyy="1.3652E-05" iyz="-2.6011E-09"
+            izz="1.8641E-05" />
+        </inertial>
+        <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+          <geometry>
+            <mesh filename="package://pal_sea_arm_description/meshes/arm_tiago_pro/end_effector_camera_realsense_d405.stl" />
+          </geometry>
+          <material name="">
+            <color rgba="0.75294 0.75294 0.75294 1" />
+          </material>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0" rpy="0 0 0" />
+          <geometry>
+            <mesh filename="package://pal_sea_arm_description/meshes/arm_tiago_pro/end_effector_camera_realsense_d405.stl" />
+          </geometry>
+        </collision>
+      </link>
+    </xacro:if>
+
+    <xacro:if value="${type == 'realsense-d435'}">
+      <link name="${name}_camera_link">
+        <inertial>
+          <origin xyz="-7.7517E-05 -0.00017089 0.003965" rpy="0 0 0"/>
+          <mass
+            value="0.05792613" />
+          <inertia
+            ixx="2.7273E-05" ixy="2.443E-07" ixz="-1.725E-09"
+            iyy="8.09E-06" iyz="-2.777E-09"
+            izz="2.73583E-05" />
+        </inertial>
+        <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+          <geometry>
+            <mesh filename="package://pal_sea_arm_description/meshes/arm_tiago_pro/end_effector_camera_realsense_d435.stl" />
+          </geometry>
+          <material name="">
+            <color rgba="0.75294 0.75294 0.75294 1" />
+          </material>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0" rpy="0 0 0" />
+          <geometry>
+            <mesh filename="package://pal_sea_arm_description/meshes/arm_tiago_pro/end_effector_camera_realsense_d435.stl" />
+          </geometry>
+        </collision>
+      </link>
+    </xacro:if>
+
+    <xacro:if value="${type == 'realsense-d435i'}">
+      <link name="${name}_camera_link">
+        <inertial>
+          <origin xyz="-7.7517E-05 -0.00017089 0.003965" rpy="0 0 0"/>
+          <mass
+            value="0.05792613" />
+          <inertia
+            ixx="2.7273E-05" ixy="2.443E-07" ixz="-1.725E-09"
+            iyy="8.09E-06" iyz="-2.777E-09"
+            izz="2.73583E-05" />
+        </inertial>
+        <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+          <geometry>
+            <mesh filename="package://pal_sea_arm_description/meshes/arm_tiago_pro/end_effector_camera_realsense_d435.stl" />
+          </geometry>
+          <material name="">
+            <color rgba="0.75294 0.75294 0.75294 1" />
+          </material>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0" rpy="0 0 0" />
+          <geometry>
+            <mesh filename="package://pal_sea_arm_description/meshes/arm_tiago_pro/end_effector_camera_realsense_d435.stl" />
+          </geometry>
+        </collision>
+      </link>
+    </xacro:if>
+
+    <joint name="${name}_camera_joint" type="fixed">
+      <xacro:if value="${camera_position == 'up'}">
+        <origin xyz="0.0406 0 -0.003" rpy="3.1416 -1.5708 0" />
+      </xacro:if>
+      <xacro:if value="${camera_position == 'down'}">
+        <origin xyz="-0.0406 0 -0.003" rpy="0 -1.5708 0" />
+      </xacro:if>
+      <parent link="${parent}" />
+      <child link="${name}_camera_link" />
+      <axis xyz="0 0 0" />
+    </joint>    
+
+  </xacro:macro>
+
+</robot>

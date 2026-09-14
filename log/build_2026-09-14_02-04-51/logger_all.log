@@ -1,0 +1,1134 @@
+[0.080s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.080s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x761213a164d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x761213b23730>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x761213b23730>>, mixin_verb=('build',))
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.188s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.189s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[0.189s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.189s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.189s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.189s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.189s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.189s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.189s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/opt/erc_ws'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(erc_images) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(erc_images) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(erc_images) by extension 'ignore_ament_install'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(erc_images) by extensions ['colcon_pkg']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(erc_images) by extension 'colcon_pkg'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(erc_images) by extensions ['colcon_meta']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(erc_images) by extension 'colcon_meta'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(erc_images) by extensions ['ros']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(erc_images) by extension 'ros'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(erc_images) by extensions ['cmake', 'python']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(erc_images) by extension 'cmake'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(erc_images) by extension 'python'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(erc_images) by extensions ['python_setup_py']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(erc_images) by extension 'python_setup_py'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_bringup) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_bringup) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_bringup) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_bringup) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_bringup) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_bringup) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_bringup) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_bringup) by extension 'ros'
+[0.203s] DEBUG:colcon.colcon_core.package_identification:Package 'src/erc_bringup' with type 'ros.ament_cmake' and name 'erc_bringup'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_description) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_description) by extension 'ignore'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_description) by extension 'ignore_ament_install'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_description) by extensions ['colcon_pkg']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_description) by extension 'colcon_pkg'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_description) by extensions ['colcon_meta']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_description) by extension 'colcon_meta'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_description) by extensions ['ros']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_description) by extension 'ros'
+[0.203s] DEBUG:colcon.colcon_core.package_identification:Package 'src/erc_description' with type 'ros.ament_cmake' and name 'erc_description'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_solution) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_solution) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_solution) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_solution) by extensions ['colcon_pkg']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_solution) by extension 'colcon_pkg'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_solution) by extensions ['colcon_meta']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_solution) by extension 'colcon_meta'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_solution) by extensions ['ros']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/erc_solution) by extension 'ros'
+[0.204s] DEBUG:colcon.colcon_core.package_identification:Package 'src/erc_solution' with type 'ros.ament_python' and name 'erc_solution'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extensions ['colcon_pkg']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extension 'colcon_pkg'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extensions ['colcon_meta']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extension 'colcon_meta'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extension 'ros'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extensions ['cmake', 'python']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extension 'cmake'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extension 'python'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extensions ['python_setup_py']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extension 'python_setup_py'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extension 'ignore_ament_install'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extensions ['colcon_pkg']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extension 'colcon_pkg'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extensions ['colcon_meta']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extension 'colcon_meta'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extension 'ros'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extensions ['cmake', 'python']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extension 'cmake'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extension 'python'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extensions ['python_setup_py']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extension 'python_setup_py'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extension 'ignore_ament_install'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extensions ['colcon_pkg']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extension 'colcon_pkg'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extensions ['colcon_meta']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extension 'colcon_meta'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extension 'ros'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extensions ['cmake', 'python']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extension 'cmake'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extension 'python'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extensions ['python_setup_py']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extension 'python_setup_py'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extension 'ros'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extensions ['cmake', 'python']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extension 'cmake'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extension 'python'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extensions ['python_setup_py']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extension 'python_setup_py'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control) by extension 'ros'
+[0.210s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gz_ros2_control/gz_ros2_control' with type 'ros.ament_cmake' and name 'gz_ros2_control'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_pal) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_pal) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_pal) by extension 'ignore_ament_install'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_pal) by extensions ['colcon_pkg']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_pal) by extension 'colcon_pkg'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_pal) by extensions ['colcon_meta']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_pal) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_pal) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch_pal) by extension 'ros'
+[0.211s] DEBUG:colcon.colcon_core.package_identification:Package 'src/launch_pal' with type 'ros.ament_python' and name 'launch_pal'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot) by extensions ['colcon_pkg']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot) by extension 'colcon_pkg'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot) by extensions ['colcon_meta']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot) by extension 'colcon_meta'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot) by extensions ['ros']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot) by extension 'ros'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot) by extensions ['cmake', 'python']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot) by extension 'cmake'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot) by extension 'python'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot) by extensions ['python_setup_py']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot) by extension 'python_setup_py'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_bringup) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_bringup) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_bringup) by extensions ['colcon_pkg']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_bringup) by extension 'colcon_pkg'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_bringup) by extensions ['colcon_meta']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_bringup) by extension 'colcon_meta'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_bringup) by extensions ['ros']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_bringup) by extension 'ros'
+[0.212s] DEBUG:colcon.colcon_core.package_identification:Package 'src/omni_base_robot/omni_base_bringup' with type 'ros.ament_cmake' and name 'omni_base_bringup'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_controller_configuration) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_controller_configuration) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_controller_configuration) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_controller_configuration) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_controller_configuration) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_controller_configuration) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_controller_configuration) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_controller_configuration) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_controller_configuration) by extension 'ros'
+[0.214s] DEBUG:colcon.colcon_core.package_identification:Package 'src/omni_base_robot/omni_base_controller_configuration' with type 'ros.ament_cmake' and name 'omni_base_controller_configuration'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_description) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_description) by extension 'ignore'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_description) by extension 'ignore_ament_install'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_description) by extensions ['colcon_pkg']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_description) by extension 'colcon_pkg'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_description) by extensions ['colcon_meta']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_description) by extension 'colcon_meta'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_description) by extensions ['ros']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_description) by extension 'ros'
+[0.215s] DEBUG:colcon.colcon_core.package_identification:Package 'src/omni_base_robot/omni_base_description' with type 'ros.ament_cmake' and name 'omni_base_description'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_robot) by extension 'ignore'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_robot) by extension 'ignore_ament_install'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_robot) by extensions ['colcon_pkg']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_robot) by extension 'colcon_pkg'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_robot) by extensions ['colcon_meta']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_robot) by extension 'colcon_meta'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_robot) by extensions ['ros']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/omni_base_robot/omni_base_robot) by extension 'ros'
+[0.223s] DEBUG:colcon.colcon_core.package_identification:Package 'src/omni_base_robot/omni_base_robot' with type 'ros.ament_cmake' and name 'omni_base_robot'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper) by extension 'ignore_ament_install'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper) by extensions ['colcon_pkg']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper) by extension 'colcon_pkg'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper) by extensions ['colcon_meta']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper) by extension 'colcon_meta'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper) by extensions ['ros']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper) by extension 'ros'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper) by extensions ['cmake', 'python']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper) by extension 'cmake'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper) by extension 'python'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper) by extensions ['python_setup_py']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper) by extension 'python_setup_py'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper) by extension 'ignore_ament_install'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper) by extensions ['colcon_pkg']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper) by extension 'colcon_pkg'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper) by extensions ['colcon_meta']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper) by extension 'colcon_meta'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper) by extensions ['ros']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper) by extension 'ros'
+[0.224s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pal_gripper/pal_gripper' with type 'ros.ament_cmake' and name 'pal_gripper'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_controller_configuration) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_controller_configuration) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_controller_configuration) by extension 'ignore_ament_install'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_controller_configuration) by extensions ['colcon_pkg']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_controller_configuration) by extension 'colcon_pkg'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_controller_configuration) by extensions ['colcon_meta']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_controller_configuration) by extension 'colcon_meta'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_controller_configuration) by extensions ['ros']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_controller_configuration) by extension 'ros'
+[0.224s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pal_gripper/pal_gripper_controller_configuration' with type 'ros.ament_cmake' and name 'pal_gripper_controller_configuration'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_description) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_description) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_description) by extension 'ignore_ament_install'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_description) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_description) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_description) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_description) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_description) by extensions ['ros']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_description) by extension 'ros'
+[0.225s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pal_gripper/pal_gripper_description' with type 'ros.ament_cmake' and name 'pal_gripper_description'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_simulation) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_simulation) by extension 'ignore_ament_install'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_simulation) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_simulation) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_simulation) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_simulation) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_simulation) by extensions ['ros']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_gripper/pal_gripper_simulation) by extension 'ros'
+[0.225s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pal_gripper/pal_gripper_simulation' with type 'ros.ament_cmake' and name 'pal_gripper_simulation'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper) by extension 'ignore_ament_install'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper) by extensions ['colcon_pkg']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper) by extension 'colcon_pkg'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper) by extensions ['colcon_meta']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper) by extension 'colcon_meta'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper) by extensions ['ros']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper) by extension 'ros'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper) by extensions ['cmake', 'python']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper) by extension 'cmake'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper) by extension 'python'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper) by extensions ['python_setup_py']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper) by extension 'python_setup_py'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper) by extension 'ignore_ament_install'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper) by extensions ['colcon_pkg']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper) by extension 'colcon_pkg'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper) by extensions ['colcon_meta']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper) by extension 'colcon_meta'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper) by extensions ['ros']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper) by extension 'ros'
+[0.226s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pal_pro_gripper/pal_pro_gripper' with type 'ros.ament_cmake' and name 'pal_pro_gripper'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_bringup) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_bringup) by extension 'ignore_ament_install'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_bringup) by extensions ['colcon_pkg']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_bringup) by extension 'colcon_pkg'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_bringup) by extensions ['colcon_meta']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_bringup) by extension 'colcon_meta'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_bringup) by extensions ['ros']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_bringup) by extension 'ros'
+[0.227s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pal_pro_gripper/pal_pro_gripper_bringup' with type 'ros.ament_cmake' and name 'pal_pro_gripper_bringup'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_controller_configuration) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_controller_configuration) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_controller_configuration) by extension 'ignore_ament_install'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_controller_configuration) by extensions ['colcon_pkg']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_controller_configuration) by extension 'colcon_pkg'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_controller_configuration) by extensions ['colcon_meta']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_controller_configuration) by extension 'colcon_meta'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_controller_configuration) by extensions ['ros']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_controller_configuration) by extension 'ros'
+[0.228s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pal_pro_gripper/pal_pro_gripper_controller_configuration' with type 'ros.ament_cmake' and name 'pal_pro_gripper_controller_configuration'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_description) by extensions ['ignore', 'ignore_ament_install']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_description) by extension 'ignore'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_description) by extension 'ignore_ament_install'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_description) by extensions ['colcon_pkg']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_description) by extension 'colcon_pkg'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_description) by extensions ['colcon_meta']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_description) by extension 'colcon_meta'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_description) by extensions ['ros']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_description) by extension 'ros'
+[0.228s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pal_pro_gripper/pal_pro_gripper_description' with type 'ros.ament_cmake' and name 'pal_pro_gripper_description'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_simulation) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_simulation) by extension 'ignore_ament_install'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_simulation) by extensions ['colcon_pkg']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_simulation) by extension 'colcon_pkg'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_simulation) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_simulation) by extension 'colcon_meta'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_simulation) by extensions ['ros']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_simulation) by extension 'ros'
+[0.229s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pal_pro_gripper/pal_pro_gripper_simulation' with type 'ros.ament_cmake' and name 'pal_pro_gripper_simulation'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_wrapper) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_wrapper) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_wrapper) by extension 'ignore_ament_install'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_wrapper) by extensions ['colcon_pkg']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_wrapper) by extension 'colcon_pkg'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_wrapper) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_wrapper) by extension 'colcon_meta'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_wrapper) by extensions ['ros']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_pro_gripper/pal_pro_gripper_wrapper) by extension 'ros'
+[0.230s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pal_pro_gripper/pal_pro_gripper_wrapper' with type 'ros.ament_python' and name 'pal_pro_gripper_wrapper'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm) by extension 'ros'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm) by extensions ['cmake', 'python']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm) by extension 'cmake'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm) by extension 'python'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm) by extensions ['python_setup_py']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm) by extension 'python_setup_py'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm) by extension 'ros'
+[0.231s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pal_sea_arm/pal_sea_arm' with type 'ros.ament_cmake' and name 'pal_sea_arm'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_bringup) by extension 'ignore'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_bringup) by extension 'ignore_ament_install'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_bringup) by extensions ['colcon_pkg']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_bringup) by extension 'colcon_pkg'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_bringup) by extensions ['colcon_meta']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_bringup) by extension 'colcon_meta'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_bringup) by extensions ['ros']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_bringup) by extension 'ros'
+[0.232s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pal_sea_arm/pal_sea_arm_bringup' with type 'ros.ament_cmake' and name 'pal_sea_arm_bringup'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_controller_configuration) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_controller_configuration) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_controller_configuration) by extension 'ignore_ament_install'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_controller_configuration) by extensions ['colcon_pkg']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_controller_configuration) by extension 'colcon_pkg'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_controller_configuration) by extensions ['colcon_meta']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_controller_configuration) by extension 'colcon_meta'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_controller_configuration) by extensions ['ros']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_controller_configuration) by extension 'ros'
+[0.233s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pal_sea_arm/pal_sea_arm_controller_configuration' with type 'ros.ament_cmake' and name 'pal_sea_arm_controller_configuration'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_description) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_description) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_description) by extension 'ignore_ament_install'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_description) by extensions ['colcon_pkg']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_description) by extension 'colcon_pkg'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_description) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_description) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_description) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_sea_arm/pal_sea_arm_description) by extension 'ros'
+[0.235s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pal_sea_arm/pal_sea_arm_description' with type 'ros.ament_cmake' and name 'pal_sea_arm_description'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_urdf_utils) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_urdf_utils) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_urdf_utils) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_urdf_utils) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_urdf_utils) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_urdf_utils) by extensions ['colcon_meta']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_urdf_utils) by extension 'colcon_meta'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_urdf_utils) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/pal_urdf_utils) by extension 'ros'
+[0.236s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pal_urdf_utils' with type 'ros.ament_cmake' and name 'pal_urdf_utils'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors) by extension 'ignore_ament_install'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors) by extensions ['colcon_pkg']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors) by extension 'colcon_pkg'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensors) by extension 'ros'
+[0.236s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sensors' with type 'ros.ament_python' and name 'sensors'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot) by extension 'ignore_ament_install'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot) by extensions ['colcon_pkg']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot) by extension 'colcon_pkg'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot) by extension 'ros'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot) by extensions ['cmake', 'python']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot) by extension 'cmake'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot) by extension 'python'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot) by extensions ['python_setup_py']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot) by extension 'python_setup_py'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_bringup) by extension 'ignore'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_bringup) by extension 'ignore_ament_install'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_bringup) by extensions ['colcon_pkg']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_bringup) by extension 'colcon_pkg'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_bringup) by extensions ['colcon_meta']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_bringup) by extension 'colcon_meta'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_bringup) by extensions ['ros']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_bringup) by extension 'ros'
+[0.237s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tiago_pro_head_robot/tiago_pro_head_bringup' with type 'ros.ament_cmake' and name 'tiago_pro_head_bringup'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_controller_configuration) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_controller_configuration) by extension 'ignore'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_controller_configuration) by extension 'ignore_ament_install'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_controller_configuration) by extensions ['colcon_pkg']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_controller_configuration) by extension 'colcon_pkg'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_controller_configuration) by extensions ['colcon_meta']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_controller_configuration) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_controller_configuration) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_controller_configuration) by extension 'ros'
+[0.238s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tiago_pro_head_robot/tiago_pro_head_controller_configuration' with type 'ros.ament_cmake' and name 'tiago_pro_head_controller_configuration'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_description) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_description) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_description) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_description) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_description) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_description) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_description) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_description) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_description) by extension 'ros'
+[0.239s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tiago_pro_head_robot/tiago_pro_head_description' with type 'ros.ament_cmake' and name 'tiago_pro_head_description'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_robot) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_robot) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_robot) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_robot) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_robot) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_robot) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_robot) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_head_robot/tiago_pro_head_robot) by extension 'ros'
+[0.240s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tiago_pro_head_robot/tiago_pro_head_robot' with type 'ros.ament_cmake' and name 'tiago_pro_head_robot'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot) by extension 'ros'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot) by extensions ['cmake', 'python']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot) by extension 'cmake'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot) by extension 'python'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot) by extensions ['python_setup_py']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot) by extension 'python_setup_py'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_bringup) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_bringup) by extension 'ignore_ament_install'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_bringup) by extensions ['colcon_pkg']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_bringup) by extension 'colcon_pkg'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_bringup) by extensions ['colcon_meta']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_bringup) by extension 'colcon_meta'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_bringup) by extensions ['ros']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_bringup) by extension 'ros'
+[0.242s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tiago_pro_robot/tiago_pro_bringup' with type 'ros.ament_cmake' and name 'tiago_pro_bringup'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_controller_configuration) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_controller_configuration) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_controller_configuration) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_controller_configuration) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_controller_configuration) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_controller_configuration) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_controller_configuration) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_controller_configuration) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_controller_configuration) by extension 'ros'
+[0.243s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tiago_pro_robot/tiago_pro_controller_configuration' with type 'ros.ament_cmake' and name 'tiago_pro_controller_configuration'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_description) by extensions ['ignore', 'ignore_ament_install']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_description) by extension 'ignore'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_description) by extension 'ignore_ament_install'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_description) by extensions ['colcon_pkg']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_description) by extension 'colcon_pkg'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_description) by extensions ['colcon_meta']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_description) by extension 'colcon_meta'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_description) by extensions ['ros']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_description) by extension 'ros'
+[0.244s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tiago_pro_robot/tiago_pro_description' with type 'ros.ament_cmake' and name 'tiago_pro_description'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_robot) by extension 'ignore'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_robot) by extension 'ignore_ament_install'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_robot) by extensions ['colcon_pkg']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_robot) by extension 'colcon_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_robot) by extensions ['colcon_meta']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_robot) by extension 'colcon_meta'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_robot) by extensions ['ros']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/tiago_pro_robot/tiago_pro_robot) by extension 'ros'
+[0.245s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tiago_pro_robot/tiago_pro_robot' with type 'ros.ament_cmake' and name 'tiago_pro_robot'
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'erc_description' build argument 'cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'erc_description' build argument 'cmake_target' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'erc_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'erc_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'erc_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'erc_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'erc_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'erc_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'erc_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.267s] DEBUG:colcon.colcon_core.verb:Building package 'erc_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/erc_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/erc_description', 'merge_install': False, 'path': '/opt/erc_ws/src/erc_description', 'symlink_install': True, 'test_result_base': None}
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'erc_solution' build argument 'cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'erc_solution' build argument 'cmake_target' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'erc_solution' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'erc_solution' build argument 'cmake_clean_cache' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'erc_solution' build argument 'cmake_clean_first' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'erc_solution' build argument 'cmake_force_configure' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'erc_solution' build argument 'ament_cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'erc_solution' build argument 'catkin_cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'erc_solution' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.267s] DEBUG:colcon.colcon_core.verb:Building package 'erc_solution' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/erc_solution', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/erc_solution', 'merge_install': False, 'path': '/opt/erc_ws/src/erc_solution', 'symlink_install': True, 'test_result_base': None}
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control' build argument 'cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control' build argument 'cmake_target' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.267s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.267s] DEBUG:colcon.colcon_core.verb:Building package 'gz_ros2_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/gz_ros2_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/gz_ros2_control', 'merge_install': False, 'path': '/opt/erc_ws/src/gz_ros2_control/gz_ros2_control', 'symlink_install': True, 'test_result_base': None}
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'launch_pal' build argument 'cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'launch_pal' build argument 'cmake_target' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'launch_pal' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'launch_pal' build argument 'cmake_clean_cache' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'launch_pal' build argument 'cmake_clean_first' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'launch_pal' build argument 'cmake_force_configure' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'launch_pal' build argument 'ament_cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'launch_pal' build argument 'catkin_cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'launch_pal' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.268s] DEBUG:colcon.colcon_core.verb:Building package 'launch_pal' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/launch_pal', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/launch_pal', 'merge_install': False, 'path': '/opt/erc_ws/src/launch_pal', 'symlink_install': True, 'test_result_base': None}
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'omni_base_controller_configuration' build argument 'cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'omni_base_controller_configuration' build argument 'cmake_target' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'omni_base_controller_configuration' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'omni_base_controller_configuration' build argument 'cmake_clean_cache' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'omni_base_controller_configuration' build argument 'cmake_clean_first' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'omni_base_controller_configuration' build argument 'cmake_force_configure' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'omni_base_controller_configuration' build argument 'ament_cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'omni_base_controller_configuration' build argument 'catkin_cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'omni_base_controller_configuration' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.268s] DEBUG:colcon.colcon_core.verb:Building package 'omni_base_controller_configuration' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/omni_base_controller_configuration', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/omni_base_controller_configuration', 'merge_install': False, 'path': '/opt/erc_ws/src/omni_base_robot/omni_base_controller_configuration', 'symlink_install': True, 'test_result_base': None}
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_controller_configuration' build argument 'cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_controller_configuration' build argument 'cmake_target' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_controller_configuration' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_controller_configuration' build argument 'cmake_clean_cache' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_controller_configuration' build argument 'cmake_clean_first' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_controller_configuration' build argument 'cmake_force_configure' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_controller_configuration' build argument 'ament_cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_controller_configuration' build argument 'catkin_cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_controller_configuration' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.268s] DEBUG:colcon.colcon_core.verb:Building package 'pal_gripper_controller_configuration' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/pal_gripper_controller_configuration', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/pal_gripper_controller_configuration', 'merge_install': False, 'path': '/opt/erc_ws/src/pal_gripper/pal_gripper_controller_configuration', 'symlink_install': True, 'test_result_base': None}
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_wrapper' build argument 'cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_wrapper' build argument 'cmake_target' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_wrapper' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_wrapper' build argument 'cmake_clean_cache' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_wrapper' build argument 'cmake_clean_first' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_wrapper' build argument 'cmake_force_configure' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_wrapper' build argument 'ament_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_wrapper' build argument 'catkin_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_wrapper' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.269s] DEBUG:colcon.colcon_core.verb:Building package 'pal_pro_gripper_wrapper' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/pal_pro_gripper_wrapper', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/pal_pro_gripper_wrapper', 'merge_install': False, 'path': '/opt/erc_ws/src/pal_pro_gripper/pal_pro_gripper_wrapper', 'symlink_install': True, 'test_result_base': None}
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'pal_urdf_utils' build argument 'cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'pal_urdf_utils' build argument 'cmake_target' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'pal_urdf_utils' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'pal_urdf_utils' build argument 'cmake_clean_cache' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'pal_urdf_utils' build argument 'cmake_clean_first' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'pal_urdf_utils' build argument 'cmake_force_configure' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'pal_urdf_utils' build argument 'ament_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'pal_urdf_utils' build argument 'catkin_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'pal_urdf_utils' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.269s] DEBUG:colcon.colcon_core.verb:Building package 'pal_urdf_utils' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/pal_urdf_utils', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/pal_urdf_utils', 'merge_install': False, 'path': '/opt/erc_ws/src/pal_urdf_utils', 'symlink_install': True, 'test_result_base': None}
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'sensors' build argument 'cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'sensors' build argument 'cmake_target' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'sensors' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'sensors' build argument 'cmake_clean_cache' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'sensors' build argument 'cmake_clean_first' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'sensors' build argument 'cmake_force_configure' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'sensors' build argument 'ament_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'sensors' build argument 'catkin_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'sensors' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.269s] DEBUG:colcon.colcon_core.verb:Building package 'sensors' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/sensors', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/sensors', 'merge_install': False, 'path': '/opt/erc_ws/src/sensors', 'symlink_install': True, 'test_result_base': None}
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'omni_base_description' build argument 'cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'omni_base_description' build argument 'cmake_target' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'omni_base_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'omni_base_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'omni_base_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'omni_base_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'omni_base_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'omni_base_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'omni_base_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.269s] DEBUG:colcon.colcon_core.verb:Building package 'omni_base_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/omni_base_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/omni_base_description', 'merge_install': False, 'path': '/opt/erc_ws/src/omni_base_robot/omni_base_description', 'symlink_install': True, 'test_result_base': None}
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_description' build argument 'cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_description' build argument 'cmake_target' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.270s] DEBUG:colcon.colcon_core.verb:Building package 'pal_gripper_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/pal_gripper_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/pal_gripper_description', 'merge_install': False, 'path': '/opt/erc_ws/src/pal_gripper/pal_gripper_description', 'symlink_install': True, 'test_result_base': None}
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_controller_configuration' build argument 'cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_controller_configuration' build argument 'cmake_target' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_controller_configuration' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_controller_configuration' build argument 'cmake_clean_cache' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_controller_configuration' build argument 'cmake_clean_first' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_controller_configuration' build argument 'cmake_force_configure' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_controller_configuration' build argument 'ament_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_controller_configuration' build argument 'catkin_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_controller_configuration' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.270s] DEBUG:colcon.colcon_core.verb:Building package 'pal_pro_gripper_controller_configuration' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/pal_pro_gripper_controller_configuration', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/pal_pro_gripper_controller_configuration', 'merge_install': False, 'path': '/opt/erc_ws/src/pal_pro_gripper/pal_pro_gripper_controller_configuration', 'symlink_install': True, 'test_result_base': None}
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_description' build argument 'cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_description' build argument 'cmake_target' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.270s] DEBUG:colcon.colcon_core.verb:Building package 'pal_pro_gripper_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/pal_pro_gripper_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/pal_pro_gripper_description', 'merge_install': False, 'path': '/opt/erc_ws/src/pal_pro_gripper/pal_pro_gripper_description', 'symlink_install': True, 'test_result_base': None}
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_controller_configuration' build argument 'cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_controller_configuration' build argument 'cmake_target' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_controller_configuration' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_controller_configuration' build argument 'cmake_clean_cache' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_controller_configuration' build argument 'cmake_clean_first' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_controller_configuration' build argument 'cmake_force_configure' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_controller_configuration' build argument 'ament_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_controller_configuration' build argument 'catkin_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_controller_configuration' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.271s] DEBUG:colcon.colcon_core.verb:Building package 'tiago_pro_head_controller_configuration' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/tiago_pro_head_controller_configuration', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/tiago_pro_head_controller_configuration', 'merge_install': False, 'path': '/opt/erc_ws/src/tiago_pro_head_robot/tiago_pro_head_controller_configuration', 'symlink_install': True, 'test_result_base': None}
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'omni_base_bringup' build argument 'cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'omni_base_bringup' build argument 'cmake_target' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'omni_base_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'omni_base_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'omni_base_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'omni_base_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'omni_base_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'omni_base_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'omni_base_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.271s] DEBUG:colcon.colcon_core.verb:Building package 'omni_base_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/omni_base_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/omni_base_bringup', 'merge_install': False, 'path': '/opt/erc_ws/src/omni_base_robot/omni_base_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper' build argument 'cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper' build argument 'cmake_target' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper' build argument 'cmake_clean_cache' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper' build argument 'cmake_clean_first' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper' build argument 'cmake_force_configure' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper' build argument 'ament_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper' build argument 'catkin_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.271s] DEBUG:colcon.colcon_core.verb:Building package 'pal_gripper' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/pal_gripper', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/pal_gripper', 'merge_install': False, 'path': '/opt/erc_ws/src/pal_gripper/pal_gripper', 'symlink_install': True, 'test_result_base': None}
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_simulation' build argument 'cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_simulation' build argument 'cmake_target' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_simulation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_simulation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_simulation' build argument 'cmake_clean_first' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_simulation' build argument 'cmake_force_configure' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_simulation' build argument 'ament_cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_simulation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_gripper_simulation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.272s] DEBUG:colcon.colcon_core.verb:Building package 'pal_gripper_simulation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/pal_gripper_simulation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/pal_gripper_simulation', 'merge_install': False, 'path': '/opt/erc_ws/src/pal_gripper/pal_gripper_simulation', 'symlink_install': True, 'test_result_base': None}
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper' build argument 'cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper' build argument 'cmake_target' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper' build argument 'cmake_clean_cache' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper' build argument 'cmake_clean_first' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper' build argument 'cmake_force_configure' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper' build argument 'ament_cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper' build argument 'catkin_cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.272s] DEBUG:colcon.colcon_core.verb:Building package 'pal_pro_gripper' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/pal_pro_gripper', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/pal_pro_gripper', 'merge_install': False, 'path': '/opt/erc_ws/src/pal_pro_gripper/pal_pro_gripper', 'symlink_install': True, 'test_result_base': None}
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_bringup' build argument 'cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_bringup' build argument 'cmake_target' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.272s] DEBUG:colcon.colcon_core.verb:Building package 'pal_pro_gripper_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/pal_pro_gripper_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/pal_pro_gripper_bringup', 'merge_install': False, 'path': '/opt/erc_ws/src/pal_pro_gripper/pal_pro_gripper_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_simulation' build argument 'cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_simulation' build argument 'cmake_target' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_simulation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_simulation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_simulation' build argument 'cmake_clean_first' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_simulation' build argument 'cmake_force_configure' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_simulation' build argument 'ament_cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_simulation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'pal_pro_gripper_simulation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.273s] DEBUG:colcon.colcon_core.verb:Building package 'pal_pro_gripper_simulation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/pal_pro_gripper_simulation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/pal_pro_gripper_simulation', 'merge_install': False, 'path': '/opt/erc_ws/src/pal_pro_gripper/pal_pro_gripper_simulation', 'symlink_install': True, 'test_result_base': None}
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_controller_configuration' build argument 'cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_controller_configuration' build argument 'cmake_target' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_controller_configuration' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_controller_configuration' build argument 'cmake_clean_cache' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_controller_configuration' build argument 'cmake_clean_first' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_controller_configuration' build argument 'cmake_force_configure' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_controller_configuration' build argument 'ament_cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_controller_configuration' build argument 'catkin_cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_controller_configuration' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.273s] DEBUG:colcon.colcon_core.verb:Building package 'pal_sea_arm_controller_configuration' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/pal_sea_arm_controller_configuration', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/pal_sea_arm_controller_configuration', 'merge_install': False, 'path': '/opt/erc_ws/src/pal_sea_arm/pal_sea_arm_controller_configuration', 'symlink_install': True, 'test_result_base': None}
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_description' build argument 'cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_description' build argument 'cmake_target' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.273s] DEBUG:colcon.colcon_core.verb:Building package 'tiago_pro_head_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/tiago_pro_head_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/tiago_pro_head_description', 'merge_install': False, 'path': '/opt/erc_ws/src/tiago_pro_head_robot/tiago_pro_head_description', 'symlink_install': True, 'test_result_base': None}
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'omni_base_robot' build argument 'cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'omni_base_robot' build argument 'cmake_target' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'omni_base_robot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'omni_base_robot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'omni_base_robot' build argument 'cmake_clean_first' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'omni_base_robot' build argument 'cmake_force_configure' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'omni_base_robot' build argument 'ament_cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'omni_base_robot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'omni_base_robot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.273s] DEBUG:colcon.colcon_core.verb:Building package 'omni_base_robot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/omni_base_robot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/omni_base_robot', 'merge_install': False, 'path': '/opt/erc_ws/src/omni_base_robot/omni_base_robot', 'symlink_install': True, 'test_result_base': None}
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_description' build argument 'cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_description' build argument 'cmake_target' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.274s] DEBUG:colcon.colcon_core.verb:Building package 'pal_sea_arm_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/pal_sea_arm_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/pal_sea_arm_description', 'merge_install': False, 'path': '/opt/erc_ws/src/pal_sea_arm/pal_sea_arm_description', 'symlink_install': True, 'test_result_base': None}
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_controller_configuration' build argument 'cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_controller_configuration' build argument 'cmake_target' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_controller_configuration' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_controller_configuration' build argument 'cmake_clean_cache' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_controller_configuration' build argument 'cmake_clean_first' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_controller_configuration' build argument 'cmake_force_configure' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_controller_configuration' build argument 'ament_cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_controller_configuration' build argument 'catkin_cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_controller_configuration' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.274s] DEBUG:colcon.colcon_core.verb:Building package 'tiago_pro_controller_configuration' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/tiago_pro_controller_configuration', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/tiago_pro_controller_configuration', 'merge_install': False, 'path': '/opt/erc_ws/src/tiago_pro_robot/tiago_pro_controller_configuration', 'symlink_install': True, 'test_result_base': None}
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_bringup' build argument 'cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_bringup' build argument 'cmake_target' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.274s] DEBUG:colcon.colcon_core.verb:Building package 'tiago_pro_head_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/tiago_pro_head_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/tiago_pro_head_bringup', 'merge_install': False, 'path': '/opt/erc_ws/src/tiago_pro_head_robot/tiago_pro_head_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_bringup' build argument 'cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_bringup' build argument 'cmake_target' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.275s] DEBUG:colcon.colcon_core.verb:Building package 'pal_sea_arm_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/pal_sea_arm_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/pal_sea_arm_bringup', 'merge_install': False, 'path': '/opt/erc_ws/src/pal_sea_arm/pal_sea_arm_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_bringup' build argument 'cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_bringup' build argument 'cmake_target' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.275s] DEBUG:colcon.colcon_core.verb:Building package 'tiago_pro_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/tiago_pro_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/tiago_pro_bringup', 'merge_install': False, 'path': '/opt/erc_ws/src/tiago_pro_robot/tiago_pro_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_description' build argument 'cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_description' build argument 'cmake_target' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.275s] DEBUG:colcon.colcon_core.verb:Building package 'tiago_pro_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/tiago_pro_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/tiago_pro_description', 'merge_install': False, 'path': '/opt/erc_ws/src/tiago_pro_robot/tiago_pro_description', 'symlink_install': True, 'test_result_base': None}
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_robot' build argument 'cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_robot' build argument 'cmake_target' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_robot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_robot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_robot' build argument 'cmake_clean_first' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_robot' build argument 'cmake_force_configure' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_robot' build argument 'ament_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_robot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_head_robot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.276s] DEBUG:colcon.colcon_core.verb:Building package 'tiago_pro_head_robot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/tiago_pro_head_robot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/tiago_pro_head_robot', 'merge_install': False, 'path': '/opt/erc_ws/src/tiago_pro_head_robot/tiago_pro_head_robot', 'symlink_install': True, 'test_result_base': None}
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'erc_bringup' build argument 'cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'erc_bringup' build argument 'cmake_target' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'erc_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'erc_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'erc_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'erc_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'erc_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'erc_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'erc_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.276s] DEBUG:colcon.colcon_core.verb:Building package 'erc_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/erc_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/erc_bringup', 'merge_install': False, 'path': '/opt/erc_ws/src/erc_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm' build argument 'cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm' build argument 'cmake_target' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm' build argument 'cmake_clean_cache' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm' build argument 'cmake_clean_first' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm' build argument 'cmake_force_configure' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm' build argument 'ament_cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm' build argument 'catkin_cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'pal_sea_arm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.276s] DEBUG:colcon.colcon_core.verb:Building package 'pal_sea_arm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/pal_sea_arm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/pal_sea_arm', 'merge_install': False, 'path': '/opt/erc_ws/src/pal_sea_arm/pal_sea_arm', 'symlink_install': True, 'test_result_base': None}
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_robot' build argument 'cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_robot' build argument 'cmake_target' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_robot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_robot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_robot' build argument 'cmake_clean_first' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_robot' build argument 'cmake_force_configure' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_robot' build argument 'ament_cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_robot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'tiago_pro_robot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.276s] DEBUG:colcon.colcon_core.verb:Building package 'tiago_pro_robot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/erc_ws/build/tiago_pro_robot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/erc_ws/install/tiago_pro_robot', 'merge_install': False, 'path': '/opt/erc_ws/src/tiago_pro_robot/tiago_pro_robot', 'symlink_install': True, 'test_result_base': None}
+[0.276s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.277s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.278s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/opt/erc_ws/src/launch_pal' with build type 'ament_python'
+[0.279s] Level 1:colcon.colcon_core.shell:create_environment_hook('launch_pal', 'ament_prefix_path')
+[0.281s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.281s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/launch_pal/share/launch_pal/hook/ament_prefix_path.ps1'
+[0.282s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/erc_ws/install/launch_pal/share/launch_pal/hook/ament_prefix_path.dsv'
+[0.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/launch_pal/share/launch_pal/hook/ament_prefix_path.sh'
+[0.283s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.283s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.287s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/opt/erc_ws/src/pal_urdf_utils' with build type 'ament_cmake'
+[0.288s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/opt/erc_ws/src/pal_urdf_utils'
+[0.288s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.288s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.292s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/opt/erc_ws/src/pal_pro_gripper/pal_pro_gripper_wrapper' with build type 'ament_python'
+[0.292s] Level 1:colcon.colcon_core.shell:create_environment_hook('pal_pro_gripper_wrapper', 'ament_prefix_path')
+[0.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/pal_pro_gripper_wrapper/share/pal_pro_gripper_wrapper/hook/ament_prefix_path.ps1'
+[0.293s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/erc_ws/install/pal_pro_gripper_wrapper/share/pal_pro_gripper_wrapper/hook/ament_prefix_path.dsv'
+[0.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/pal_pro_gripper_wrapper/share/pal_pro_gripper_wrapper/hook/ament_prefix_path.sh'
+[0.294s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.294s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.298s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/opt/erc_ws/src/omni_base_robot/omni_base_controller_configuration' with build type 'ament_cmake'
+[0.298s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/opt/erc_ws/src/omni_base_robot/omni_base_controller_configuration'
+[0.298s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.298s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.302s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/opt/erc_ws/src/pal_gripper/pal_gripper_controller_configuration' with build type 'ament_cmake'
+[0.302s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/opt/erc_ws/src/pal_gripper/pal_gripper_controller_configuration'
+[0.302s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.302s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.306s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/opt/erc_ws/src/erc_description' with build type 'ament_cmake'
+[0.307s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/opt/erc_ws/src/erc_description'
+[0.307s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.307s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.311s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/opt/erc_ws/src/erc_solution' with build type 'ament_python'
+[0.311s] Level 1:colcon.colcon_core.shell:create_environment_hook('erc_solution', 'ament_prefix_path')
+[0.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/erc_solution/share/erc_solution/hook/ament_prefix_path.ps1'
+[0.312s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/erc_ws/install/erc_solution/share/erc_solution/hook/ament_prefix_path.dsv'
+[0.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/erc_solution/share/erc_solution/hook/ament_prefix_path.sh'
+[0.313s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.313s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.317s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/opt/erc_ws/src/gz_ros2_control/gz_ros2_control' with build type 'ament_cmake'
+[0.317s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/opt/erc_ws/src/gz_ros2_control/gz_ros2_control'
+[0.317s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.317s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.321s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/opt/erc_ws/src/sensors' with build type 'ament_python'
+[0.321s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensors', 'ament_prefix_path')
+[0.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/sensors/share/sensors/hook/ament_prefix_path.ps1'
+[0.322s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/erc_ws/install/sensors/share/sensors/hook/ament_prefix_path.dsv'
+[0.322s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/sensors/share/sensors/hook/ament_prefix_path.sh'
+[0.322s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.323s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.487s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/opt/erc_ws/src/launch_pal'
+[0.487s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.487s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.497s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/opt/erc_ws/build/pal_urdf_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/pal_urdf_utils -- -j16 -l16
+[0.654s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/opt/erc_ws/src/pal_pro_gripper/pal_pro_gripper_wrapper'
+[0.654s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.654s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.662s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/opt/erc_ws/build/omni_base_controller_configuration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/omni_base_controller_configuration -- -j16 -l16
+[0.664s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/opt/erc_ws/build/pal_gripper_controller_configuration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/pal_gripper_controller_configuration -- -j16 -l16
+[0.668s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/opt/erc_ws/build/erc_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/erc_description -- -j16 -l16
+[0.826s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/opt/erc_ws/src/erc_solution'
+[0.826s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.826s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.834s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/opt/erc_ws/build/gz_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/gz_ros2_control -- -j16 -l16
+[1.020s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/opt/erc_ws/src/sensors'
+[1.021s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.021s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.029s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/opt/erc_ws/build/pal_urdf_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/pal_urdf_utils -- -j16 -l16
+[1.038s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/opt/erc_ws/build/pal_urdf_utils': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/pal_urdf_utils
+[1.039s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/opt/erc_ws/build/omni_base_controller_configuration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/omni_base_controller_configuration -- -j16 -l16
+[1.040s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/opt/erc_ws/build/omni_base_controller_configuration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/omni_base_controller_configuration
+[1.041s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/opt/erc_ws/build/pal_gripper_controller_configuration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/pal_gripper_controller_configuration -- -j16 -l16
+[1.043s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/opt/erc_ws/build/pal_gripper_controller_configuration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/pal_gripper_controller_configuration
+[1.045s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/opt/erc_ws/build/erc_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/erc_description -- -j16 -l16
+[1.046s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/opt/erc_ws/build/erc_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/erc_description
+[1.117s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pal_gripper_controller_configuration)
+[1.119s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/opt/erc_ws/build/pal_gripper_controller_configuration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/pal_gripper_controller_configuration
+[1.122s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_gripper_controller_configuration' for CMake module files
+[1.123s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_gripper_controller_configuration' for CMake config files
+[1.123s] Level 1:colcon.colcon_core.shell:create_environment_hook('pal_gripper_controller_configuration', 'cmake_prefix_path')
+[1.123s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/hook/cmake_prefix_path.ps1'
+[1.124s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/hook/cmake_prefix_path.dsv'
+[1.124s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/hook/cmake_prefix_path.sh'
+[1.125s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_gripper_controller_configuration/bin'
+[1.125s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_gripper_controller_configuration/lib/pkgconfig/pal_gripper_controller_configuration.pc'
+[1.126s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_gripper_controller_configuration/lib/python3.10/site-packages'
+[1.126s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_gripper_controller_configuration/bin'
+[1.126s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/package.ps1'
+[1.128s] INFO:colcon.colcon_core.shell:Creating package descriptor '/opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/package.dsv'
+[1.128s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/package.sh'
+[1.129s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/package.bash'
+[1.130s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/package.zsh'
+[1.131s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/opt/erc_ws/install/pal_gripper_controller_configuration/share/colcon-core/packages/pal_gripper_controller_configuration)
+[1.131s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pal_gripper_controller_configuration)
+[1.132s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_gripper_controller_configuration' for CMake module files
+[1.132s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_gripper_controller_configuration' for CMake config files
+[1.132s] Level 1:colcon.colcon_core.shell:create_environment_hook('pal_gripper_controller_configuration', 'cmake_prefix_path')
+[1.132s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/hook/cmake_prefix_path.ps1'
+[1.133s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/hook/cmake_prefix_path.dsv'
+[1.133s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/hook/cmake_prefix_path.sh'
+[1.134s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_gripper_controller_configuration/bin'
+[1.134s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_gripper_controller_configuration/lib/pkgconfig/pal_gripper_controller_configuration.pc'
+[1.134s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_gripper_controller_configuration/lib/python3.10/site-packages'
+[1.134s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_gripper_controller_configuration/bin'
+[1.135s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/package.ps1'
+[1.135s] INFO:colcon.colcon_core.shell:Creating package descriptor '/opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/package.dsv'
+[1.136s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/package.sh'
+[1.136s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/package.bash'
+[1.136s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_gripper_controller_configuration/share/pal_gripper_controller_configuration/package.zsh'
+[1.137s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/opt/erc_ws/install/pal_gripper_controller_configuration/share/colcon-core/packages/pal_gripper_controller_configuration)
+[1.137s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(omni_base_controller_configuration)
+[1.137s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/omni_base_controller_configuration' for CMake module files
+[1.139s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/opt/erc_ws/build/omni_base_controller_configuration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/omni_base_controller_configuration
+[1.140s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/omni_base_controller_configuration' for CMake config files
+[1.140s] Level 1:colcon.colcon_core.shell:create_environment_hook('omni_base_controller_configuration', 'cmake_prefix_path')
+[1.140s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/hook/cmake_prefix_path.ps1'
+[1.141s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/hook/cmake_prefix_path.dsv'
+[1.142s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/hook/cmake_prefix_path.sh'
+[1.142s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/omni_base_controller_configuration/bin'
+[1.142s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/omni_base_controller_configuration/lib/pkgconfig/omni_base_controller_configuration.pc'
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/omni_base_controller_configuration/lib/python3.10/site-packages'
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/omni_base_controller_configuration/bin'
+[1.143s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/package.ps1'
+[1.144s] INFO:colcon.colcon_core.shell:Creating package descriptor '/opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/package.dsv'
+[1.145s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/package.sh'
+[1.146s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/package.bash'
+[1.146s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/package.zsh'
+[1.146s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/opt/erc_ws/install/omni_base_controller_configuration/share/colcon-core/packages/omni_base_controller_configuration)
+[1.147s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(omni_base_controller_configuration)
+[1.148s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/omni_base_controller_configuration' for CMake module files
+[1.148s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/omni_base_controller_configuration' for CMake config files
+[1.148s] Level 1:colcon.colcon_core.shell:create_environment_hook('omni_base_controller_configuration', 'cmake_prefix_path')
+[1.149s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/hook/cmake_prefix_path.ps1'
+[1.149s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/hook/cmake_prefix_path.dsv'
+[1.150s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/hook/cmake_prefix_path.sh'
+[1.151s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/omni_base_controller_configuration/bin'
+[1.151s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/omni_base_controller_configuration/lib/pkgconfig/omni_base_controller_configuration.pc'
+[1.152s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/omni_base_controller_configuration/lib/python3.10/site-packages'
+[1.152s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/omni_base_controller_configuration/bin'
+[1.153s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/package.ps1'
+[1.154s] INFO:colcon.colcon_core.shell:Creating package descriptor '/opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/package.dsv'
+[1.154s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/package.sh'
+[1.155s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/package.bash'
+[1.156s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/omni_base_controller_configuration/share/omni_base_controller_configuration/package.zsh'
+[1.156s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/opt/erc_ws/install/omni_base_controller_configuration/share/colcon-core/packages/omni_base_controller_configuration)
+[1.157s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(erc_description)
+[1.157s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/erc_description' for CMake module files
+[1.159s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/opt/erc_ws/build/erc_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/erc_description
+[1.159s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/erc_description' for CMake config files
+[1.161s] Level 1:colcon.colcon_core.shell:create_environment_hook('erc_description', 'cmake_prefix_path')
+[1.161s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/erc_description/share/erc_description/hook/cmake_prefix_path.ps1'
+[1.163s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/erc_ws/install/erc_description/share/erc_description/hook/cmake_prefix_path.dsv'
+[1.164s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/erc_description/share/erc_description/hook/cmake_prefix_path.sh'
+[1.165s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/erc_description/bin'
+[1.165s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/erc_description/lib/pkgconfig/erc_description.pc'
+[1.165s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/erc_description/lib/python3.10/site-packages'
+[1.166s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/erc_description/bin'
+[1.166s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/erc_description/share/erc_description/package.ps1'
+[1.168s] INFO:colcon.colcon_core.shell:Creating package descriptor '/opt/erc_ws/install/erc_description/share/erc_description/package.dsv'
+[1.169s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/erc_description/share/erc_description/package.sh'
+[1.170s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/erc_description/share/erc_description/package.bash'
+[1.171s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/erc_description/share/erc_description/package.zsh'
+[1.171s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/opt/erc_ws/install/erc_description/share/colcon-core/packages/erc_description)
+[1.172s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(erc_description)
+[1.172s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/erc_description' for CMake module files
+[1.173s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/erc_description' for CMake config files
+[1.173s] Level 1:colcon.colcon_core.shell:create_environment_hook('erc_description', 'cmake_prefix_path')
+[1.174s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/erc_description/share/erc_description/hook/cmake_prefix_path.ps1'
+[1.174s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/erc_ws/install/erc_description/share/erc_description/hook/cmake_prefix_path.dsv'
+[1.176s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/erc_description/share/erc_description/hook/cmake_prefix_path.sh'
+[1.178s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/erc_description/bin'
+[1.178s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/erc_description/lib/pkgconfig/erc_description.pc'
+[1.179s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/erc_description/lib/python3.10/site-packages'
+[1.179s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/erc_description/bin'
+[1.180s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/erc_description/share/erc_description/package.ps1'
+[1.181s] INFO:colcon.colcon_core.shell:Creating package descriptor '/opt/erc_ws/install/erc_description/share/erc_description/package.dsv'
+[1.182s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/erc_description/share/erc_description/package.sh'
+[1.183s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/erc_description/share/erc_description/package.bash'
+[1.184s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/erc_description/share/erc_description/package.zsh'
+[1.185s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/opt/erc_ws/install/erc_description/share/colcon-core/packages/erc_description)
+[1.187s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pal_urdf_utils)
+[1.187s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_urdf_utils' for CMake module files
+[1.190s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/opt/erc_ws/build/pal_urdf_utils' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/pal_urdf_utils
+[1.190s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_urdf_utils' for CMake config files
+[1.192s] Level 1:colcon.colcon_core.shell:create_environment_hook('pal_urdf_utils', 'cmake_prefix_path')
+[1.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/hook/cmake_prefix_path.ps1'
+[1.194s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/hook/cmake_prefix_path.dsv'
+[1.195s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/hook/cmake_prefix_path.sh'
+[1.196s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_urdf_utils/bin'
+[1.196s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_urdf_utils/lib/pkgconfig/pal_urdf_utils.pc'
+[1.197s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_urdf_utils/lib/python3.10/site-packages'
+[1.197s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_urdf_utils/bin'
+[1.198s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/package.ps1'
+[1.199s] INFO:colcon.colcon_core.shell:Creating package descriptor '/opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/package.dsv'
+[1.201s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/package.sh'
+[1.202s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/package.bash'
+[1.202s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/package.zsh'
+[1.203s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/opt/erc_ws/install/pal_urdf_utils/share/colcon-core/packages/pal_urdf_utils)
+[1.204s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pal_urdf_utils)
+[1.204s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_urdf_utils' for CMake module files
+[1.205s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_urdf_utils' for CMake config files
+[1.206s] Level 1:colcon.colcon_core.shell:create_environment_hook('pal_urdf_utils', 'cmake_prefix_path')
+[1.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/hook/cmake_prefix_path.ps1'
+[1.207s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/hook/cmake_prefix_path.dsv'
+[1.208s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/hook/cmake_prefix_path.sh'
+[1.208s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_urdf_utils/bin'
+[1.208s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_urdf_utils/lib/pkgconfig/pal_urdf_utils.pc'
+[1.209s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_urdf_utils/lib/python3.10/site-packages'
+[1.209s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_urdf_utils/bin'
+[1.210s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/package.ps1'
+[1.211s] INFO:colcon.colcon_core.shell:Creating package descriptor '/opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/package.dsv'
+[1.211s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/package.sh'
+[1.212s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/package.bash'
+[1.213s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_urdf_utils/share/pal_urdf_utils/package.zsh'
+[1.213s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/opt/erc_ws/install/pal_urdf_utils/share/colcon-core/packages/pal_urdf_utils)
+[1.214s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/opt/erc_ws/src/pal_pro_gripper/pal_pro_gripper_description' with build type 'ament_cmake'
+[1.215s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/opt/erc_ws/src/pal_pro_gripper/pal_pro_gripper_description'
+[1.216s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.216s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.227s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/opt/erc_ws/src/pal_gripper/pal_gripper_description' with build type 'ament_cmake'
+[1.227s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/opt/erc_ws/src/pal_gripper/pal_gripper_description'
+[1.228s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.228s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.247s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/opt/erc_ws/build/pal_pro_gripper_description': CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/tiago_pro_robot:/opt/erc_ws/install/tiago_pro_head_robot:/opt/erc_ws/install/tiago_pro_bringup:/opt/erc_ws/install/tiago_pro_head_bringup:/opt/erc_ws/install/erc_bringup:/opt/erc_ws/install/tiago_pro_description:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/tiago_pro_controller_configuration:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_sea_arm:/opt/erc_ws/install/pal_sea_arm_bringup:/opt/erc_ws/install/pal_sea_arm_description:/opt/erc_ws/install/pal_pro_gripper_simulation:/opt/erc_ws/install/pal_pro_gripper_bringup:/opt/erc_ws/install/pal_pro_gripper:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_gripper_simulation:/opt/erc_ws/install/pal_gripper:/opt/erc_ws/install/pal_gripper_description:/opt/erc_ws/install/omni_base_robot:/opt/erc_ws/install/omni_base_bringup:/opt/erc_ws/install/omni_base_description:/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_gripper_controller_configuration:/opt/erc_ws/install/omni_base_controller_configuration:/opt/erc_ws/install/gz_ros2_control:/opt/erc_ws/install/erc_description:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/pal_pro_gripper_description -- -j16 -l16
+[1.252s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/opt/erc_ws/build/pal_gripper_description': CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/tiago_pro_robot:/opt/erc_ws/install/tiago_pro_head_robot:/opt/erc_ws/install/tiago_pro_bringup:/opt/erc_ws/install/tiago_pro_head_bringup:/opt/erc_ws/install/erc_bringup:/opt/erc_ws/install/tiago_pro_description:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/tiago_pro_controller_configuration:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_sea_arm:/opt/erc_ws/install/pal_sea_arm_bringup:/opt/erc_ws/install/pal_sea_arm_description:/opt/erc_ws/install/pal_pro_gripper_simulation:/opt/erc_ws/install/pal_pro_gripper_bringup:/opt/erc_ws/install/pal_pro_gripper:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_gripper_simulation:/opt/erc_ws/install/pal_gripper:/opt/erc_ws/install/pal_gripper_description:/opt/erc_ws/install/omni_base_robot:/opt/erc_ws/install/omni_base_bringup:/opt/erc_ws/install/omni_base_description:/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_gripper_controller_configuration:/opt/erc_ws/install/omni_base_controller_configuration:/opt/erc_ws/install/gz_ros2_control:/opt/erc_ws/install/erc_description:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/pal_gripper_description -- -j16 -l16
+[0.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/opt/erc_ws/build/pal_gripper_description' returned '0': CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/tiago_pro_robot:/opt/erc_ws/install/tiago_pro_head_robot:/opt/erc_ws/install/tiago_pro_bringup:/opt/erc_ws/install/tiago_pro_head_bringup:/opt/erc_ws/install/erc_bringup:/opt/erc_ws/install/tiago_pro_description:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/tiago_pro_controller_configuration:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_sea_arm:/opt/erc_ws/install/pal_sea_arm_bringup:/opt/erc_ws/install/pal_sea_arm_description:/opt/erc_ws/install/pal_pro_gripper_simulation:/opt/erc_ws/install/pal_pro_gripper_bringup:/opt/erc_ws/install/pal_pro_gripper:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_gripper_simulation:/opt/erc_ws/install/pal_gripper:/opt/erc_ws/install/pal_gripper_description:/opt/erc_ws/install/omni_base_robot:/opt/erc_ws/install/omni_base_bringup:/opt/erc_ws/install/omni_base_description:/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_gripper_controller_configuration:/opt/erc_ws/install/omni_base_controller_configuration:/opt/erc_ws/install/gz_ros2_control:/opt/erc_ws/install/erc_description:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/pal_gripper_description -- -j16 -l16
+[0.408s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/opt/erc_ws/build/pal_gripper_description': CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/tiago_pro_robot:/opt/erc_ws/install/tiago_pro_head_robot:/opt/erc_ws/install/tiago_pro_bringup:/opt/erc_ws/install/tiago_pro_head_bringup:/opt/erc_ws/install/erc_bringup:/opt/erc_ws/install/tiago_pro_description:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/tiago_pro_controller_configuration:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_sea_arm:/opt/erc_ws/install/pal_sea_arm_bringup:/opt/erc_ws/install/pal_sea_arm_description:/opt/erc_ws/install/pal_pro_gripper_simulation:/opt/erc_ws/install/pal_pro_gripper_bringup:/opt/erc_ws/install/pal_pro_gripper:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_gripper_simulation:/opt/erc_ws/install/pal_gripper:/opt/erc_ws/install/pal_gripper_description:/opt/erc_ws/install/omni_base_robot:/opt/erc_ws/install/omni_base_bringup:/opt/erc_ws/install/omni_base_description:/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_gripper_controller_configuration:/opt/erc_ws/install/omni_base_controller_configuration:/opt/erc_ws/install/gz_ros2_control:/opt/erc_ws/install/erc_description:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --install /opt/erc_ws/build/pal_gripper_description
+[0.411s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/opt/erc_ws/build/pal_pro_gripper_description' returned '2': CMAKE_PREFIX_PATH=/opt/erc_ws/install/pal_urdf_utils:/opt/erc_ws/install/tiago_pro_robot:/opt/erc_ws/install/tiago_pro_head_robot:/opt/erc_ws/install/tiago_pro_bringup:/opt/erc_ws/install/tiago_pro_head_bringup:/opt/erc_ws/install/erc_bringup:/opt/erc_ws/install/tiago_pro_description:/opt/erc_ws/install/tiago_pro_head_description:/opt/erc_ws/install/tiago_pro_controller_configuration:/opt/erc_ws/install/tiago_pro_head_controller_configuration:/opt/erc_ws/install/pal_sea_arm:/opt/erc_ws/install/pal_sea_arm_bringup:/opt/erc_ws/install/pal_sea_arm_description:/opt/erc_ws/install/pal_pro_gripper_simulation:/opt/erc_ws/install/pal_pro_gripper_bringup:/opt/erc_ws/install/pal_pro_gripper:/opt/erc_ws/install/pal_pro_gripper_description:/opt/erc_ws/install/pal_gripper_simulation:/opt/erc_ws/install/pal_gripper:/opt/erc_ws/install/pal_gripper_description:/opt/erc_ws/install/omni_base_robot:/opt/erc_ws/install/omni_base_bringup:/opt/erc_ws/install/omni_base_description:/opt/erc_ws/install/pal_sea_arm_controller_configuration:/opt/erc_ws/install/pal_pro_gripper_controller_configuration:/opt/erc_ws/install/pal_gripper_controller_configuration:/opt/erc_ws/install/omni_base_controller_configuration:/opt/erc_ws/install/gz_ros2_control:/opt/erc_ws/install/erc_description:/opt/erc_ws/install/sensors:/opt/erc_ws/install/pal_pro_gripper_wrapper:/opt/erc_ws/install/launch_pal:/opt/erc_ws/install/erc_solution:/opt/ros/humble /usr/bin/cmake --build /opt/erc_ws/build/pal_pro_gripper_description -- -j16 -l16
+[0.412s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pal_pro_gripper_description)
+[0.412s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_pro_gripper_description' for CMake module files
+[0.413s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_pro_gripper_description' for CMake config files
+[0.414s] Level 1:colcon.colcon_core.shell:create_environment_hook('pal_pro_gripper_description', 'cmake_prefix_path')
+[0.414s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/hook/cmake_prefix_path.ps1'
+[0.415s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/hook/cmake_prefix_path.dsv'
+[0.416s] INFO:colcon.colcon_core.shell:Creating environment hook '/opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/hook/cmake_prefix_path.sh'
+[0.417s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_pro_gripper_description/bin'
+[0.417s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_pro_gripper_description/lib/pkgconfig/pal_pro_gripper_description.pc'
+[0.417s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_pro_gripper_description/lib/python3.10/site-packages'
+[0.418s] Level 1:colcon.colcon_core.environment:checking '/opt/erc_ws/install/pal_pro_gripper_description/bin'
+[0.419s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/package.ps1'
+[0.424s] INFO:colcon.colcon_core.shell:Creating package descriptor '/opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/package.dsv'
+[0.431s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/package.sh'
+[0.432s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/package.bash'
+[0.433s] INFO:colcon.colcon_core.shell:Creating package script '/opt/erc_ws/install/pal_pro_gripper_description/share/pal_pro_gripper_description/package.zsh'
+[0.434s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/opt/erc_ws/install/pal_pro_gripper_description/share/colcon-core/packages/pal_pro_gripper_description)
+[-0.322s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[-0.322s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[-0.321s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[-0.321s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[-0.315s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[-0.315s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[-0.315s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[-0.315s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[-0.313s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[-0.313s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[-0.312s] INFO:colcon.colcon_core.shell:Creating prefix script '/opt/erc_ws/install/local_setup.ps1'
+[-0.311s] INFO:colcon.colcon_core.shell:Creating prefix util module '/opt/erc_ws/install/_local_setup_util_ps1.py'
+[-0.310s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/opt/erc_ws/install/setup.ps1'
+[-0.308s] INFO:colcon.colcon_core.shell:Creating prefix script '/opt/erc_ws/install/local_setup.sh'
+[-0.308s] INFO:colcon.colcon_core.shell:Creating prefix util module '/opt/erc_ws/install/_local_setup_util_sh.py'
+[-0.307s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/opt/erc_ws/install/setup.sh'
+[-0.306s] INFO:colcon.colcon_core.shell:Creating prefix script '/opt/erc_ws/install/local_setup.bash'
+[-0.306s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/opt/erc_ws/install/setup.bash'
+[-0.304s] INFO:colcon.colcon_core.shell:Creating prefix script '/opt/erc_ws/install/local_setup.zsh'
+[-0.304s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/opt/erc_ws/install/setup.zsh'

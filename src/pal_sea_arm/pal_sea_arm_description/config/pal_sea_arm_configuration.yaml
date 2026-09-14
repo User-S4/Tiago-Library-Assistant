@@ -1,0 +1,28 @@
+arm_type:
+  description: 'Arm type'
+  choices: ['tiago-sea', 'tiago-sea-dual', 'tiago-pro', 'tiago-pro-s', 'pal-sea-arm-standalone']
+  default_value: 'tiago-pro'
+end_effector:
+  description: 'End effector model'
+  choices: ['custom', 'no-end-effector', 'pal-pro-gripper', 'allegro-hand', 'pen-gripper']
+  default_value: 'pal-pro-gripper'
+ft_sensor:
+  description: 'FT sensor model'
+  choices: ['ati', 'rokubi', 'no-ft-sensor']
+  default_value: 'no-ft-sensor'
+wrist_model:
+  description: "Wrist model"
+  choices: ['straight-wrist', 'spherical-wrist', 'short-wrist']
+  default_value: 'straight-wrist'
+tool_changer:
+  description: 'The arm has a tool changer'
+  choices: ['False', 'True']
+  default_value: 'True'
+torque_estimation:
+  description: 'The arm has torque estimation'
+  choices: ['False', 'True']
+  default_value: 'False'
+limits_v2:
+  description: 'Use limits v2 for the arm joints'
+  choices: ['False', 'True']
+  default_value: 'False'

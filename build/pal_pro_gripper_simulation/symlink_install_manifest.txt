@@ -1,0 +1,17 @@
+/opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/launch/pal_pro_gripper_gazebo.launch.py
+/opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/launch/robot_spawn.launch.py
+/opt/erc_ws/install/pal_pro_gripper_simulation/share/ament_index/resource_index/package_run_dependencies/pal_pro_gripper_simulation
+/opt/erc_ws/install/pal_pro_gripper_simulation/share/ament_index/resource_index/parent_prefix_path/pal_pro_gripper_simulation
+/opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/environment/ament_prefix_path.sh
+/opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/environment/ament_prefix_path.dsv
+/opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/environment/path.sh
+/opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/environment/path.dsv
+/opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/local_setup.bash
+/opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/local_setup.sh
+/opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/local_setup.zsh
+/opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/local_setup.dsv
+/opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/package.dsv
+/opt/erc_ws/install/pal_pro_gripper_simulation/share/ament_index/resource_index/packages/pal_pro_gripper_simulation
+/opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/cmake/pal_pro_gripper_simulationConfig.cmake
+/opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/cmake/pal_pro_gripper_simulationConfig-version.cmake
+/opt/erc_ws/install/pal_pro_gripper_simulation/share/pal_pro_gripper_simulation/package.xml

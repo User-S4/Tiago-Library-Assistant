@@ -1,0 +1,41 @@
+[1.115s] Invoking command in '/opt/erc_ws/src/pal_pro_gripper/pal_pro_gripper_wrapper': PYTHONPATH=/opt/erc_ws/build/pal_pro_gripper_wrapper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/pal_pro_gripper_wrapper build --build-base /opt/erc_ws/build/pal_pro_gripper_wrapper/build install --record /opt/erc_ws/build/pal_pro_gripper_wrapper/install.log --install-scripts $base/lib/pal_pro_gripper_wrapper --single-version-externally-managed install_data
+[1.286s] running egg_info
+[1.287s] creating ../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info
+[1.287s] writing ../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info/PKG-INFO
+[1.288s] writing dependency_links to ../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info/dependency_links.txt
+[1.288s] writing entry points to ../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info/entry_points.txt
+[1.288s] writing requirements to ../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info/requires.txt
+[1.288s] writing top-level names to ../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info/top_level.txt
+[1.288s] writing manifest file '../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info/SOURCES.txt'
+[1.291s] reading manifest file '../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info/SOURCES.txt'
+[1.292s] writing manifest file '../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info/SOURCES.txt'
+[1.292s] running build
+[1.293s] running build_py
+[1.293s] creating /opt/erc_ws/build/pal_pro_gripper_wrapper/build
+[1.293s] creating /opt/erc_ws/build/pal_pro_gripper_wrapper/build/lib
+[1.293s] creating /opt/erc_ws/build/pal_pro_gripper_wrapper/build/lib/pal_pro_gripper_wrapper
+[1.293s] copying pal_pro_gripper_wrapper/__init__.py -> /opt/erc_ws/build/pal_pro_gripper_wrapper/build/lib/pal_pro_gripper_wrapper
+[1.294s] copying pal_pro_gripper_wrapper/gripper_grasper_srv.py -> /opt/erc_ws/build/pal_pro_gripper_wrapper/build/lib/pal_pro_gripper_wrapper
+[1.294s] running install
+[1.295s] running install_lib
+[1.295s] creating /opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages/pal_pro_gripper_wrapper
+[1.295s] copying /opt/erc_ws/build/pal_pro_gripper_wrapper/build/lib/pal_pro_gripper_wrapper/__init__.py -> /opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages/pal_pro_gripper_wrapper
+[1.295s] copying /opt/erc_ws/build/pal_pro_gripper_wrapper/build/lib/pal_pro_gripper_wrapper/gripper_grasper_srv.py -> /opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages/pal_pro_gripper_wrapper
+[1.295s] byte-compiling /opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages/pal_pro_gripper_wrapper/__init__.py to __init__.cpython-310.pyc
+[1.296s] byte-compiling /opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages/pal_pro_gripper_wrapper/gripper_grasper_srv.py to gripper_grasper_srv.cpython-310.pyc
+[1.299s] running install_data
+[1.299s] creating /opt/erc_ws/install/pal_pro_gripper_wrapper/share/ament_index
+[1.300s] creating /opt/erc_ws/install/pal_pro_gripper_wrapper/share/ament_index/resource_index
+[1.300s] creating /opt/erc_ws/install/pal_pro_gripper_wrapper/share/ament_index/resource_index/packages
+[1.300s] copying resource/pal_pro_gripper_wrapper -> /opt/erc_ws/install/pal_pro_gripper_wrapper/share/ament_index/resource_index/packages
+[1.301s] copying package.xml -> /opt/erc_ws/install/pal_pro_gripper_wrapper/share/pal_pro_gripper_wrapper
+[1.301s] creating /opt/erc_ws/install/pal_pro_gripper_wrapper/share/pal_pro_gripper_wrapper/config
+[1.301s] copying config/gripper.yaml -> /opt/erc_ws/install/pal_pro_gripper_wrapper/share/pal_pro_gripper_wrapper/config
+[1.302s] creating /opt/erc_ws/install/pal_pro_gripper_wrapper/share/pal_pro_gripper_wrapper/launch
+[1.302s] copying launch/pal_pro_gripper_wrapper.launch.py -> /opt/erc_ws/install/pal_pro_gripper_wrapper/share/pal_pro_gripper_wrapper/launch
+[1.302s] running install_egg_info
+[1.302s] Copying ../../../build/pal_pro_gripper_wrapper/pal_pro_gripper_wrapper.egg-info to /opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages/pal_pro_gripper_wrapper-1.12.5-py3.10.egg-info
+[1.304s] running install_scripts
+[1.327s] Installing gripper_grasper_srv script to /opt/erc_ws/install/pal_pro_gripper_wrapper/lib/pal_pro_gripper_wrapper
+[1.328s] writing list of installed files to '/opt/erc_ws/build/pal_pro_gripper_wrapper/install.log'
+[1.386s] Invoked command in '/opt/erc_ws/src/pal_pro_gripper/pal_pro_gripper_wrapper' returned '0': PYTHONPATH=/opt/erc_ws/build/pal_pro_gripper_wrapper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/erc_ws/install/pal_pro_gripper_wrapper/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/pal_pro_gripper_wrapper build --build-base /opt/erc_ws/build/pal_pro_gripper_wrapper/build install --record /opt/erc_ws/build/pal_pro_gripper_wrapper/install.log --install-scripts $base/lib/pal_pro_gripper_wrapper --single-version-externally-managed install_data

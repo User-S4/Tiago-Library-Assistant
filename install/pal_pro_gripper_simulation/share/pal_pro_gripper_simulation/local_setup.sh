@@ -1,0 +1,1 @@
+/opt/erc_ws/build/pal_pro_gripper_simulation/ament_cmake_environment_hooks/local_setup.sh
