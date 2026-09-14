@@ -30,6 +30,7 @@ setup(
             'book_colour_detector = erc_solution.book_colour_detector:main',
             'shelf_column_detector = erc_solution.shelf_column_detector:main',
             'column_navigator = erc_solution.column_navigator:main',
+            'grasp_controller = erc_solution.manipulation.grasp_controller:main',
         ],
     },
 )

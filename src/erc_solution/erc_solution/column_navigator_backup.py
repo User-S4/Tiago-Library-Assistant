@@ -87,9 +87,8 @@ class ColumnNavigator(Node):
 
         # --- tolerances -----------------------------------------------------
         self.declare_parameter("centre_tolerance", 0.06)
-        self.declare_parameter("approach_recentre_tolerance", 0.30)
         self.declare_parameter("stop_distance_m", 2.3)
-        self.declare_parameter("slow_down_distance_m", 2.8)
+        self.declare_parameter("slow_down_distance_m", 2.2)
         self.declare_parameter("min_linear_speed", 0.07)
         self.declare_parameter("offset_timeout_sec", 3.0)
         self.declare_parameter("settle_hold_sec", 3.0)
@@ -194,7 +193,7 @@ class ColumnNavigator(Node):
         if not msg.ranges:
             return
         forward = (msg.angle_min + msg.angle_max) / 2.0
-        half = math.radians(10.0)
+        half = math.radians(60.0)
 
         closest = None
         for i, distance in enumerate(msg.ranges):
@@ -379,28 +378,9 @@ class ColumnNavigator(Node):
             scale = (self.depth_distance - stop_at) / span
             speed = max(self.get_parameter("min_linear_speed").value, speed * scale)
 
-        # If the target drifts significantly while we are driving, stop forward
-        # motion and re-centre in place. This prevents the robot from driving past
-        # the shelf while the target walks toward the edge of the camera image.
-        if self.target_visible():
-            recentre = self.get_parameter("approach_recentre_tolerance").value
-            if abs(self.offset) > recentre:
-                self.stop()
-                self.change_state(
-                    CENTRE,
-                    f"target drifted to {self.offset:+.2f}"
-                )
-                return
-
-        # Strong proportional steering while approaching. The previous
-        # 0.25 gain was too weak: the target walked across the image faster
-        # than the base corrected.
-        if self.target_visible():
-            angular = -1.0 * self.offset
-            angular = max(-0.30, min(0.30, angular))
-        else:
-            angular = 0.0
-
+        # Gentle correction only while the plaque is still visible. Small gain so
+        # the path stays near straight rather than arcing round the shelf.
+        angular = -0.25 * self.offset if self.target_visible() else 0.0
         self.publish(speed, angular)
 
     def do_settle(self):
