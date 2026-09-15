@@ -57,7 +57,7 @@ DRAW_BGR = {
     "yellow": (0, 200, 200),
 }
 
-FIRST_BOOK_ROW = 2
+FIRST_BOOK_ROW = 1
 BOOKS_PER_COLUMN = 4
 
 
@@ -90,7 +90,7 @@ class BookRowDetector(Node):
             "/head_front_camera/head_front_camera/depth/camera_info",
         )
 
-        self.declare_parameter("image_dir", "erc_images")
+        self.declare_parameter("image_dir", "/erc_images")
 
         # Blob filters.
         self.declare_parameter("min_area", 8)
@@ -894,14 +894,14 @@ class BookRowDetector(Node):
                 mean_x - centre
             )
 
-        complete = [
-            column
-            for column in columns
-            if len(column) == BOOKS_PER_COLUMN
-        ]
-
+        # Navigation has already centred the requested shelf column.
+        # Stay locked to the column nearest the image centre.
+        #
+        # Do NOT switch to another column merely because that neighbouring
+        # column happens to have all four books visible. At close range the
+        # target column can be partially clipped by the camera FOV.
         return min(
-            complete or columns,
+            columns,
             key=distance,
         )
 
@@ -958,11 +958,12 @@ class BookRowDetector(Node):
                 desired_encoding="bgr8",
             )
 
-        except Exception as exc:  # noqa: BLE001
+        except Exception as exc:
             self.get_logger().warn(
                 f"Could not convert frame: {exc}"
             )
             return
+
 
         width = frame.shape[1]
 
@@ -971,16 +972,23 @@ class BookRowDetector(Node):
             cv2.COLOR_BGR2HSV,
         )
 
+
+        # ------------------------------------------------------------
+        # Detect every coloured book spine visible in the frame.
+        # ------------------------------------------------------------
+
         books = self.find_books(
             hsv,
             width,
         )
 
-        # Keep original depth labels/filter behaviour.
+
         for book in books:
+
             book["depth"] = self.depth_at(
                 *book["box"]
             )
+
 
         books = [
             b
@@ -990,50 +998,170 @@ class BookRowDetector(Node):
             )
         ]
 
+
+        # Keep the old column split only for debug drawing.
+        # It is NO LONGER used to choose the target.
         columns = self.split_into_columns(
             books,
             width,
         )
 
-        chosen = self.choose_column(
-            columns,
-            width,
-        )
 
+        chosen = None
         target_row = None
         target_book = None
         target_point = None
 
-        if chosen:
 
-            ordered = self.assign_rows(
-                chosen
+        # ============================================================
+        # TARGET SELECTION
+        #
+        # Navigation has already centred the requested shelf column.
+        # Therefore the target-colour book belonging to that shelf
+        # column is the target-colour blob nearest image centre.
+        #
+        # This avoids grouping books by X, which is unreliable because
+        # ERC randomises each book horizontally inside its shelf row.
+        # ============================================================
+
+        colour_books = [
+            b
+            for b in books
+            if b["colour"] == self.colour
+        ]
+
+
+        if colour_books:
+
+            image_centre = (
+                width / 2.0
             )
 
-            complete = (
-                len(ordered)
-                == BOOKS_PER_COLUMN
+
+            target_book = min(
+                colour_books,
+                key=lambda b: abs(
+                    b["cx"]
+                    - image_centre
+                )
             )
 
-            if complete:
-                self.frames_full_column += 1
 
-            if (
-                complete
-                or not self.get_parameter(
-                    "require_full_column"
-                ).value
-            ):
+            centre_error = (
+                target_book["cx"]
+                - image_centre
+            )
 
-                for book in ordered:
 
-                    if (
-                        book["colour"]
-                        == self.colour
-                    ):
-                        target_row = book["row"]
-                        target_book = book
-                        break
+            self.get_logger().info(
+                f"CENTER-LOCK {self.colour}: "
+                f"pixel=({target_book['cx']:.1f},"
+                f"{target_book['cy']:.1f}) "
+                f"dx={centre_error:+.1f}px",
+                throttle_duration_sec=2.0,
+            )
+
+
+            # --------------------------------------------------------
+            # Determine which old debug column contains this target.
+            # This affects drawing only.
+            # --------------------------------------------------------
+
+            for column in columns:
+
+                if any(
+                    b is target_book
+                    for b in column
+                ):
+
+                    chosen = column
+                    break
+
+
+            # ========================================================
+            # ROW IDENTIFICATION
+            #
+            # All books lie on four fixed horizontal shelf rows.
+            # Cluster the vertical centres of ALL visible coloured
+            # books into those four row levels.
+            # ========================================================
+
+            if len(books) >= 4:
+
+                y_values = np.array(
+                    [
+                        [float(b["cy"])]
+                        for b in books
+                    ],
+                    dtype=np.float32,
+                )
+
+
+                criteria = (
+                    cv2.TERM_CRITERIA_EPS
+                    + cv2.TERM_CRITERIA_MAX_ITER,
+                    50,
+                    0.1,
+                )
+
+
+                _compactness, _labels, centres = cv2.kmeans(
+                    y_values,
+                    4,
+                    None,
+                    criteria,
+                    10,
+                    cv2.KMEANS_PP_CENTERS,
+                )
+
+
+                row_centres = sorted(
+                    float(c[0])
+                    for c in centres
+                )
+
+
+                nearest_index = min(
+                    range(4),
+                    key=lambda i: abs(
+                        target_book["cy"]
+                        - row_centres[i]
+                    ),
+                )
+
+
+                first_row = int(
+                    self.get_parameter(
+                        "first_book_row"
+                    ).value
+                )
+
+
+                target_row = (
+                    first_row
+                    + nearest_index
+                )
+
+
+                target_book["row"] = (
+                    target_row
+                )
+
+
+                self.get_logger().info(
+                    "ROW LEVELS: "
+                    + ", ".join(
+                        f"{v:.1f}"
+                        for v in row_centres
+                    )
+                    + f" | target row={target_row}",
+                    throttle_duration_sec=2.0,
+                )
+
+
+        # ============================================================
+        # OFFICIAL ROW TOPIC
+        # ============================================================
 
         if target_row is not None:
 
@@ -1047,20 +1175,29 @@ class BookRowDetector(Node):
                 + 1
             )
 
+
             self.row_pub.publish(
                 Int32(
-                    data=int(target_row)
+                    data=int(
+                        target_row
+                    )
                 )
             )
 
-        # ---------------------------------------------------------- 3D target point
+
+        # ============================================================
+        # 3D TARGET POINT
+        # ============================================================
 
         if target_book is not None:
 
-            target_point = self.estimate_target_point(
-                target_book,
-                msg,
+            target_point = (
+                self.estimate_target_point(
+                    target_book,
+                    msg,
+                )
             )
+
 
             if target_point is not None:
 
@@ -1068,36 +1205,48 @@ class BookRowDetector(Node):
                     target_point
                 )
 
+
                 now_ns = (
                     self.get_clock()
                     .now()
                     .nanoseconds
                 )
 
-                # Log at most once per second.
+
                 if (
                     now_ns
                     - self.last_xyz_log_ns
                     > 1_000_000_000
                 ):
 
-                    self.last_xyz_log_ns = now_ns
-
-                    depth_m = target_book.get(
-                        "registered_depth"
+                    self.last_xyz_log_ns = (
+                        now_ns
                     )
+
+
+                    depth_m = (
+                        target_book.get(
+                            "registered_depth"
+                        )
+                    )
+
 
                     self.get_logger().info(
                         f"TARGET {self.colour}: "
-                        f"RGB pixel "
-                        f"({target_book['cx']:.1f}, "
+                        f"row={target_row} | "
+                        f"RGB=({target_book['cx']:.1f},"
                         f"{target_book['cy']:.1f}) | "
-                        f"depth {depth_m:.3f} m | "
-                        f"base XYZ "
+                        f"depth={depth_m:.3f} m | "
+                        f"base XYZ="
                         f"({target_point.point.x:.3f}, "
                         f"{target_point.point.y:.3f}, "
                         f"{target_point.point.z:.3f})"
                     )
+
+
+        # ============================================================
+        # DEBUG / SCORING IMAGE
+        # ============================================================
 
         annotated = self.draw(
             frame,
@@ -1108,6 +1257,7 @@ class BookRowDetector(Node):
             target_point,
         )
 
+
         self.publish_debug(
             annotated,
             self.mask_for(
@@ -1115,6 +1265,7 @@ class BookRowDetector(Node):
                 self.colour,
             ),
         )
+
 
         self.maybe_save(
             annotated,

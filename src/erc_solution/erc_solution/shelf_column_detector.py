@@ -56,7 +56,7 @@ class ShelfColumnDetector(Node):
             "image_topic", "/head_front_camera/head_front_camera/color/image_raw"
         )
         self.declare_parameter("texture_dir", TEXTURE_DIR)
-        self.declare_parameter("image_dir", "erc_images")
+        self.declare_parameter("image_dir", "/erc_images")
 
         # --- digit segmentation -------------------------------------------
         # Plaque digits are near black on a light grey plaque.

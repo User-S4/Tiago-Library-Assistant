@@ -47,12 +47,15 @@ from cv_bridge import CvBridge
 from geometry_msgs.msg import Twist
 from rclpy.node import Node
 from sensor_msgs.msg import Image, LaserScan
-from std_msgs.msg import Float32, String
+from std_msgs.msg import Float32, Int32, String, Bool
 from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 
+CLEAR_START = "CLEAR_START"
+FACE_SHELF = "FACE_SHELF"
 SEARCH = "SEARCH"
 CENTRE = "CENTRE"
 APPROACH = "APPROACH"
+BYPASS_OBSTACLE = "BYPASS_OBSTACLE"
 SETTLE = "SETTLE"
 ARRIVED = "ARRIVED"
 FAILED = "FAILED"
@@ -83,7 +86,38 @@ class ColumnNavigator(Node):
         self.declare_parameter("depth_patch_width_frac", 0.25)
         self.declare_parameter("depth_patch_height_frac", 0.40)
         # Laser is advisory only: an emergency stop, not the primary range.
-        self.declare_parameter("laser_emergency_stop_m", 0.45)
+        self.declare_parameter("laser_emergency_stop_m", 0.18)
+
+        # Table / obstacle bypass.
+        #
+        # The front laser is mounted with a -45 degree yaw,
+        # therefore scan angles are converted to robot-relative
+        # sectors in on_scan().
+        self.declare_parameter("bypass_trigger_m", 0.80)
+        self.declare_parameter("bypass_clear_m", 1.05)
+        self.declare_parameter("bypass_left_min_m", 0.65)
+        self.declare_parameter("bypass_lateral_speed", 0.12)
+        self.declare_parameter("bypass_clear_hold_sec", 1.0)
+        self.declare_parameter("bypass_timeout_sec", 18.0)
+
+        # Startup table clearance.
+        #
+        # Do NOT rotate immediately after spawn. If the table
+        # is close to the base, first use mecanum lateral motion
+        # to create enough room for safe rotation.
+        self.declare_parameter("start_clearance_m", 0.85)
+        self.declare_parameter("start_side_min_m", 0.55)
+        self.declare_parameter("start_lateral_speed", 0.09)
+        self.declare_parameter("start_clear_hold_sec", 0.8)
+        self.declare_parameter("start_clear_timeout_sec", 15.0)
+
+        # Grasp controller folds both arms immediately at startup.
+        # Give the arm trajectories time to finish before ANY
+        # mobile-base translation or rotation.
+        self.declare_parameter(
+            "startup_arm_tuck_delay_sec",
+            0.0
+        )
 
         # --- tolerances -----------------------------------------------------
         self.declare_parameter("centre_tolerance", 0.06)
@@ -110,11 +144,29 @@ class ColumnNavigator(Node):
         self.declare_parameter("control_period_sec", 0.1)
         self.declare_parameter("log_period_sec", 3.0)
 
-        self.state = SEARCH
+        self.state = CLEAR_START
         self.offset = None
         self.last_offset_time = None
+        self.target_confirmed = False
+
+        # Navigator is physically locked until grasp_controller
+        # confirms both arms are folded.
+        self.startup_arms_safe = False
         self.depth_distance = None
         self.laser_min = None
+
+        # Robot-relative LiDAR sectors.
+        self.scan_front = None
+        self.scan_front_right = None
+        self.scan_right = None
+        self.scan_front_left = None
+        self.scan_left = None
+
+        self.bypass_clear_since = None
+        self.bypass_count = 0
+
+        self.start_clear_since = None
+
         self.depth_frames = 0
         self.startup_checked = False
         self.head_target = None
@@ -134,6 +186,21 @@ class ColumnNavigator(Node):
 
         self.create_subscription(
             Float32, self.get_parameter("offset_topic").value, self.on_offset, 10
+        )
+
+        self.create_subscription(
+            Int32,
+            "/erc/shelf_column_identification",
+            self.on_column_confirmed,
+            10
+        )
+
+
+        self.create_subscription(
+            Bool,
+            "/erc/startup_arms_safe",
+            self.on_startup_arms_safe,
+            10
         )
         self.create_subscription(
             Image, self.get_parameter("depth_topic").value, self.on_depth, 1
@@ -156,6 +223,41 @@ class ColumnNavigator(Node):
     def on_offset(self, msg):
         self.offset = float(msg.data)
         self.last_offset_time = self.get_clock().now()
+
+    def on_column_confirmed(self, msg):
+        self.target_confirmed = True
+
+        self.get_logger().info(
+            f"Target shelf column {msg.data} CONFIRMED."
+        )
+
+    def on_startup_arms_safe(self, msg):
+
+        if not bool(msg.data):
+            return
+
+        # Only perform the transition once.
+        if self.startup_arms_safe:
+            return
+
+        self.startup_arms_safe = True
+
+        # IMPORTANT:
+        # CLEAR_START existed while the arms were folding.
+        # Reset its timer NOW so the table-clearance timeout
+        # starts only after the base is actually allowed to move.
+        self.state_entered = (
+            self.get_clock().now()
+        )
+
+        self.start_clear_since = None
+
+        self.get_logger().info(
+            "ARM-SAFE SIGNAL RECEIVED. "
+            "Mobile base unlocked. "
+            "Startup-clearance timer reset."
+        )
+
 
     def on_depth(self, msg):
         """Distance to whatever fills the middle of the view.
@@ -186,28 +288,105 @@ class ColumnNavigator(Node):
         self.depth_distance = value / 1000.0 if value > 100.0 else value
 
     def on_scan(self, msg):
-        """Nearest return anywhere in the forward half of the sweep.
-
-        Advisory only. Used to refuse to keep driving into something very close,
-        not to decide when the shelf has been reached.
         """
+        Build robot-relative LiDAR sectors.
+
+        The physical front laser frame is rotated -45 degrees,
+        therefore robot-forward appears at -45 degrees in the
+        raw LaserScan.
+
+        Robot-relative:
+            0 deg   = forward
+           +90 deg  = left
+           -90 deg  = right
+        """
+
         if not msg.ranges:
             return
-        forward = (msg.angle_min + msg.angle_max) / 2.0
-        half = math.radians(10.0)
 
-        closest = None
-        for i, distance in enumerate(msg.ranges):
-            angle = msg.angle_min + i * msg.angle_increment
-            if abs(angle - forward) > half:
-                continue
-            if not math.isfinite(distance):
-                continue
-            if distance < msg.range_min or distance > msg.range_max:
-                continue
-            if closest is None or distance < closest:
-                closest = distance
-        self.laser_min = closest
+        raw_forward = math.radians(-45.0)
+
+
+        def sector_min(
+            relative_lo_deg,
+            relative_hi_deg
+        ):
+
+            lo = (
+                raw_forward
+                + math.radians(
+                    relative_lo_deg
+                )
+            )
+
+            hi = (
+                raw_forward
+                + math.radians(
+                    relative_hi_deg
+                )
+            )
+
+            values = []
+
+            for i, distance in enumerate(
+                msg.ranges
+            ):
+
+                if not math.isfinite(
+                    distance
+                ):
+                    continue
+
+                if (
+                    distance < msg.range_min
+                    or distance > msg.range_max
+                ):
+                    continue
+
+                angle = (
+                    msg.angle_min
+                    + i * msg.angle_increment
+                )
+
+                if lo <= angle <= hi:
+                    values.append(
+                        float(distance)
+                    )
+
+            if not values:
+                return None
+
+            return min(values)
+
+
+        self.scan_front = sector_min(
+            -18.0,
+            +18.0
+        )
+
+        self.scan_front_right = sector_min(
+            -65.0,
+            -18.0
+        )
+
+        self.scan_right = sector_min(
+            -88.0,
+            -60.0
+        )
+
+        self.scan_front_left = sector_min(
+            +18.0,
+            +65.0
+        )
+
+        self.scan_left = sector_min(
+            +60.0,
+            +100.0
+        )
+
+        # Keep legacy variable for emergency protection.
+        self.laser_min = self.scan_front
+
 
     # --------------------------------------------------------------- helpers
 
@@ -232,11 +411,31 @@ class ColumnNavigator(Node):
         self.state = new_state
         self.state_entered = self.get_clock().now()
 
-    def publish(self, linear_x=0.0, angular_z=0.0):
+    def publish(
+        self,
+        linear_x=0.0,
+        angular_z=0.0,
+        linear_y=0.0
+    ):
         twist = Twist()
-        twist.linear.x = float(linear_x)
-        twist.angular.z = float(angular_z)
-        self.cmd_pub.publish(twist)
+
+        twist.linear.x = float(
+            linear_x
+        )
+
+        # REP-103:
+        # +Y is robot-left.
+        twist.linear.y = float(
+            linear_y
+        )
+
+        twist.angular.z = float(
+            angular_z
+        )
+
+        self.cmd_pub.publish(
+            twist
+        )
 
     def stop(self):
         """Zero velocity. The base holds its last command, so this is not optional."""
@@ -310,7 +509,8 @@ class ColumnNavigator(Node):
             self.request_head_tilt(
                 self.get_parameter("head_tilt_approach_rad").value
             )
-        self.service_head()
+        if self.state not in (ARRIVED, FAILED):
+            self.service_head()
 
         if (self.state not in (ARRIVED, FAILED)
                 and self.seconds_running()
@@ -318,14 +518,120 @@ class ColumnNavigator(Node):
             self.change_state(FAILED, f"timed out after {self.seconds_running():.0f}s")
 
         handler = {
+            CLEAR_START: self.do_clear_start,
+            FACE_SHELF: self.do_face_shelf,
             SEARCH: self.do_search,
             CENTRE: self.do_centre,
             APPROACH: self.do_approach,
+            BYPASS_OBSTACLE: self.do_bypass_obstacle,
             SETTLE: self.do_settle,
             ARRIVED: self.do_arrived,
             FAILED: self.do_failed,
         }[self.state]
         handler()
+
+    def do_clear_start(self):
+        """
+        Startup behaviour:
+
+        1. Keep the mobile base completely stationary while
+           both arms are folding.
+        2. Once both arms are confirmed safe, DO NOT strafe.
+        3. Go directly to FACE_SHELF.
+        4. Shelf searching is done by rotation/scanning only.
+
+        No startup X/Y translation is allowed here.
+        """
+
+        # ----------------------------------------------------
+        # WAIT FOR BOTH ARMS TO BE FOLDED
+        # ----------------------------------------------------
+
+        if not self.startup_arms_safe:
+
+            self.stop()
+
+            if (
+                "WAITING_FOR_ARM_SAFE_SIGNAL"
+                not in self.announced
+            ):
+
+                self.announced.add(
+                    "WAITING_FOR_ARM_SAFE_SIGNAL"
+                )
+
+                self.get_logger().info(
+                    "BASE LOCKED. "
+                    "Waiting for both arms to fold."
+                )
+
+            return
+
+
+        # ----------------------------------------------------
+        # ARMS SAFE:
+        # NO LEFT/RIGHT/FORWARD/BACKWARD STARTUP MOVEMENT.
+        # ----------------------------------------------------
+
+        self.stop()
+
+        if (
+            "NO_STARTUP_STRAFE"
+            not in self.announced
+        ):
+
+            self.announced.add(
+                "NO_STARTUP_STRAFE"
+            )
+
+            self.get_logger().info(
+                "ARMS SAFE. "
+                "No startup translation. "
+                "Beginning in-place shelf scan."
+            )
+
+
+        # Go straight to shelf-facing/search state.
+        self.state = FACE_SHELF
+
+        self.state_entered = (
+            self.get_clock().now()
+        )
+
+        self.start_clear_since = None
+
+        self.get_logger().info(
+            "CLEAR_START -> FACE_SHELF"
+        )
+
+        return
+
+
+    def do_face_shelf(self):
+        """Initial startup: face the target shelf before moving forward."""
+
+        # Absolutely no forward motion during this phase.
+        if not self.target_visible():
+            self.publish(
+                0.0,
+                self.get_parameter(
+                    "search_angular_speed"
+                ).value
+            )
+            return
+
+        # Target shelf column is now visible.
+        self.stop()
+
+        self.get_logger().info(
+            "Target shelf visible. "
+            "Rotating to face it before approach."
+        )
+
+        self.change_state(
+            CENTRE,
+            "target shelf visible"
+        )
 
     def do_search(self):
         """Rotate on the spot until the target column comes into view."""
@@ -342,7 +648,31 @@ class ColumnNavigator(Node):
 
         if abs(self.offset) <= self.get_parameter("centre_tolerance").value:
             self.stop()
-            self.change_state(APPROACH, f"centred at {self.offset:+.2f}")
+
+            if not self.target_confirmed:
+                if "WAIT_COLUMN_CONFIRM" not in self.announced:
+                    self.announced.add(
+                        "WAIT_COLUMN_CONFIRM"
+                    )
+
+                    self.get_logger().info(
+                        "Shelf is centred. "
+                        "Waiting for confirmed column recognition "
+                        "before driving."
+                    )
+
+                return
+
+            self.get_logger().info(
+                "ROBOT FACING TARGET SHELF. "
+                "Column confirmed. Starting approach."
+            )
+
+            self.change_state(
+                APPROACH,
+                f"centred and confirmed at {self.offset:+.2f}"
+            )
+
             return
 
         # Positive offset means the target is right of centre, so turn right,
@@ -352,9 +682,238 @@ class ColumnNavigator(Node):
             speed *= 0.4
         self.publish(0.0, -math.copysign(speed, self.offset))
 
+    def do_bypass_obstacle(self):
+        """
+        Strafe robot-left around the table.
+
+        IMPORTANT:
+        There is ZERO forward velocity in this state.
+
+        We stay in the same orientation while moving sideways
+        until the front-right sector becomes clear.
+        """
+
+        # ----------------------------------------------------
+        # Safety: never strafe into something on our left.
+        # ----------------------------------------------------
+
+        left = (
+            self.scan_left
+            if self.scan_left is not None
+            else float("inf")
+        )
+
+        front_left = (
+            self.scan_front_left
+            if self.scan_front_left is not None
+            else float("inf")
+        )
+
+
+        left_clearance = min(
+            left,
+            front_left
+        )
+
+
+        if (
+            left_clearance
+            < self.get_parameter(
+                "bypass_left_min_m"
+            ).value
+        ):
+
+            self.stop()
+
+            self.change_state(
+                FAILED,
+                f"bypass left blocked at "
+                f"{left_clearance:.2f} m"
+            )
+
+            return
+
+
+        # ----------------------------------------------------
+        # Timeout protection
+        # ----------------------------------------------------
+
+        if (
+            self.seconds_in_state()
+            > self.get_parameter(
+                "bypass_timeout_sec"
+            ).value
+        ):
+
+            self.stop()
+
+            self.change_state(
+                FAILED,
+                "table bypass timed out"
+            )
+
+            return
+
+
+        front_right = (
+            self.scan_front_right
+            if self.scan_front_right is not None
+            else float("inf")
+        )
+
+
+        front = (
+            self.scan_front
+            if self.scan_front is not None
+            else float("inf")
+        )
+
+
+        clear_distance = (
+            self.get_parameter(
+                "bypass_clear_m"
+            ).value
+        )
+
+
+        # ----------------------------------------------------
+        # Table is considered cleared only when:
+        #
+        #   front-right is comfortably open
+        #   AND straight ahead is not dangerously close.
+        # ----------------------------------------------------
+
+        clear_now = (
+            front_right >= clear_distance
+            and front >= 0.75
+        )
+
+
+        if clear_now:
+
+            if self.bypass_clear_since is None:
+
+                self.bypass_clear_since = (
+                    self.get_clock().now()
+                )
+
+
+            clear_age = (
+                self.get_clock().now()
+                - self.bypass_clear_since
+            ).nanoseconds / 1e9
+
+
+            if (
+                clear_age
+                >= self.get_parameter(
+                    "bypass_clear_hold_sec"
+                ).value
+            ):
+
+                self.stop()
+
+                self.bypass_count += 1
+
+                self.bypass_clear_since = None
+
+                self.get_logger().info(
+                    "TABLE CLEARED. "
+                    "Reacquiring target shelf column."
+                )
+
+                # Lateral motion changes the camera alignment,
+                # so do NOT immediately continue forwards.
+                self.change_state(
+                    SEARCH,
+                    "table cleared; reacquire target"
+                )
+
+                return
+
+        else:
+
+            self.bypass_clear_since = None
+
+
+        # ----------------------------------------------------
+        # STRAFE LEFT ONLY.
+        # No forward movement while avoiding the table.
+        # ----------------------------------------------------
+
+        speed = self.get_parameter(
+            "bypass_lateral_speed"
+        ).value
+
+
+        self.publish(
+            0.0,
+            0.0,
+            speed
+        )
+
+
     def do_approach(self):
-        """Drive straight until the depth camera says the shelf is close."""
-        stop_at = self.get_parameter("stop_distance_m").value
+        """Drive toward shelf, bypassing the collection table when necessary."""
+
+        stop_at = self.get_parameter(
+            "stop_distance_m"
+        ).value
+
+
+        # ====================================================
+        # TABLE / SIDE-OBSTACLE DETECTION
+        #
+        # We observed the collection table entering the
+        # robot's FRONT-RIGHT sector while the LEFT side was
+        # open. Detect it early, stop forward motion, then
+        # strafe left.
+        # ====================================================
+
+        trigger = self.get_parameter(
+            "bypass_trigger_m"
+        ).value
+
+
+        front_right = (
+            self.scan_front_right
+            if self.scan_front_right is not None
+            else float("inf")
+        )
+
+
+        left = (
+            self.scan_left
+            if self.scan_left is not None
+            else 0.0
+        )
+
+
+        if (
+            front_right <= trigger
+            and left >= self.get_parameter(
+                "bypass_left_min_m"
+            ).value
+        ):
+
+            self.stop()
+
+            self.bypass_clear_since = None
+
+            self.get_logger().warn(
+                f"OBSTACLE FRONT-RIGHT "
+                f"{front_right:.2f} m, "
+                f"LEFT {left:.2f} m. "
+                f"Starting LEFT lateral bypass."
+            )
+
+            self.change_state(
+                BYPASS_OBSTACLE,
+                "table blocking shelf route"
+            )
+
+            return
+
 
         if self.depth_distance is not None and self.depth_distance <= stop_at:
             self.stop()
@@ -366,7 +925,7 @@ class ColumnNavigator(Node):
         if self.laser_min is not None and self.laser_min <= emergency:
             self.stop()
             self.change_state(
-                SETTLE, f"laser emergency stop at {self.laser_min:.2f} m"
+                FAILED, f"laser emergency stop at {self.laser_min:.2f} m"
             )
             return
 
@@ -414,8 +973,9 @@ class ColumnNavigator(Node):
             self.change_state(ARRIVED, "settled at shelf")
 
     def do_arrived(self):
-        self.stop()
         if ARRIVED not in self.announced:
+            self.stop()
+            self.get_logger().info("NAV_HANDOFF_V3: base/head control released to grasp controller")
             self.announced.add(ARRIVED)
             depth = (f"{self.depth_distance:.2f} m"
                      if self.depth_distance is not None else "unknown")
